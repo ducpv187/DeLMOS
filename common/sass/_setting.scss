@@ -1,0 +1,60 @@
+html {
+    font-size: calc(10/375*100vw);
+    @include mq_min_969 {
+        font-size: 62.5%;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, Arial,'Noto Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #222222;
+}
+
+main {
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+a,
+button {
+    text-decoration: none;
+    color: #0066C5;
+    &:hover {
+        opacity: .7;
+        text-decoration: none;
+    }
+}
+
+input,
+select,
+button {
+    &:focus {
+        outline: none;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width    : 100%;
+    max-width: 1040px;
+    margin   : 0 auto;
+    padding  : 0 2rem;
+}
+
