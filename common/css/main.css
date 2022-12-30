@@ -532,15 +532,25 @@ ul {
   left: 50%;
   transform: translateX(-50%);
 }
+@media screen and (max-width: 968px) {
+  .modal__content {
+    width: 35rem;
+  }
+}
 
 .modal__infor {
   padding-top: 2.5rem;
 }
 .modal__infor .text__top {
   font-size: 1.6rem;
-  line-height: 1;
+  line-height: 1.2;
   color: #222222;
   font-weight: 700;
+}
+@media screen and (max-width: 968px) {
+  .modal__infor .text__top {
+    font-size: 1.25rem;
+  }
 }
 .modal__infor .text__bot {
   text-align: center;
@@ -586,4 +596,9 @@ ul {
 .show {
   top: 30rem;
   transition: ease-in-out 0.5s;
+}
+@media screen and (max-width: 968px) {
+  .show {
+    top: 15rem;
+  }
 }

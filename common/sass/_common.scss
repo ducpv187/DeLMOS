@@ -300,15 +300,20 @@
   top: -100%;
   left: 50%;
   transform: translateX(-50%);
-
+  @include mq_max_968 {
+    width: 35rem;
+  }
 }
 .modal__infor {
   padding-top: 2.5rem;
   .text__top {
     font-size: 1.6rem;
-    line-height: 1;
+    line-height: 1.2;
     color: #222222;
     font-weight: 700;
+    @include mq_max_968 {
+      font-size: 1.25rem;
+    }
   }
   .text__bot {
     text-align: center;
@@ -354,4 +359,7 @@
 .show {
   top: 30rem;
   transition: ease-in-out 0.5s;
+  @include mq_max_968 {
+    top: 15rem;
+  }
 }
