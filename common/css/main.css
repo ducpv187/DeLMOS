@@ -247,6 +247,10 @@ ul {
   }
 }
 
+.page {
+  position: relative;
+}
+
 .main {
   padding: 3.5rem 0;
 }
@@ -491,4 +495,95 @@ ul {
   color: #b2b2b2;
   text-align: center;
   margin-top: 1.5rem;
-}/*# sourceMappingURL=main.css.map */
+}
+
+.modal__popup {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(178, 178, 178, 0.65);
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  transition: ease-in-out 0.5s;
+}
+
+.form__modal {
+  padding: 0 0 2rem 0;
+}
+
+.modal_close {
+  width: 2.4rem;
+  height: 2.4rem;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  cursor: pointer;
+}
+
+.modal__content {
+  width: 42.8rem;
+  padding: 3rem;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  position: relative;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.modal__infor {
+  padding-top: 2.5rem;
+}
+.modal__infor .text__top {
+  font-size: 1.6rem;
+  line-height: 1;
+  color: #222222;
+  font-weight: 700;
+}
+.modal__infor .text__bot {
+  text-align: center;
+}
+.modal__infor .text__bot a {
+  display: inline-block;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  color: #405080;
+}
+.modal__infor .text__bot a:hover {
+  border-bottom: 1px solid #b2b2b2;
+}
+.modal__infor .btn__submit {
+  padding: 1.5rem 0.5rem;
+  background-color: rgb(178, 178, 178);
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+.modal__infor input {
+  font-size: 1.6rem;
+  padding: 1.6rem;
+  border: none;
+  border-bottom: 1px solid #b2b2b2;
+}
+.modal__infor .w-100 {
+  width: 100%;
+}
+.modal__infor .mt-3 {
+  margin-top: 3rem;
+}
+.modal__infor .px-2 {
+  padding: 0 2rem;
+}
+
+.block {
+  top: 0;
+}
+
+.show {
+  top: 30rem;
+  transition: ease-in-out 0.5s;
+}

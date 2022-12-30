@@ -48,6 +48,9 @@
     }
   }
 }
+.page {
+  position: relative;
+}
 .main {
   padding: 3.5rem 0 ;
   @include mq_min_969 {
@@ -263,4 +266,92 @@
     text-align: center;
     margin-top: 1.5rem;
   }
+}
+//Popup login
+.modal__popup {
+  // display: none;
+  position: absolute;
+  top: -100%;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(178, 178, 178, 0.65);
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  transition: ease-in-out 0.5s;
+}
+.form__modal {
+  padding: 0 0 2rem 0;
+}
+.modal_close {
+  width: 2.4rem;
+  height: 2.4rem;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  cursor: pointer;
+}
+.modal__content {
+  width: 42.8rem;
+  padding: 3rem;
+  background-color: #ffffff; 
+  border-radius: 0.5rem; 
+  position: relative;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+.modal__infor {
+  padding-top: 2.5rem;
+  .text__top {
+    font-size: 1.6rem;
+    line-height: 1;
+    color: #222222;
+    font-weight: 700;
+  }
+  .text__bot {
+    text-align: center;
+   a {
+    display: inline-block;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    color: #405080;   
+    &:hover {
+      border-bottom: 1px solid #b2b2b2;
+    }
+   }
+  }
+  .btn__submit {
+    padding: 1.5rem 0.5rem;
+    background-color:rgba(178, 178, 178, 1);
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  input {
+    font-size: 1.6rem;
+    padding: 1.6rem;
+    border: none;
+    border-bottom: 1px solid #b2b2b2;     
+  }
+  .w-100 {
+    width: 100%;
+  }
+  .mt-3 {
+    margin-top: 3rem;
+  }
+  .px-2 {
+    padding: 0 2rem;
+  }
+}
+.block {
+  // display: block;
+  top: 0;
+}
+.show {
+  top: 30rem;
+  transition: ease-in-out 0.5s;
 }
