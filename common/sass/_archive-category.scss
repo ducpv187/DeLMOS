@@ -1,3 +1,11 @@
+.page__archive {
+  .main {
+    padding: 3rem 0;
+    @include mq_min_969 {
+      padding: 5.5rem 0 10rem;
+    }
+  }
+}
 .archive__category {
   .tab {
     margin: 2rem 0 1rem;
@@ -36,16 +44,8 @@
       border-radius: 0.5rem;
     }
   }
-}
-.pagination {
-  text-align: center;
-  .list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .tab__pagination {
-    width: 4.7rem;
-    height: 4.7rem;
+  .text__des {
+    font-size: 1.6rem;
+    letter-spacing: 0.2rem;
   }
 }
