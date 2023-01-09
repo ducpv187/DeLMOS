@@ -199,6 +199,11 @@ ul {
   justify-content: center;
   background-color: #F8F8F8;
 }
+@media screen and (max-width: 968px) {
+  .header .container {
+    padding: 0 1rem;
+  }
+}
 .header .d__flex {
   display: flex;
   justify-content: space-between;
@@ -225,6 +230,12 @@ ul {
   padding: 0.6rem 1.5rem;
   border-radius: 0.5rem;
   cursor: pointer;
+}
+@media screen and (max-width: 968px) {
+  .header__btn .btn {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+  }
 }
 .header__btn .btn-white {
   background-color: #ffffff;
@@ -471,6 +482,24 @@ ul {
 @media screen and (max-width: 968px) {
   .show {
     top: 15rem;
+  }
+}
+
+.h-pc {
+  display: block;
+}
+@media screen and (min-width: 969px) {
+  .h-pc {
+    display: none;
+  }
+}
+
+.h-sp {
+  display: none;
+}
+@media screen and (min-width: 969px) {
+  .h-sp {
+    display: block;
   }
 }
 

@@ -153,6 +153,19 @@
     top: 15rem;
   }
 }
+//show hide pc sp
+.h-pc {
+  display: block;
+  @include mq_min_969 {
+    display: none;
+  }
+}
+.h-sp {
+  display: none;
+  @include mq_min_969 {
+    display: block;
+  }
+}
 
 //pagination
 .pagination {
