@@ -36,10 +36,16 @@
       border-radius: 0.5rem;
     }
   }
-  .pagination {
-    .list {
-      display: flex;
-      justify-content: flex-start;
-    }
+}
+.pagination {
+  text-align: center;
+  .list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tab__pagination {
+    width: 4.7rem;
+    height: 4.7rem;
   }
 }

@@ -659,7 +659,16 @@ ul {
 .archive__category .thumb img {
   border-radius: 0.5rem;
 }
-.archive__category .pagination .list {
+
+.pagination {
+  text-align: center;
+}
+.pagination .list {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
+}
+.pagination .tab__pagination {
+  width: 4.7rem;
+  height: 4.7rem;
 }
