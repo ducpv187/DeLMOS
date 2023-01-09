@@ -19,6 +19,9 @@
     }
   }
   &__btn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     line-height: 0;
     .btn {
       font-size: 1.4rem;
@@ -31,17 +34,25 @@
       background-color: #ffffff;
       color: #717DA0;
       border: 1px solid #405080;
-      margin-left: 3rem;
+      margin-left: 1rem;
       @include mq_max_968 {
-        margin-left: 2.5rem;
+        margin-left: 0.5rem;
       }
     }
     .btn-blue {
       background-color: #405080;
       color: #ffffff;
       border: none;
-      margin-left: 1.5rem;  
+      margin-left: 1rem;  
       border: 1px solid transparent;
+      @include mq_max_968 {
+        margin-left: 0.5rem;
+      }
+    }
+    .btn-purple {
+      background-color: #e4e7f0;
+      border: 1px solid #e4e7f0;
+      color: #405080;      
       @include mq_max_968 {
         margin-left: 1rem;
       }

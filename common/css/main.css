@@ -214,6 +214,9 @@ ul {
   width: 9.8rem;
 }
 .header__btn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
   line-height: 0;
 }
 .header__btn .btn {
@@ -227,22 +230,32 @@ ul {
   background-color: #ffffff;
   color: #717DA0;
   border: 1px solid #405080;
-  margin-left: 3rem;
+  margin-left: 1rem;
 }
 @media screen and (max-width: 968px) {
   .header__btn .btn-white {
-    margin-left: 2.5rem;
+    margin-left: 0.5rem;
   }
 }
 .header__btn .btn-blue {
   background-color: #405080;
   color: #ffffff;
   border: none;
-  margin-left: 1.5rem;
+  margin-left: 1rem;
   border: 1px solid transparent;
 }
 @media screen and (max-width: 968px) {
   .header__btn .btn-blue {
+    margin-left: 0.5rem;
+  }
+}
+.header__btn .btn-purple {
+  background-color: #e4e7f0;
+  border: 1px solid #e4e7f0;
+  color: #405080;
+}
+@media screen and (max-width: 968px) {
+  .header__btn .btn-purple {
     margin-left: 1rem;
   }
 }
