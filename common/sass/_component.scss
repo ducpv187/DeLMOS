@@ -208,6 +208,11 @@
       color: #ffffff;
       background-color: #405080;
     }
+    @include mq_max_968 {
+      width: 3rem;
+      height: 3rem;
+      font-size: 1.6rem;
+    }
   }
   .css-vubbuv {
     user-select: none;

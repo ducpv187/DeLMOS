@@ -1,6 +1,6 @@
 .page__archive {
   .main {
-    padding: 3rem 0;
+    padding: 2rem 0;
     @include mq_min_969 {
       padding: 5.5rem 0 10rem;
     }
@@ -14,7 +14,10 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;  
+    @include mq_max_767 {     
+      margin: 0 -0.5rem;
+    }  
     .items {
       @include mq_table {
         width: auto;
@@ -27,6 +30,7 @@
       display: inline-block; 
       padding: 1rem 3rem;  
       margin-right: 1rem;
+      margin-bottom: 1rem;
       font-size: 1.6rem;    
       line-height: 1.2;
       color: #405080;
@@ -56,6 +60,14 @@
     .items-creator {
       width: calc(calc(100% /4 ) - 1rem);
       margin: 0 0.5rem 1rem;  
+      @include mq_table {
+        width: calc(calc(100% /3 ) - 1rem);
+        margin: 0 0.5rem 1rem;  
+      }
+      @include mq_max_767 {
+        width: calc(calc(100% /2 ) - 1rem);
+        margin: 0 0.5rem 1rem;  
+      }
     }
   }
   .thumb {
