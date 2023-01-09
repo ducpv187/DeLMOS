@@ -1,0 +1,37 @@
+.footer {
+  padding: 4rem 0 5rem;
+  background-color: #F8F8F8;
+  @include mq_max_968 {
+    padding: 2.5rem 0 3rem;
+  }
+  &__list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;   
+    flex-wrap: wrap;
+    &-items {
+      @include mq_max_968 {
+        text-align: center;
+        width: 100%;
+        padding: 0.5rem;
+      }
+      a {
+      font-size: 1.2rem;
+      display: inline-block;
+      padding: 1rem 1.5rem;
+      color: #808080;
+      @include mq_max_968 {
+        padding: 0;
+      }
+      }
+    }
+  }
+  .footer__text {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    color: #b2b2b2;
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+}

@@ -1,0 +1,50 @@
+.header {
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F8F8F8;
+  .d__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .link__logo {
+    display: inline-block;
+  }
+  .img__logo {
+    line-height: 0;
+    .img {
+      width: 9.8rem
+    }
+  }
+  &__btn {
+    line-height: 0;
+    .btn {
+      font-size: 1.4rem;
+      line-height: 1.2;
+      padding: 0.6rem 1.5rem;
+      border-radius: 0.5rem; 
+      cursor: pointer;
+    }
+    .btn-white {
+      background-color: #ffffff;
+      color: #717DA0;
+      border: 1px solid #405080;
+      margin-left: 3rem;
+      @include mq_max_968 {
+        margin-left: 2.5rem;
+      }
+    }
+    .btn-blue {
+      background-color: #405080;
+      color: #ffffff;
+      border: none;
+      margin-left: 1.5rem;  
+      border: 1px solid transparent;
+      @include mq_max_968 {
+        margin-left: 1rem;
+      }
+    }
+  }
+}

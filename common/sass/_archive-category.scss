@@ -1,0 +1,45 @@
+.archive__category {
+  .tab {
+    margin: 2rem 0 1rem;
+  }
+  .tab__category {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;    
+    .items {
+     a {
+      display: inline-block; 
+      padding: 1rem 3rem;  
+      margin-right: 1rem;
+      font-size: 1.6rem;    
+      line-height: 1.2;
+      color: #405080;
+      background-color: #ffffff;
+      border: 1px solid #405080;
+      border-radius: 0.5rem;
+      &.active {
+        color: #ffffff;
+        background-color: #384670;
+      }
+     }
+    }
+  }
+  .list__post {
+    .items-creator {
+      width: calc(calc(100% /4 ) - 1rem);
+      margin: 0 0.5rem 1rem;  
+    }
+  }
+  .thumb {
+    img {
+      border-radius: 0.5rem;
+    }
+  }
+  .pagination {
+    .list {
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+}
