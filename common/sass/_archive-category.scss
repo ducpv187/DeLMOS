@@ -16,6 +16,13 @@
     align-items: flex-start;
     flex-wrap: wrap;    
     .items {
+      @include mq_table {
+        width: auto;
+      }
+      @include mq_max_767 {
+        width:  calc(calc(100%/3) - 1rem);
+        margin: 0 0.5rem;
+      }
      a {
       display: inline-block; 
       padding: 1rem 3rem;  
@@ -29,6 +36,17 @@
       &.active {
         color: #ffffff;
         background-color: #384670;
+      }
+      @include mq_max_968 {
+        margin-bottom: 0.5rem;
+        font-size: 1.2rem;
+        padding: 0.5rem 1rem;
+        margin-right: 0.5rem;
+      }
+      @include mq_max_767 {
+        width: 100%;
+        margin-right: 0;
+        padding: 0.5rem;
       }
      }
     }
