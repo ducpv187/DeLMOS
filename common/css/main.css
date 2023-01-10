@@ -209,14 +209,34 @@ ul {
   justify-content: space-between;
   align-items: center;
 }
-.header .link__logo {
-  display: inline-block;
+@media screen and (max-width: 968px) {
+  .header__login .navigation {
+    display: none;
+  }
 }
-.header .img__logo {
-  line-height: 0;
+.header__login .navigation__bar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2.5rem;
 }
-.header .img__logo .img {
-  width: 9.8rem;
+.header__login .link__nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #000;
+}
+.header__login .account {
+  margin-left: 3rem;
+}
+.header__login .account__btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: none;
+  color: #000;
+  background-color: transparent;
+  font-size: 1.4rem;
 }
 .header__btn {
   display: flex;
@@ -269,6 +289,34 @@ ul {
   .header__btn .btn-purple {
     margin-left: 1rem;
   }
+}
+.header .icon {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 2rem;
+  height: 2rem;
+  display: inline-block;
+  fill: currentcolor;
+  flex-shrink: 0;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-size: 1.25rem;
+  color: #000;
+  margin-right: 0.5rem;
+}
+.header .link__logo {
+  display: inline-block;
+}
+.header .img__logo {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  display: flex;
+  line-height: 0;
+}
+.header .img__logo .img {
+  width: 9.8rem;
 }
 
 .footer {
