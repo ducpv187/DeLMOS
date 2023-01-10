@@ -71,7 +71,8 @@
 .modal__popup {
   // display: none;
   position: absolute;
-  top: -100%;
+  opacity: 0;
+  top: 0;
   left: 0;
   bottom: 0;
   background-color: rgba(178, 178, 178, 0.65);
@@ -144,11 +145,11 @@
   }
 }
 .block {
-  top: 0;
+  opacity: 1;
 }
 .show {
   top: 30rem;
-  transition: ease-in-out 0.5s;
+  transition: ease-in-out 1s;
   @include mq_max_968 {
     top: 15rem;
   }

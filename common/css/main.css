@@ -193,11 +193,13 @@ ul {
 }
 
 .header {
+  position: relative;
   height: 6rem;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #F8F8F8;
+  z-index: 9999;
 }
 @media screen and (max-width: 968px) {
   .header .container {
@@ -229,6 +231,11 @@ ul {
 .header__login .account {
   margin-left: 3rem;
 }
+@media screen and (max-width: 968px) {
+  .header__login .account {
+    margin-left: 0;
+  }
+}
 .header__login .account__btn {
   display: flex;
   align-items: center;
@@ -237,6 +244,8 @@ ul {
   color: #000;
   background-color: transparent;
   font-size: 1.4rem;
+  line-height: 1.2;
+  cursor: pointer;
 }
 .header__btn {
   display: flex;
@@ -438,7 +447,8 @@ ul {
 
 .modal__popup {
   position: absolute;
-  top: -100%;
+  opacity: 0;
+  top: 0;
   left: 0;
   bottom: 0;
   background-color: rgba(178, 178, 178, 0.65);
@@ -520,12 +530,12 @@ ul {
 }
 
 .block {
-  top: 0;
+  opacity: 1;
 }
 
 .show {
   top: 30rem;
-  transition: ease-in-out 0.5s;
+  transition: ease-in-out 1s;
 }
 @media screen and (max-width: 968px) {
   .show {

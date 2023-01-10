@@ -1,9 +1,11 @@
 .header {
+  position: relative;
   height: 6rem;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #F8F8F8;
+  z-index: 9999;
   .container {
     @include mq_max_968 {
       padding: 0 1rem;
@@ -35,15 +37,20 @@
       color: #000;
     }
     .account {
-      margin-left: 3rem;
+      margin-left: 3rem;    
+      @include mq_max_968 {
+        margin-left: 0;
+      }
      &__btn {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      border: none;
-      color: #000;
-      background-color: transparent;
-      font-size: 1.4rem;
+       display: flex;
+       align-items: center;
+       justify-content: flex-start;
+       border: none;
+       color: #000;
+       background-color: transparent;
+       font-size: 1.4rem;
+       line-height: 1.2;
+       cursor: pointer;
      }
     }
   }  
