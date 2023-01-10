@@ -6,8 +6,9 @@ $(document).ready(function() {
   });
   $(".modal_close").click(function() {
     $(this).parents().find(".modal__popup").removeClass('block');
+    $(this).parent(".modal__content").removeClass('show'); 
   });
-  $(".modal__content ").click(function(e) {
+  $(".modal__content").click(function(e) {
     e.stopPropagation(e);
   });
   $(".modal__popup").click(function() {
