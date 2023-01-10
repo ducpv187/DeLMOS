@@ -114,10 +114,11 @@
     display: inline-block;
   }
   .img__logo {
+    display: flex;
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 0%;
-    display: flex;
+    // flex: 1;
     line-height: 0;
     .img {
       width: 9.8rem

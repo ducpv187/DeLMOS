@@ -318,10 +318,10 @@ ul {
   display: inline-block;
 }
 .header .img__logo {
+  display: flex;
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 0%;
-  display: flex;
   line-height: 0;
 }
 .header .img__logo .img {
