@@ -531,6 +531,7 @@ ul {
 
 .block {
   opacity: 1;
+  z-index: 99999;
 }
 
 .show {
