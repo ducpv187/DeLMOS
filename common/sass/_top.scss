@@ -2,6 +2,8 @@
   position: relative;
 }
 .main {
+  position: relative;
+  z-index: 99;
   padding: 3.5rem 0 ;
   @include mq_min_969 {
     padding: 5.5rem 0 3.5rem 0;
