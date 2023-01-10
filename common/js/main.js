@@ -12,5 +12,6 @@ $(document).ready(function() {
   });
   $(".modal__popup").click(function() {
     $(this).removeClass('block');
+    $(this).parents().find(".modal__content").removeClass('show');      
   });
 });
