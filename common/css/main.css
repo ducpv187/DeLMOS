@@ -230,6 +230,7 @@ ul {
 }
 .header__login .account {
   margin-left: 3rem;
+  position: relative;
 }
 @media screen and (max-width: 968px) {
   .header__login .account {
@@ -246,6 +247,27 @@ ul {
   font-size: 1.4rem;
   line-height: 1.2;
   cursor: pointer;
+}
+.header__login .account__logout {
+  width: 18rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.2);
+  font-size: 1.4rem;
+  line-height: 1.2;
+  padding: 1.5rem 2rem;
+  color: #222222;
+  background-color: #ffffff;
+  cursor: pointer;
+  position: absolute;
+  top: 3rem;
+  right: 0;
+}
+.header__login .account__drop {
+  display: none;
 }
 .header__btn {
   display: flex;
@@ -541,6 +563,10 @@ ul {
   .show {
     top: 15rem;
   }
+}
+
+.active {
+  display: block !important;
 }
 
 .h-pc {

@@ -15,4 +15,12 @@ $(document).ready(function() {
     $(this).removeClass('block');
     $(this).parents().find(".modal__content").removeClass('show');      
   });
+  // click account drop
+  $(".account__btn").click(function() {
+    $(this).parents().find(".account__drop").toggleClass('active');
+
+  });
+  $(".main").click(function() {    
+    $(this).parents().find(".account__drop").removeClass('active');   
+  })
 });

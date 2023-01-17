@@ -38,6 +38,7 @@
     }
     .account {
       margin-left: 3rem;    
+      position: relative;
       @include mq_max_968 {
         margin-left: 0;
       }
@@ -51,6 +52,27 @@
        font-size: 1.4rem;
        line-height: 1.2;
        cursor: pointer;
+     }
+     &__logout {      
+      width: 18rem;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      border: none;
+      border-radius: 0.5rem;
+      box-shadow: 0 0.3rem 0.8rem rgb(0 0 0 / 0.2);
+      font-size: 1.4rem;
+      line-height: 1.2;
+      padding: 1.5rem 2rem;
+      color: #222222;
+      background-color: #ffffff;
+      cursor: pointer;
+      position: absolute;
+      top: 3rem;
+      right: 0;      
+     }
+     &__drop {
+      display: none;
      }
     }
   }  
