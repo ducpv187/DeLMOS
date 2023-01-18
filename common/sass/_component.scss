@@ -1,6 +1,15 @@
+//flex
+.d-flex {
+  display: flex;
+}
+
 //width
 .w-100 {
   width: 100%;
+}
+
+.w-20  {
+  width: 20rem;
 }
 
 //margin
@@ -26,11 +35,14 @@
 .px-2 {
   padding: 0 2rem;
 }
-
+.pt-5 {
+  padding-top: 5rem;
+}
 //font-weight
 .font-bold {
   font-weight: 700;
 }
+
 
 //col
 .list__post {

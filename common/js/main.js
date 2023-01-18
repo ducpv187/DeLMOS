@@ -23,4 +23,28 @@ $(document).ready(function() {
   $(".main").click(function() {    
     $(this).parents().find(".account__drop").removeClass('active_drop');   
   })
+
+   //validate form
+ $('#my__form').validate({
+    rules: {
+      email: "required",
+      password: "required",
+      number: "required",
+      staffNameLastName: "required",
+      staffNameFirstName: "required",
+      staffNameLastNameKana: "required",
+      staffNameFirstNameKana: "required",
+      // acceptPolicy: "required",
+    },
+    messages: {
+      email: "メールアドレスを入力してください。",
+      password: "メールアドレスを入力してください。", 
+      number: "メールアドレスを入力してください。", 
+      staffNameLastName: "「姓」を入力してください。", 
+      staffNameFirstName: "「姓」を入力してください。", 
+      staffNameLastNameKana: "「セイ」を入力してください。", 
+      staffNameFirstNameKana: "「セイ」を入力してください。", 
+      // acceptPolicy: "利用規約とプライバシーポリシーに同意の上チェックを入れてください。", 
+    },
+  });
 });

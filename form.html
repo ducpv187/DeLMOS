@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./common/images/favicon-svg.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" crossorigin as="font">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Sans:wght@300&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="common/css/main.css">
+    <title> DeLOMs </title>
+  </head>
+
+  <body>
+    <main class="page__form page">
+      <header>
+        <div class="header">
+          <div class="container">
+            <div class="d__flex header__login">
+              <div class="img__logo">
+                <a href="/" class="link__logo">
+                  <img src="./common/images/logo.svg" alt="logo" class="img">
+                </a>
+              </div>
+              <div class="navigation">
+                <ul class="navigation__bar header__btn">
+                  <li>
+                    <button class="btn btn-purple">
+                      事例ダウンロード
+                    </button>
+                  </li>
+                  <li>
+                    <a href="#" class="link__nav">
+                      <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall text-d-gray-10 mr-1 css-1k33q06 icon" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ManageAccountsOutlinedIcon"><path d="M4 18v-.65c0-.34.16-.66.41-.81C6.1 15.53 8.03 15 10 15c.03 0 .05 0 .08.01.1-.7.3-1.37.59-1.98-.22-.02-.44-.03-.67-.03-2.42 0-4.68.67-6.61 1.82-.88.52-1.39 1.5-1.39 2.53V20h9.26c-.42-.6-.75-1.28-.97-2H4zm6-6c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm10.75 10c0-.22-.03-.42-.06-.63l1.14-1.01-1-1.73-1.45.49c-.32-.27-.68-.48-1.08-.63L18 11h-2l-.3 1.49c-.4.15-.76.36-1.08.63l-1.45-.49-1 1.73 1.14 1.01c-.03.21-.06.41-.06.63s.03.42.06.63l-1.14 1.01 1 1.73 1.45-.49c.32.27.68.48 1.08.63L16 21h2l.3-1.49c.4-.15.76-.36 1.08-.63l1.45.49 1-1.73-1.14-1.01c.03-.21.06-.41.06-.63zM17 18c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"></path>
+                      </svg>
+                      マイページ
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="link__nav">
+                      <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall text-d-gray-20 mr-1 css-1k33q06 icon" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="FavoriteBorderRoundedIcon"><path d="M19.66 3.99c-2.64-1.8-5.9-.96-7.66 1.1-1.76-2.06-5.02-2.91-7.66-1.1-1.4.96-2.28 2.58-2.34 4.29-.14 3.88 3.3 6.99 8.55 11.76l.1.09c.76.69 1.93.69 2.69-.01l.11-.1c5.25-4.76 8.68-7.87 8.55-11.75-.06-1.7-.94-3.32-2.34-4.28zM12.1 18.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"></path>
+                      </svg>
+                      お気に入り
+                    </a>                    
+                  </li>
+                  <li>
+                    <a href="#" class="link__nav">
+                      <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall text-d-gray-10 mr-1 css-1k33q06 icon" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="HistoryRoundedIcon"><path d="M13.26 3C8.17 2.86 4 6.95 4 12H2.21c-.45 0-.67.54-.35.85l2.79 2.8c.2.2.51.2.71 0l2.79-2.8c.31-.31.09-.85-.36-.85H6c0-3.9 3.18-7.05 7.1-7 3.72.05 6.85 3.18 6.9 6.9.05 3.91-3.1 7.1-7 7.1-1.61 0-3.1-.55-4.28-1.48-.4-.31-.96-.28-1.32.08-.42.42-.39 1.13.08 1.49C9 20.29 10.91 21 13 21c5.05 0 9.14-4.17 9-9.26-.13-4.69-4.05-8.61-8.74-8.74zm-.51 5c-.41 0-.75.34-.75.75v3.68c0 .35.19.68.49.86l3.12 1.85c.36.21.82.09 1.03-.26.21-.36.09-.82-.26-1.03l-2.88-1.71v-3.4c0-.4-.34-.74-.75-.74z"></path></svg>
+                      閲覧履歴
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="link__nav">
+                      <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall text-d-gray-10 mr-1 css-1k33q06 icon" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="DoneRoundedIcon"><path d="m9 16.2-3.5-3.5a.9839.9839 0 0 0-1.4 0c-.39.39-.39 1.01 0 1.4l4.19 4.19c.39.39 1.02.39 1.41 0L20.3 7.7c.39-.39.39-1.01 0-1.4a.9839.9839 0 0 0-1.4 0L9 16.2z"></path></svg>
+                      購入済
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="account">                
+                <div class="account__icon">
+                  <button class="account__btn">
+                    <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall text-d-black mr-1 css-1k33q06 icon" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="PersonOutlineIcon"><path d="M12 5.9c1.16 0 2.1.94 2.1 2.1s-.94 2.1-2.1 2.1S9.9 9.16 9.9 8s.94-2.1 2.1-2.1m0 9c2.97 0 6.1 1.46 6.1 2.1v1.1H5.9V17c0-.64 3.13-2.1 6.1-2.1M12 4C9.79 4 8 5.79 8 8s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 9c-2.67 0-8 1.34-8 4v3h16v-3c0-2.66-5.33-4-8-4z"></path></svg>
+                    huynhamさん
+                  </button>
+                </div>
+               <div class="account__drop">
+                <button class="account__logout" role="menuitem">
+                  <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall text-d-gray-10 mr-1 css-1k33q06 icon" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ExitToAppIcon"><path d="M10.09 15.59 11.5 17l5-5-5-5-1.41 1.41L12.67 11H3v2h9.67l-2.58 2.59zM19 3H5c-1.11 0-2 .9-2 2v4h2V5h14v14H5v-4H3v4c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"></path>
+                  </svg>
+                  ログアウト
+                </button>
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="main">
+        <section class="ttl mb-5">
+         <div class="container">
+          <h1 class="title">
+            新規登録（無料）
+           </h1>        
+         </div>  
+        </section>  
+        <section class="form">
+          <div class="container">
+            <div class="description">
+              まずは以下の情報を入力してください。
+            </div>
+            <form action="" id="my__form">
+              <div class="form__input">
+                <div class="row-form">
+                  <div class="c-full title">
+                    <label class="label">メールアドレス</label>
+                    <span class="requied">必須</span>
+                  </div>
+                  <div class="c-full">
+                    <input class="input" type="email" placeholder="例：delmo@mail.com" name="email">
+                  </div>
+                </div>
+                <div class="row-form">
+                  <div class="c-full title">
+                    <label class="label">パスワード</label>
+                    <span class="requied">必須</span>
+                  </div>
+                  <div class="c-full">
+                    <input class="input" type="password" placeholder="パスワード" name="password">
+                  </div>
+                  <p class="des__input">
+                    ※半角英数字、小文字、大文字をそれぞれ含む8文字以上の組み合わせ
+                  </p>                 
+                </div>
+                <div class="row-form">
+                  <div class="c-full title">
+                    <label class="label">電話番号</label>
+                    <span class="requied">必須</span>
+                  </div>
+                  <div class="c-full">
+                    <input class="input" type="text" placeholder="例）03-1234-5678" name="number">
+                  </div>
+                  <p class="des__input">
+                    ※半角英数字、小文字、大文字をそれぞれ含む8文字以上の組み合わせ
+                  </p>
+                </div>
+                <div class="row-form">
+                  <div class="c-full title">
+                    <label class="label">お名前</label>
+                    <span class="requied">必須</span>
+                  </div>
+                 <div class="input__number">
+                  <div class="w-20">
+                    <input class="input" type="text"  placeholder="例：田中" name="staffNameLastName">
+                  </div>
+                  <div class="w-20">
+                    <input class="input" type="text" placeholder="例：太郎" name="staffNameFirstName">
+                  </div>
+                 </div>
+                </div>
+                <div class="row-form">
+                  <div class="c-full title">
+                    <label class="label">お名前（カナ）</label>
+                    <span class="requied">必須</span>
+                  </div>
+                 <div class="input__number">
+                  <div class="w-20">
+                    <input class="input" type="text" placeholder="例：タナカ" name="staffNameLastNameKana">
+                  </div>
+                  <div class="w-20">
+                    <input class="input" type="text" placeholder="例：タロウ" name="staffNameFirstNameKana">
+                  </div>
+                 </div>
+                </div>
+              </div>
+              <div class="form__checkbox">
+                <div class="row-form">
+                  <div class="c-full input__checkbox">
+                    <input type="checkbox" id="acceptPolicy" name="acceptPolicy">
+                    <label for="acceptPolicy">
+                      <a class="cs-link" href="https://drive.google.com/file/d/1Y_UaLQbxIE9cTZMc1bZkl1PvY7j852AW/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                        利用規約
+                      </a>
+                      と
+                      <a class="cs-link" href="https://drive.google.com/file/d/1jfcjMQC-EqFKHnEJLHsxqN_FSMoGJRBq/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                        プライバシーポリシー
+                      </a>に同意する
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="btn">
+                <button class="btn__submit" type="submit">
+                  確認画面へ                  
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>   
+       </div>
+      <footer class="footer">
+        <ul class="footer__list">
+          <li class="footer__list-items">
+            <a href="#">
+              運営会社
+            </a>
+          </li>
+          <li class="footer__list-items">
+            <a href="#">
+              運営会社
+            </a>
+          </li>
+          <li class="footer__list-items">
+            <a href="#">
+              プライバシーポリシー
+            </a>
+          </li>
+          <li class="footer__list-items">
+            <a href="#">
+              運営会社
+            </a>
+          </li>
+          <li class="footer__list-items">
+            <a href="#">
+              お問い合わせ
+            </a>
+          </li>
+          <li class="footer__list-items">
+            <a href="#">
+              運営会社
+            </a>
+          </li>
+        </ul>
+        <p class="footer__text">Copyright©2022 Makiyama brothers Inc.</p>
+      </footer>
+      <!-- popup login -->
+      <div class="modal__popup">
+        <div class="modal__content">
+          <div class="modal_close">
+            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-6flbmm" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ClearIcon"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+            </svg>
+          </div>
+          <div class="modal__infor">
+            <p class="text__top">サービスをご利用いただくにはログインが必要です</p>
+            <form action="" class="form__modal">
+              <div class="mt-3 px-2">
+                <input type="text" class="w-100" placeholder="メールアドレス" value="">
+              </div>
+              <div class="mt-3 px-2">
+                <input type="password" class="w-100" placeholder="パスワード" value="">
+              </div>
+              <div class="mt-3 px-2">
+                <button type="button" class="w-100 btn__submit" disabled>ログイン</button>
+              </div>
+            </form>
+            <div class="text__bot">
+              <a href="#">パスワードをお忘れになった方はこちら</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="./common/js/main.js"></script>
+  </body> 
+</html>

@@ -1,0 +1,101 @@
+.page__form {
+  .main {
+    padding: 5.5rem 0 7.5rem 0;
+  }
+  .title {
+    text-align: center;
+  }
+  .form {
+    .container {
+      max-width: 71.2rem;
+    }
+    .description {
+      font-size: 1.8rem;
+      line-height: 1.2;
+      font-weight: bold;
+      color: #222222;
+      text-align: center;
+    }
+    &__input {
+      margin-top: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 5rem;
+    }
+    .c-full {
+      width: 100%;
+    }
+    .title {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 1rem;
+      padding-bottom: 1rem;
+    }
+    .label {
+      font-size: 1.8rem;
+      line-height: 1.2;
+      color: #222222;
+      font-weight: bold;
+    }
+    .requied {
+      font-size: 1.2rem;
+      line-height: 1.2;
+      padding: 0.5rem 1rem;
+      color: #ffffff;
+      background-color: #405080;
+    }
+    .input {
+      width: 100%;
+      font-size: 1.4rem;
+      line-height: 1.2;
+      padding: 1.2rem 1rem;
+      margin-bottom: 1rem;
+      border-radius: 0.5rem;
+      border: 1px solid #CCCCCC;
+      &:focus {
+        background-color: #E8F0FE;
+      }
+      &__checkbox {
+        text-align: center;
+      }
+    }    
+    .des__input {
+      font-size: 1.2rem;
+      line-height: 1.2;
+      color: #666666;
+    }
+    .input__number {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 1.5rem;
+    }
+    .form__checkbox {
+      margin: 4rem 0;
+    }
+    .btn {
+      text-align: center;
+      &__submit {
+        font-size: 1.6rem;
+        line-height: 1.2;
+        color: #ffffff;
+        background-color: #999999;
+        padding: 1.25rem 2.8rem;
+        border-radius: 0.25rem;
+        border: none;
+        cursor: pointer;
+      }
+    }
+    .cs-link {
+      font-size: 1.6rem;
+      line-height: 1.2;
+      color: #405080;
+    }
+    .error {
+      font-size: 1.2rem;
+      line-height: 1.2;
+      color: #A70000;
+    }
+  }  
+}
