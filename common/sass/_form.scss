@@ -62,6 +62,9 @@
       &__checkbox {
         text-align: center;
       }
+      &.error {
+        border:  1px solid #A70000;
+      }
     }    
     .des__input {
       font-size: 1.2rem;

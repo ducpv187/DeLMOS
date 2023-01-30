@@ -999,6 +999,9 @@ ul {
 .page__form .form .input__checkbox {
   text-align: center;
 }
+.page__form .form .input.error {
+  border: 1px solid #A70000;
+}
 .page__form .form .des__input {
   font-size: 1.2rem;
   line-height: 1.2;
