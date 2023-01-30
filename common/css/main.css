@@ -599,6 +599,14 @@ ul {
   }
 }
 
+.d-none {
+  display: none !important;
+}
+
+.d-block {
+  display: block !important;
+}
+
 .pagination {
   text-align: center;
 }
@@ -948,6 +956,11 @@ ul {
   flex-direction: column;
   gap: 5rem;
 }
+@media screen and (max-width: 968px) {
+  .page__form .form__input {
+    gap: 2.5rem;
+  }
+}
 .page__form .form .c-full {
   width: 100%;
 }
@@ -1000,6 +1013,36 @@ ul {
 .page__form .form .form__checkbox {
   margin: 4rem 0;
 }
+.page__form .form .input__password {
+  position: relative;
+}
+.page__form .form .input__password .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+.page__form .form .input__password .icon-show,
+.page__form .form .input__password .icon-hidden {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 2.4rem;
+  height: 2.4rem;
+  fill: currentcolor;
+  flex-shrink: 0;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-size: 1.4rem;
+  color: #B2B2B2;
+}
+.page__form .form .input__password .icon-show {
+  display: none;
+}
 .page__form .form .btn {
   text-align: center;
 }
@@ -1022,4 +1065,4 @@ ul {
   font-size: 1.2rem;
   line-height: 1.2;
   color: #A70000;
-}/*# sourceMappingURL=main.css.map */
+}

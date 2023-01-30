@@ -24,6 +24,28 @@ $(document).ready(function() {
     $(this).parents().find(".account__drop").removeClass('active_drop');   
   })
 
+  //show-hidden password
+  $(".input__password .icon").click(function() { 
+    let typePassword = $(this).parents().find(".input__password .input").attr("type");    
+    if(typePassword == "password"){
+      $(this).parents().find(".input__password .input").attr('type', 'text');       
+    }
+    else {
+      $(this).parents().find(".input__password .input").attr('type', 'password');      
+    }
+  })
+  
+  //show-hidden icon  
+  $(".input__password .icon .icon-hidden").click(function() {     
+    $(this).addClass("d-none");
+    $(this).siblings().addClass("d-block");
+  })
+
+  $(".input__password .icon .icon-show").click(function() { 
+    $(this).removeClass("d-block");
+    $(this).siblings().removeClass("d-none");
+  })
+
    //validate form
  $('#my__form').validate({
     rules: {
