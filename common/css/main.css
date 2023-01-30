@@ -480,15 +480,16 @@ ul {
 }
 
 .modal__popup {
+  display: none;
   position: absolute;
-  opacity: 0;
   top: 0;
   left: 0;
   bottom: 0;
   background-color: rgba(178, 178, 178, 0.65);
   width: 100%;
   height: 100%;
-  transition: ease-in-out 0.5s;
+  transition: ease-in-out 1s;
+  z-index: 99999;
 }
 
 .form__modal {
@@ -563,8 +564,7 @@ ul {
 }
 
 .block {
-  opacity: 1;
-  z-index: 99999;
+  display: block;
 }
 
 .show {
