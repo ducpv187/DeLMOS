@@ -73,8 +73,6 @@
 .items-top {
   width: calc(calc(100% /5 ) - 1.6rem);
   margin: 0 0.8rem;  
-  position: relative;
-  cursor: pointer;    
   &:hover {
     opacity: 0.75;
   }     
