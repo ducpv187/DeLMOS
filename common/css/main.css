@@ -890,8 +890,7 @@ ul {
   justify-content: center;
   align-items: flex-start;
 }
-.main .category .post .btn__readmore {
-  max-width: 31rem;
+.main .category .post .cpn__btn--top {
   width: 100%;
   font-size: 1.8rem;
   line-height: 1.2;
@@ -901,6 +900,12 @@ ul {
   border: 1px solid #707070;
   border-radius: 1rem;
   cursor: pointer;
+}
+.main .category .post .btn__readmore {
+  max-width: 31rem;
+}
+.main .category .post .btn__search-category {
+  max-width: 16.8rem;
 }
 
 .page__archive .main {
