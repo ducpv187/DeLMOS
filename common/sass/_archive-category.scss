@@ -57,6 +57,18 @@
     }
   }
   .list__post {
+    .items-top {
+      width: calc(calc(100% /4 ) - 1rem);
+      margin: 0 0.5rem 1rem;  
+      @include mq_table {
+        width: calc(calc(100% /3 ) - 1rem);
+        margin: 0 0.5rem 1rem;  
+      }
+      @include mq_max_767 {
+        width: calc(calc(100% /2 ) - 1rem);
+        margin: 0 0.5rem 1rem;  
+      }
+    }
     .items-creator {
       width: calc(calc(100% /4 ) - 1rem);
       margin: 0 0.5rem 1rem;  

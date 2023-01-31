@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" crossorigin as="font">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Sans:wght@300&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="common/css/main.css">
-    <title> DeLOMs </title>
+    <title> UGC </title>
   </head>
 
   <body>
@@ -42,169 +42,288 @@
       </header>
       <div class="main">
         <div class="container">
-         <section class="form__search">
-           <form action="">
-            <div class="d__flex">
-             <input class="input__search w-100" name="query" placeholder="キーワードを入力" value="">
-             <button type="submit" class="btn__search">
-               <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium text-d-gray-10 css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="SearchIcon" style="color: rgb(255, 255, 255);"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
-               </svg>
-             </button>
+          <section class="form__search">
+            <form action="">
+              <div class="d__flex">
+              <input class="input__search w-100" name="query" placeholder="キーワードを入力" value="">
+              <button type="submit" class="btn__search">
+                <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium text-d-gray-10 css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="SearchIcon" style="color: rgb(255, 255, 255);"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                </svg>
+              </button>
+              </div>
+            </form>
+          </section>
+          <section class="category">
+            <h1 class="title">
+              人気ランキングTOP5
+            </h1>
+            <div class="post">
+              <div class="list__post">
+                <div class="items-top">
+                  <div class="thumb">
+                    <img src="./common/images/img_category/cat_img1.jpg" alt="thumbnail">
+                  </div>   
+                  <div class="ttl-thumb">
+                    No.1
+                  </div>      
+                  <div class="des-thumb">
+                    クリエイター名が入ります。<br>
+                    20代 <br>
+                    ＃ヘアケアをしている
+                  </div>        
+                </div>
+                <div class="items-top">
+                  <div class="thumb">
+                    <img src="./common/images/img_category/cat_img2.jpeg" alt="thumbnail">
+                  </div>
+                  <div class="ttl-thumb">
+                    No.2
+                  </div>      
+                  <div class="des-thumb">
+                    クリエイター名が入ります。<br>
+                    20代 <br>
+                    ＃ヘアケアをしている
+                  </div>     
+                </div>
+                <div class="items-top">
+                  <div class="thumb">
+                    <img src="./common/images/img_category/cat_img3.jpeg" alt="thumbnail">
+                  </div>
+                  <div class="ttl-thumb">
+                    No.3
+                  </div>      
+                  <div class="des-thumb">
+                    クリエイター名が入ります。<br>
+                    20代 <br>
+                    ＃ヘアケアをしている
+                  </div>     
+                </div>
+                <div class="items-top">
+                  <div class="thumb">
+                    <img src="./common/images/img_category/cat_img4.jpg" alt="thumbnail">
+                  </div>
+                  <div class="ttl-thumb">
+                    No.4
+                  </div>      
+                  <div class="des-thumb">
+                    クリエイター名が入ります。<br>
+                    20代 <br>
+                    ＃ヘアケアをしている
+                  </div>     
+                </div>  
+                <div class="items-top">
+                  <div class="thumb">
+                    <img src="./common/images/img_category/cat_img4.jpg" alt="thumbnail">
+                  </div>
+                  <div class="ttl-thumb">
+                    No.5
+                  </div>      
+                  <div class="des-thumb">
+                    クリエイター名が入ります。<br>
+                    20代 <br>
+                    ＃ヘアケアをしている
+                  </div>     
+                </div>                               
+              </div>
             </div>
-           </form>
-        </section>
-         <section class="category">
-           <h1 class="title">
-             クリエイターから探す
-           </h1>
-           <div class="post">
-             <div class="list__post">
-               <div class="items-creator">
-                 <div class="thumb">
-                   <img src="./common/images/img_category/cat_img1.jpg" alt="thumbnail">
-                 </div>
-                 <div class="ttl__img">
-                   ２０代
-                 </div>
-               </div>
-               <div class="items-creator">
-                 <div class="thumb">
-                   <img src="./common/images/img_category/cat_img2.jpeg" alt="thumbnail">
-                 </div>
-                 <div class="ttl__img">
-                   ３０代
-                 </div>
-               </div>
-               <div class="items-creator">
-                 <div class="thumb">
-                   <img src="./common/images/img_category/cat_img3.jpeg" alt="thumbnail">
-                 </div>
-                 <div class="ttl__img">
-                   ４０代
-                 </div>
-               </div>
-               <div class="items-creator">
-                 <div class="thumb">
-                   <img src="./common/images/img_category/cat_img4.jpg" alt="thumbnail">
-                 </div>
-                 <div class="ttl__img">
-                   ５０代
-                 </div>
-               </div>                                
-             </div>
-             <div class="btn__cat">
-               <button class="btn__readmore">
-                 クリエイター一覧を見る
-               </button>
-             </div>
-           </div>
-           <h1 class="title">
-             カテゴリから探す
-           </h1>
-           <div class="post">
-             <div class="list__post">
-               <div class="items-cat">
-                 <div class="thumb">
-                   <img src="./common/images/img_category/cat_img5.jpg" alt="thumbnail">
-                 </div>
-                 <div class="ttl__item">
-                   アプリ・Webサービス
-                 </div>
-                 <ul class="list__child">
-                   <li class="list__child-item">
-                     <a href="#">マッチング</a>
-                   </li>
-                   <li class="list__child-item">
-                     <a href="#">生活系アプリ</a>
-                   </li>
-                   <li class="list__child-item">
-                     <a href="#">Webサービス</a>
-                   </li>
-                 </ul>
-               </div>
-               <div class="items-cat">
-                 <div class="thumb">
-                   <img src="./common/images/img_category/cat_img6.jpg" alt="thumbnail">
-                 </div>
-                 <div class="ttl__item">
-                   美容
-                 </div>
-                 <ul class="list__child">
-                   <li class="list__child-item">
-                     <a href="#">脱毛</a>
-                   </li>
-                   <li class="list__child-item">
-                     <a href="#">コスメ</a>
-                   </li>
-                   <li class="list__child-item">
-                     <a href="#">その他美容</a>
-                   </li>
-                 </ul>
-               </div>  
-               <div class="items-cat">
-                 <div class="thumb">
-                   <img src="./common/images/img_category/cat_img7.jpg" alt="thumbnail">
-                 </div>
-                 <div class="ttl__item">
-                   健康
-                 </div>
-                 <ul class="list__child">
-                   <li class="list__child-item">
-                     <a href="#">ダイエット</a>
-                   </li>
-                   <li class="list__child-item">
-                     <a href="#">その他健康</a>
-                   </li>
-                 </ul>
-               </div>  
-               <div class="items-cat">
-                 <div class="thumb">
-                   <img src="./common/images/img_category/cat_img8.jpg" alt="thumbnail">
-                 </div>
-                 <div class="ttl__item">
-                   ペット
-                 </div>
-                 <ul class="list__child">
-                   <li class="list__child-item">
-                     <a href="#">犬</a>
-                   </li>
-                   <li class="list__child-item">
-                     <a href="#">猫</a>
-                   </li>
-                 </ul>
-               </div> 
-               <div class="items-cat">
-                 <div class="thumb">
-                   <img src="./common/images/img_category/cat_img9.jpg" alt="thumbnail">
-                 </div>
-                 <div class="ttl__item">
-                   教育
-                 </div>
-                 <ul class="list__child">
-                   <li class="list__child-item">
-                     <a href="#">子育て</a>
-                   </li>
-                   <li class="list__child-item">
-                     <a href="#">学習全般</a>
-                   </li>
-                 </ul>
-               </div> 
-               <div class="items-cat">
-                 <div class="thumb">
-                   <img src="./common/images/img_category/cat_img10.jpg" alt="thumbnail">
-                 </div>
-                 <div class="ttl__item">
-                   金融
-                 </div>
-                 <ul class="list__child">
-                   <li class="list__child-item">
-                     <a href="#">金融</a>
-                   </li>                    
-                 </ul>
-               </div>                        
-             </div>
-           </div>
-         </section>
+            <h1 class="title">
+              クリエイターから探す
+            </h1>
+            <div class="post">
+              <div class="child-category">
+                女性のクリエイター
+              </div>
+              <div class="list__post">
+                <div class="items-creator">
+                  <div class="thumb">
+                    <img src="./common/images/img_category/cat_img1.jpg" alt="thumbnail">
+                  </div>
+                  <div class="ttl__img">
+                    ２０代
+                  </div>
+                </div>
+                <div class="items-creator">
+                  <div class="thumb">
+                    <img src="./common/images/img_category/cat_img2.jpeg" alt="thumbnail">
+                  </div>
+                  <div class="ttl__img">
+                    ３０代
+                  </div>
+                </div>
+                <div class="items-creator">
+                  <div class="thumb">
+                    <img src="./common/images/img_category/cat_img3.jpeg" alt="thumbnail">
+                  </div>
+                  <div class="ttl__img">
+                    ４０代
+                  </div>
+                </div>
+                <div class="items-creator">
+                  <div class="thumb">
+                    <img src="./common/images/img_category/cat_img4.jpg" alt="thumbnail">
+                  </div>
+                  <div class="ttl__img">
+                    ５０代
+                  </div>
+                </div>                                
+              </div>
+              <div class="btn__cat">
+                <button class="btn__readmore">
+                  男性のクリエイター一覧はこちら
+                </button>
+              </div>
+            </div>
+            <div class="post">
+              <div class="child-category">
+                男性のクリエイター
+              </div>
+              <div class="list__post">
+                <div class="items-creator">
+                  <div class="thumb">
+                    <img src="./common/images/img_category/cat_img1.jpg" alt="thumbnail">
+                  </div>
+                  <div class="ttl__img">
+                    ２０代
+                  </div>
+                </div>
+                <div class="items-creator">
+                  <div class="thumb">
+                    <img src="./common/images/img_category/cat_img2.jpeg" alt="thumbnail">
+                  </div>
+                  <div class="ttl__img">
+                    ３０代
+                  </div>
+                </div>
+                <div class="items-creator">
+                  <div class="thumb">
+                    <img src="./common/images/img_category/cat_img3.jpeg" alt="thumbnail">
+                  </div>
+                  <div class="ttl__img">
+                    ４０代
+                  </div>
+                </div>
+                <div class="items-creator">
+                  <div class="thumb">
+                    <img src="./common/images/img_category/cat_img4.jpg" alt="thumbnail">
+                  </div>
+                  <div class="ttl__img">
+                    ５０代
+                  </div>
+                </div>                                
+              </div>
+              <div class="btn__cat">
+                <button class="btn__readmore">
+                  女性のクリエイター一覧はこちら
+                </button>
+              </div>
+            </div>
+            <h1 class="title">
+              カテゴリから探す
+            </h1>
+            <div class="post">
+              <div class="list__post">
+                <div class="items-cat">
+                  <div class="thumb">
+                    <img src="./common/images/img_category/cat_img5.jpg" alt="thumbnail">
+                  </div>
+                  <div class="ttl__item">
+                    アプリ・Webサービス
+                  </div>
+                  <ul class="list__child">
+                    <li class="list__child-item">
+                      <a href="#">マッチング</a>
+                    </li>
+                    <li class="list__child-item">
+                      <a href="#">生活系アプリ</a>
+                    </li>
+                    <li class="list__child-item">
+                      <a href="#">Webサービス</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="items-cat">
+                  <div class="thumb">
+                    <img src="./common/images/img_category/cat_img6.jpg" alt="thumbnail">
+                  </div>
+                  <div class="ttl__item">
+                    美容
+                  </div>
+                  <ul class="list__child">
+                    <li class="list__child-item">
+                      <a href="#">脱毛</a>
+                    </li>
+                    <li class="list__child-item">
+                      <a href="#">コスメ</a>
+                    </li>
+                    <li class="list__child-item">
+                      <a href="#">その他美容</a>
+                    </li>
+                  </ul>
+                </div>  
+                <div class="items-cat">
+                  <div class="thumb">
+                    <img src="./common/images/img_category/cat_img7.jpg" alt="thumbnail">
+                  </div>
+                  <div class="ttl__item">
+                    健康
+                  </div>
+                  <ul class="list__child">
+                    <li class="list__child-item">
+                      <a href="#">ダイエット</a>
+                    </li>
+                    <li class="list__child-item">
+                      <a href="#">その他健康</a>
+                    </li>
+                  </ul>
+                </div>  
+                <div class="items-cat">
+                  <div class="thumb">
+                    <img src="./common/images/img_category/cat_img8.jpg" alt="thumbnail">
+                  </div>
+                  <div class="ttl__item">
+                    ペット
+                  </div>
+                  <ul class="list__child">
+                    <li class="list__child-item">
+                      <a href="#">犬</a>
+                    </li>
+                    <li class="list__child-item">
+                      <a href="#">猫</a>
+                    </li>
+                  </ul>
+                </div> 
+                <div class="items-cat">
+                  <div class="thumb">
+                    <img src="./common/images/img_category/cat_img9.jpg" alt="thumbnail">
+                  </div>
+                  <div class="ttl__item">
+                    教育
+                  </div>
+                  <ul class="list__child">
+                    <li class="list__child-item">
+                      <a href="#">子育て</a>
+                    </li>
+                    <li class="list__child-item">
+                      <a href="#">学習全般</a>
+                    </li>
+                  </ul>
+                </div> 
+                <div class="items-cat">
+                  <div class="thumb">
+                    <img src="./common/images/img_category/cat_img10.jpg" alt="thumbnail">
+                  </div>
+                  <div class="ttl__item">
+                    金融
+                  </div>
+                  <ul class="list__child">
+                    <li class="list__child-item">
+                      <a href="#">金融</a>
+                    </li>                    
+                  </ul>
+                </div>                        
+              </div>
+            </div>
+          </section>
         </div>
        </div>
       <footer class="footer">
