@@ -41,6 +41,7 @@
       padding: 1.2rem 1.5rem;
       font-size: 2rem;
       line-height: calc(34/20);
+      font-family: 'yugothic-medium';
       color: #707070;
       border: 1px solid #707070;
       @include mq_max_968 {
@@ -68,7 +69,8 @@
         width: 100%;
         font-size: 2rem;
         line-height: calc(34/20);
-        padding: 0.8rem 1.5rem;
+        font-family: 'yugothic-medium';
+        padding: 1.2rem 1.5rem;
         color: #FFFFFF;
         background-color: #101010;
         border: none;  
@@ -84,7 +86,8 @@
         width: 100%;
         font-size: 2rem;
         line-height: calc(34/20);
-        padding: 0.8rem 1.5rem;
+        font-family: 'yugothic-medium';
+        padding: 1.2rem 1.5rem;
         color: #FFFFFF;
         background-color: #717071;
         border: none;     
@@ -110,6 +113,7 @@
     .child-category {
       font-size: 2.4rem;
       line-height: calc(41/24);
+      font-family: 'yugothic-medium';
       font-weight: 500;
       color: #6F706F;
       margin-bottom: 1.5rem;
@@ -152,6 +156,7 @@
         .des-thumb {
           font-size: 1.6rem; 
           line-height: calc(27/19);
+          font-family: 'yugothic-medium';
           color: #6F706F;
           margin-top: 2rem;
           @include mq_max_968 {
@@ -233,8 +238,7 @@
         width: 100%;
         font-size: 1.8rem;
         line-height: 1.2;
-        font-family: 'yugothic-light';
-        font-weight: 600;
+        font-family: 'yugothic-medium';
         padding: 1.3rem 1.5rem;
         background-color: #ffffff;
         color: #6F706F;

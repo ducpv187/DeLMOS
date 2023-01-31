@@ -440,7 +440,7 @@ ul {
 
 @font-face {
   font-family: "yugothic-medium";
-  src: url("../font/yugothib.ttf");
+  src: url("../font/yugothic-medium.otf");
   font-weight: 500;
 }
 @font-face {
@@ -772,6 +772,7 @@ ul {
   padding: 1.2rem 1.5rem;
   font-size: 2rem;
   line-height: 1.7;
+  font-family: "yugothic-medium";
   color: #707070;
   border: 1px solid #707070;
 }
@@ -805,7 +806,8 @@ ul {
   width: 100%;
   font-size: 2rem;
   line-height: 1.7;
-  padding: 0.8rem 1.5rem;
+  font-family: "yugothic-medium";
+  padding: 1.2rem 1.5rem;
   color: #FFFFFF;
   background-color: #101010;
   border: none;
@@ -823,7 +825,8 @@ ul {
   width: 100%;
   font-size: 2rem;
   line-height: 1.7;
-  padding: 0.8rem 1.5rem;
+  font-family: "yugothic-medium";
+  padding: 1.2rem 1.5rem;
   color: #FFFFFF;
   background-color: #717071;
   border: none;
@@ -850,6 +853,7 @@ ul {
 .main .category .child-category {
   font-size: 2.4rem;
   line-height: 1.7083333333;
+  font-family: "yugothic-medium";
   font-weight: 500;
   color: #6F706F;
   margin-bottom: 1.5rem;
@@ -903,6 +907,7 @@ ul {
 .main .category .post .items-top .des-thumb {
   font-size: 1.6rem;
   line-height: 1.4210526316;
+  font-family: "yugothic-medium";
   color: #6F706F;
   margin-top: 2rem;
 }
@@ -957,8 +962,7 @@ ul {
   width: 100%;
   font-size: 1.8rem;
   line-height: 1.2;
-  font-family: "yugothic-light";
-  font-weight: 600;
+  font-family: "yugothic-medium";
   padding: 1.3rem 1.5rem;
   background-color: #ffffff;
   color: #6F706F;
