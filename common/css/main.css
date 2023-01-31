@@ -894,6 +894,8 @@ ul {
   width: 100%;
   font-size: 1.8rem;
   line-height: 1.2;
+  font-family: "yugothic-light";
+  font-weight: 600;
   padding: 1.3rem 1.5rem;
   background-color: #ffffff;
   color: #6F706F;
