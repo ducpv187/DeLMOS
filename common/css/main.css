@@ -782,6 +782,7 @@ ul {
     max-width: 13.2rem;
     font-size: 1.4rem;
     padding: 0.4rem 1.75rem;
+    height: unset;
   }
 }
 @media only screen and (min-width: 969px) and (max-width: 1056px) {
@@ -801,7 +802,7 @@ ul {
     width: 100%;
   }
 }
-.main .filter__category .gr__btn--search {
+.main .filter__category .gr__btn .cpn__gr--btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -813,37 +814,21 @@ ul {
   font-family: "yugothic-medium";
   padding: 1.2rem 1.5rem;
   color: #FFFFFF;
-  background-color: #101010;
   border: none;
   cursor: pointer;
 }
 @media screen and (max-width: 968px) {
-  .main .filter__category .gr__btn--search {
+  .main .filter__category .gr__btn .cpn__gr--btn {
     font-size: 1.4rem;
     padding: 0.4rem 1.75rem;
+    height: unset;
   }
+}
+.main .filter__category .gr__btn--search {
+  background-color: #101010;
 }
 .main .filter__category .gr__btn--reset {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 11.4rem;
-  width: 100%;
-  height: 5rem;
-  font-size: 2rem;
-  line-height: 1.7;
-  font-family: "yugothic-medium";
-  padding: 1.2rem 1.5rem;
-  color: #FFFFFF;
   background-color: #717071;
-  border: none;
-  cursor: pointer;
-}
-@media screen and (max-width: 968px) {
-  .main .filter__category .gr__btn--reset {
-    font-size: 1.4rem;
-    padding: 0.4rem 1.75rem;
-  }
 }
 .main .category .title {
   font-size: 3rem;
