@@ -747,6 +747,7 @@ ul {
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 3rem;
+  overflow: hidden;
 }
 @media screen and (max-width: 968px) {
   .main .filter__category .form {
@@ -767,8 +768,7 @@ ul {
   }
 }
 .main .filter__category .row-form .select-form {
-  max-width: 26.4rem;
-  width: 100%;
+  width: 26.4rem;
   padding: 1.2rem 1.5rem;
   font-size: 2rem;
   line-height: 1.7;

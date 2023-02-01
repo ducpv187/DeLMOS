@@ -19,6 +19,7 @@
       align-items: flex-start;
       flex-wrap: wrap;      
       gap: 3rem;
+      overflow: hidden;
       @include mq_max_968 {
         gap: 1.5rem;
       }
@@ -36,8 +37,7 @@
     }
     .row-form {
      .select-form {
-      max-width: 26.4rem;
-      width: 100%;
+      width: 26.4rem;      
       padding: 1.2rem 1.5rem;
       font-size: 2rem;
       line-height: calc(34/20);
