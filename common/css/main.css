@@ -769,7 +769,8 @@ ul {
 }
 .main .filter__category .row-form .select-form {
   width: 26.4rem;
-  padding: 1.2rem 1.5rem;
+  height: 5rem;
+  padding: 1rem 1.5rem;
   font-size: 2rem;
   line-height: 1.7;
   font-family: "yugothic-medium";
@@ -801,9 +802,12 @@ ul {
   }
 }
 .main .filter__category .gr__btn--search {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 11.4rem;
   width: 100%;
+  height: 5rem;
   font-size: 2rem;
   line-height: 1.7;
   font-family: "yugothic-medium";
@@ -820,9 +824,12 @@ ul {
   }
 }
 .main .filter__category .gr__btn--reset {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 11.4rem;
   width: 100%;
+  height: 5rem;
   font-size: 2rem;
   line-height: 1.7;
   font-family: "yugothic-medium";
