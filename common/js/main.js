@@ -118,4 +118,17 @@ $(document).ready(function() {
       // acceptPolicy: "利用規約とプライバシーポリシーに同意の上チェックを入れてください。", 
     },
   });
+
+
+
+  $('#form__reset').validate({
+    rules: {
+      pass: "required",
+      repass: "required",    
+    },
+    messages: {
+      pass: "errror",
+      repass: "errror", 
+    },
+  });
 });
