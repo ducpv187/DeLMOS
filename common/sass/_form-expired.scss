@@ -1,3 +1,50 @@
 .form__expired {
-  
+  background-color: #000000;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include mq_max_968 {
+    background-color: transparent;
+  }
+  .content {
+    width: 40rem;
+    height: 54rem;
+    padding: 4rem;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include mq_max_968 {
+     padding: 0 2rem;
+    }
+  }
+  .img-error {
+    width: 8.8rem;
+    margin-bottom: 2.4rem;
+  }
+  .ttl {
+    font-size: 2.4rem;
+    line-height: 1.2;
+    font-family: 'yugothic-medium';
+    color: #2d333a;
+    text-align: center;
+    margin-bottom: 1.6rem;
+    @include mq_max_968 {
+      font-size: 2rem;
+    }
+  }
+  .desc {
+    font-size: 1.5rem;    
+    line-height: 1.5;
+    font-family: 'yugothic-medium';
+    color: #2d333a;
+    text-align: center;
+    @include mq_max_968 {
+     font-size: 1.2rem;
+    }
+  }
 }

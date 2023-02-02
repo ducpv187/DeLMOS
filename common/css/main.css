@@ -402,16 +402,20 @@ ul {
   width: 20rem;
 }
 
-.mt-4 {
-  margin-top: 4rem;
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
 }
 
 .mt-3 {
   margin-top: 3rem;
 }
 
-.mt-2 {
-  margin-top: 2rem;
+.mt-4 {
+  margin-top: 4rem;
 }
 
 .mb-1 {
@@ -448,6 +452,10 @@ ul {
   src: url("../font/Yu-Gothic-Light.ttf");
   font-weight: 400;
 }
+.thumb {
+  line-height: 0;
+}
+
 .list__post {
   display: flex;
   justify-content: flex-start;
@@ -832,7 +840,8 @@ ul {
 }
 .main .category .title {
   font-size: 3rem;
-  font-weight: 700;
+  font-family: "yugothic-light";
+  font-weight: 400;
   color: #6F706F;
   margin-bottom: 3rem;
 }
@@ -912,10 +921,12 @@ ul {
 }
 .main .category .post .ttl__img {
   font-size: 2rem;
-  font-weight: 700;
+  font-family: "yugothic-light";
+  font-weight: 400;
   line-height: 1.2;
   color: #6F706F;
   text-align: center;
+  margin-top: 1.5rem;
 }
 @media screen and (max-width: 968px) {
   .main .category .post .ttl__img {
@@ -1228,4 +1239,180 @@ ul {
   font-size: 1.2rem;
   line-height: 1.2;
   color: #A70000;
+}
+
+.form__expired {
+  background-color: #000000;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 968px) {
+  .form__expired {
+    background-color: transparent;
+  }
+}
+.form__expired .content {
+  width: 40rem;
+  height: 54rem;
+  padding: 4rem;
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 968px) {
+  .form__expired .content {
+    padding: 0 2rem;
+  }
+}
+.form__expired .img-error {
+  width: 8.8rem;
+  margin-bottom: 2.4rem;
+}
+.form__expired .ttl {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  font-family: "yugothic-medium";
+  color: #2d333a;
+  text-align: center;
+  margin-bottom: 1.6rem;
+}
+@media screen and (max-width: 968px) {
+  .form__expired .ttl {
+    font-size: 2rem;
+  }
+}
+.form__expired .desc {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-family: "yugothic-medium";
+  color: #2d333a;
+  text-align: center;
+}
+@media screen and (max-width: 968px) {
+  .form__expired .desc {
+    font-size: 1.2rem;
+  }
+}
+
+.form__resetpass {
+  background-color: #000000;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 968px) {
+  .form__resetpass {
+    background-color: transparent;
+  }
+}
+.form__resetpass .content {
+  width: 40rem;
+  height: 54rem;
+  padding: 4rem;
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 968px) {
+  .form__resetpass .content {
+    height: 100vh;
+    padding: 0 2rem;
+  }
+}
+.form__resetpass .info {
+  margin-bottom: 1.2rem;
+}
+@media screen and (max-width: 968px) {
+  .form__resetpass .info {
+    margin-bottom: 1rem;
+  }
+}
+.form__resetpass .info .img {
+  width: 16.2rem;
+  margin: 0 auto;
+}
+.form__resetpass .info .ttl {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  font-family: "yugothic-medium";
+  color: #2d333a;
+  text-align: center;
+  margin: 2.4rem 0 1.6rem;
+}
+@media screen and (max-width: 968px) {
+  .form__resetpass .info .ttl {
+    font-size: 2rem;
+  }
+}
+.form__resetpass .info .desc {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-family: "yugothic-medium";
+  color: #2d333a;
+  text-align: center;
+}
+@media screen and (max-width: 968px) {
+  .form__resetpass .info .desc {
+    font-size: 1.2rem;
+  }
+}
+.form__resetpass .form {
+  width: 100%;
+}
+.form__resetpass .form__reset .row-form {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 0.5rem;
+  border: 1px solid #b2b2b2;
+  height: 5.2rem;
+  overflow: hidden;
+}
+@media screen and (max-width: 968px) {
+  .form__resetpass .form__reset .row-form {
+    height: unset;
+  }
+}
+.form__resetpass .form__reset--input {
+  font-size: 1.6rem;
+  padding: 1.6rem;
+  border: none;
+  border-radius: 0.5rem;
+  height: 100%;
+}
+@media screen and (max-width: 968px) {
+  .form__resetpass .form__reset--input {
+    font-size: 1.35rem;
+  }
+}
+.form__resetpass .form__reset .btn__submit {
+  font-size: 1.6rem;
+  padding: 1.6rem;
+  border: none;
+  background-color: #0059d6;
+  color: #ffffff;
+  cursor: pointer;
+}
+.form__resetpass .form .icon {
+  width: 3.6rem;
+  height: 100%;
+  padding: 1rem;
+  cursor: pointer;
+}
+.form__resetpass .form .icon:hover {
+  background-color: #E5E5E5;
+}
+.form__resetpass .form .icon-hidden {
+  display: none;
 }

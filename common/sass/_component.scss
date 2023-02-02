@@ -13,14 +13,17 @@
 }
 
 //margin
-.mt-4 {
-  margin-top: 4rem;
+.mt-1 {
+  margin-top: 1rem;
+}
+.mt-2 {
+  margin-top: 2rem;
 }
 .mt-3 {
   margin-top: 3rem;
 }
-.mt-2 {
-  margin-top: 2rem;
+.mt-4 {
+  margin-top: 4rem;
 }
 .mb-1 {
   margin-bottom: 1rem;
@@ -31,6 +34,7 @@
 .mb-5 {
   margin-bottom: 5rem;
 }
+
 //padding
 .px-2 {
   padding: 0 2rem;
@@ -58,6 +62,12 @@
   font-weight: 400;
 }
 
+//light-heigh
+.thumb {
+  line-height: 0;
+}
+
+
 //col
 .list__post {
   display: flex;
@@ -70,6 +80,8 @@
     margin-bottom: 0;
   }
 }
+
+
 .items-top {
   width: calc(calc(100% /5 ) - 1.6rem);
   margin: 0 0.8rem;  
