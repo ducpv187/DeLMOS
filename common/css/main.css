@@ -840,8 +840,8 @@ ul {
 }
 .main .category .title {
   font-size: 3rem;
-  font-family: "yugothic-light";
-  font-weight: 400;
+  font-family: "yugothic-medium";
+  font-weight: 500;
   color: #6F706F;
   margin-bottom: 3rem;
 }
