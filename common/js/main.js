@@ -59,39 +59,40 @@ $(document).ready(function() {
   })
 
  //page forgot password : show-hidden password
-  $(".js__newpass .icon").click(function() { 
-    let typeNewPassword = $(this).parents().find(".js__newpass .input").attr("type");    
+
+ 
+  $(".form__reset .icon").click(function() {  
+    let typeInput = $(this).parent().find(".input");
+    if( typeInput.attr('type') == "password" ){
+      typeInput.attr('type', 'text');       
+    }
+    else {
+      typeInput.attr('type', 'password');      
+    }
+  })
+
+  // $(".js__newpass .icon").click(function() { 
+  //   let typeNewPassword = $(this).parents().find(".js__newpass .input").attr("type");    
     
-    if(typeNewPassword == "password"){
-      $(this).parents().find(".js__newpass .input").attr('type', 'text');       
-    }
-    else {
-      $(this).parents().find(".js__newpass .input").attr('type', 'password');      
-    }
-  })
-
-  $(".js__resetpass .icon").click(function() { 
-    let typeRePassword = $(this).parents().find(".js__resetpass .input").attr("type");    
- 
-    if(typeRePassword == "password"){
-      $(this).parents().find(".js__resetpass .input").attr('type', 'text');       
-    }
-    else {
-      $(this).parents().find(".js__resetpass .input").attr('type', 'password');      
-    }
-  })
-
-  // $(".form__reset .icon").click(function() { 
-  //   let typeNewPassword = $(this).parents().find(".js__newpass .input").attr("type"); 
-  //   let typeRePassword = $(this).parents().find(".js__resetpass .input").attr("type");    
- 
-  //   if(typeNewPassword == "password" || typeRePassword == "password"){
-  //     $(this).parents().find(".input").attr('type', 'text');       
+  //   if(typeNewPassword == "password"){
+  //     $(this).parents().find(".js__newpass .input").attr('type', 'text');       
   //   }
   //   else {
-  //     $(this).parents().find(".input").attr('type', 'password');      
+  //     $(this).parents().find(".js__newpass .input").attr('type', 'password');      
   //   }
   // })
+
+  // $(".js__resetpass .icon").click(function() { 
+  //   let typeRePassword = $(this).parents().find(".js__resetpass .input").attr("type");    
+ 
+  //   if(typeRePassword == "password"){
+  //     $(this).parents().find(".js__resetpass .input").attr('type', 'text');       
+  //   }
+  //   else {
+  //     $(this).parents().find(".js__resetpass .input").attr('type', 'password');      
+  //   }
+  // })
+
 
 
   //Validate form
