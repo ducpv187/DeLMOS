@@ -133,6 +133,93 @@
   }  
 }
 
+// cpn section filter category
+.filter__category {
+  margin-bottom: 6.5rem;
+  @include mq_max_968 {
+    margin-bottom: 3rem;
+  }
+  .form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;      
+    gap: 3rem;
+    overflow: hidden;
+    @include mq_max_968 {
+      gap: 1.5rem;
+    }
+  }
+  .select {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+    @include mq_max_968 {
+      width: 100%;
+      gap: 0.5rem;
+    }
+  }
+  .row-form {
+   .select-form {
+    width: 26.4rem;      
+    height: 5rem;
+    padding: 1rem 1.5rem;
+    font-size: 2rem;
+    line-height: calc(34/20);
+    font-family: 'yugothic-medium';
+    color: #707070;
+    border: 1px solid #707070;
+    @include mq_max_968 {
+      max-width: 13.2rem;
+      font-size: 1.4rem;
+      padding: 0.4rem 1.75rem;
+      height: unset;
+    }   
+    @media only screen and (min-width: 969px) and (max-width: 1056px)  {
+      max-width: 20.4rem;  
+    }    
+   } 
+  }
+  .gr__btn {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex: 1;
+    gap: 1.6rem;
+    @include mq_max_968 {
+      width: 100%;
+    }
+    .cpn__gr--btn{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 11.4rem;
+      width: 100%;
+      height: 5rem;
+      font-size: 2rem;
+      line-height: calc(34/20);
+      font-family: 'yugothic-medium';
+      padding: 1.2rem 1.5rem;
+      color: #FFFFFF;
+      border: none;  
+      cursor: pointer;    
+      @include mq_max_968 {
+        font-size: 1.4rem;
+        padding: 0.4rem 1.75rem; 
+        height: unset;         
+      }        
+    }
+    &--search {
+      background-color: #101010;        
+    }
+    &--reset {      
+      background-color: #717071;        
+    }
+  }
+}
+
 
 
 //Popup login
@@ -293,6 +380,9 @@
     &.active {
       color: #ffffff;
       background-color: #405080;
+      @include mq_max_968 {
+       border-radius: 0.5rem;     
+      }
     }
     @include mq_max_968 {
       width: 3rem;

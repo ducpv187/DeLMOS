@@ -101,135 +101,195 @@
       </header>
       <div class="main">
         <div class="container">
-         <section class="archive__category mb-5">
-           <h1 class="title">
-            クリエイター一覧
-           </h1>
-           <div class="tab">
-            <ul class="tab__category">
-              <li class="items">
-               <a href="" class="active">キッズ</a>
-              </li>
-              <li class="items">
-                <a href="">20代</a>                
-              </li>              
-              <li class="items">
-                <a href="">30代</a>                
-              </li>              
-              <li class="items">                
-                <a href="">40代</a>
-              </li>
-              <li class="items">                
-                <a href="">50代</a>
-              </li>
-              <li class="items">                
-                <a href="">60代</a>
-              </li>
-              <li class="items">                
-                <a href="">70代</a>
-              </li>
-              <li class="items">                
-                <a href="">80代</a>
-              </li>
-              <li class="items">                
-                <a href="">New</a>
-              </li>              
-            </ul>
-           </div>
-           <div class="post mt-2">
-             <div class="list__post">
-               <div class="items-creator">
-                 <div class="thumb">
-                   <img src="./common/images/img_category/cat_list1.jpg" alt="thumbnail">
-                 </div>                 
-               </div>
-               <div class="items-creator">
-                 <div class="thumb">
-                   <img src="./common/images/img_category/cat_list2.jpg" alt="thumbnail">
-                 </div>                 
-               </div>
-               <div class="items-creator">
-                 <div class="thumb">
-                   <img src="./common/images/img_category/cat_list3.jpg" alt="thumbnail">
-                 </div>                 
-               </div>
-               <div class="items-creator">
-                 <div class="thumb">
-                   <img src="./common/images/img_category/cat_list4.jpeg" alt="thumbnail">
-                 </div>                 
-               </div>
-               <div class="items-creator">
-                 <div class="thumb">
-                   <img src="./common/images/img_category/cat_list5.jpg" alt="thumbnail">
-                 </div>                
-               </div>                                
-               <div class="items-creator">
-                 <div class="thumb">
-                   <img src="./common/images/img_category/cat_list6.jpg" alt="thumbnail">
-                 </div>                
-               </div>                                
-               <div class="items-creator">
-                 <div class="thumb">
-                   <img src="./common/images/img_category/cat_list7.jpg" alt="thumbnail">
-                 </div>                
-               </div>                                
-               <div class="items-creator">
-                 <div class="thumb">
-                   <img src="./common/images/img_category/cat_list8.jpg" alt="thumbnail">
-                 </div>                
-               </div>                                
-               <div class="items-creator">
-                 <div class="thumb">
-                   <img src="./common/images/img_category/cat_list9.jpg" alt="thumbnail">
-                 </div>                
-               </div>                                
-               <div class="items-creator">
-                 <div class="thumb">
-                   <img src="./common/images/img_category/cat_list10.jpg" alt="thumbnail">
-                 </div>                
-               </div>                                
-             </div>             
-           </div>
-         </section>
-         <section class="pagination">
-            <div class="container">
-              <ul class="list">
-                <li class="tab__pagination arrow-prev">
-                  <a href="" class="page__link">
-                    <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="NavigateBeforeIcon"><path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path></svg>
-                  </a>
-                </li>
-                <li class="tab__pagination">
-                  <a href="" class="page__link active">
-                    1
-                  </a>
-                </li>
-                <li class="tab__pagination">
-                  <a href="" class="page__link">
-                    2
-                  </a>
-                </li>
-                <li class="tab__pagination">
-                  <a href="" class="page__link">
-                    3
-                  </a>
-                </li>
-                <li class="tab__pagination arrow-next">
-                  <a href="" class="page__link">
-                    <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="NavigateNextIcon"><path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg>
-                  </a>
-                </li>
-              </ul>
-              <div class="text__des mt-3">
-                <span class="font-bold">10</span>
-                  件中 
-                <span class="font-bold">1</span> 
-                  - 
-                <span class="font-bold">10</span> 
-                 件
+          <section class="filter__category">
+            <form action="#" class="form">                    
+              <div class="select">
+                <div class="row-form">                                
+                  <select name="option1" tabindex="-1" class="select-form">
+                    <option value="1">カテゴリーから選ぶ</option>
+                    <option value="2">ダイエット</option>
+                    <option value="3">美容</option>
+                  </select>                 
+                </div>     
+                <div class="row-form">                                
+                  <select name="option2" tabindex="-1" class="select-form">
+                    <option value="1">年齢・性別で選ぶ</option>
+                    <option value="2">10代　女性</option>
+                    <option value="3">20代　女性</option>
+                  </select>                 
+                </div>  
+                <div class="row-form">                               
+                  <input type="text" id="keyword" name="keyword" placeholder="キーワードを入力する" class="select-form">
+                </div>        
+              </div> 
+              <div class="gr__btn">
+                <button class="cpn__gr--btn gr__btn--search">
+                  検索
+                </button>
+                <button class="cpn__gr--btn gr__btn--reset">
+                  リセット
+                </button>
               </div>
+            </form>
+          </section>
+          <section class="archive__category mb-5">
+            <h1 class="title">
+              クリエイター一覧
+            </h1>
+            <div class="tab">
+              <ul class="tab__category tab__sex">             
+                <li class="items">
+                  <a href="" class="active">女性</a>
+                </li>
+                <li class="items">
+                  <a href="">男性</a>                
+                </li>              
+                <li class="items">
+                  <a href="">両方</a>                
+                </li>                                       
+              </ul>
+              <ul class="tab__category tab__options">
+                <li class="items">
+                <a href="" class="">キッズ</a>
+                </li>
+                <li class="items">
+                  <a href="" class="active">20代</a>                
+                </li>              
+                <li class="items">
+                  <a href="">30代</a>                
+                </li>              
+                <li class="items">                
+                  <a href="">40代</a>
+                </li>
+                <li class="items">                
+                  <a href="">50代</a>
+                </li>              
+              </ul>
             </div>
-         </section>
+            <div class="post">
+              <div class="list__post">
+                <div class="items-creator">
+                  <div class="thumb">
+                    <img src="./common/images/img_category/cat_list1.jpg" alt="thumbnail">
+                  </div>     
+                  <div class="ttl"> 名前：山田太郎</div>            
+                  <div class="age"> 年齢：20代</div>
+                  <div class="desc"> 得意な動画：美容・ダイエット</div>
+                </div>
+                <div class="items-creator">
+                  <div class="thumb">
+                    <img src="./common/images/img_category/cat_list2.jpg" alt="thumbnail">
+                  </div> 
+                  <div class="ttl"> 名前：○○○○○○○○○</div>            
+                  <div class="age"> 年齢：20代</div>
+                  <div class="desc"> 得意な動画：美容・ダイエット</div>                
+                </div>
+                <div class="items-creator">
+                  <div class="thumb">
+                    <img src="./common/images/img_category/cat_list3.jpg" alt="thumbnail">
+                  </div>   
+                  <div class="ttl"> 名前：○○○○○○○○○</div>            
+                  <div class="age"> 年齢：20代</div>
+                  <div class="desc"> 得意な動画：美容・ダイエット</div>              
+                </div>
+                <div class="items-creator">
+                  <div class="thumb">
+                    <img src="./common/images/img_category/cat_list4.jpeg" alt="thumbnail">
+                  </div>      
+                  <div class="ttl"> 名前：○○○○○○○○○</div>            
+                  <div class="age"> 年齢：20代</div>
+                  <div class="desc"> 得意な動画：美容・ダイエット</div>           
+                </div>
+                <div class="items-creator">
+                  <div class="thumb">
+                    <img src="./common/images/img_category/cat_list5.jpg" alt="thumbnail">
+                  </div>  
+                  <div class="ttl"> 名前：○○○○○○○○○</div>            
+                  <div class="age"> 年齢：20代</div>
+                  <div class="desc"> 得意な動画：美容・ダイエット</div>              
+                </div>                                
+                <div class="items-creator">
+                  <div class="thumb">
+                    <img src="./common/images/img_category/cat_list6.jpg" alt="thumbnail">
+                  </div>    
+                  <div class="ttl"> 名前：○○○○○○○○○</div>            
+                  <div class="age"> 年齢：20代</div>
+                  <div class="desc"> 得意な動画：美容・ダイエット</div>            
+                </div>                                
+                <div class="items-creator">
+                  <div class="thumb">
+                    <img src="./common/images/img_category/cat_list7.jpg" alt="thumbnail">
+                  </div>     
+                  <div class="ttl"> 名前：○○○○○○○○○</div>            
+                  <div class="age"> 年齢：20代</div>
+                  <div class="desc"> 得意な動画：美容・ダイエット</div>           
+                </div>                                
+                <div class="items-creator">
+                  <div class="thumb">
+                    <img src="./common/images/img_category/cat_list8.jpg" alt="thumbnail">
+                  </div>   
+                  <div class="ttl"> 名前：○○○○○○○○○</div>            
+                  <div class="age"> 年齢：20代</div>
+                  <div class="desc"> 得意な動画：美容・ダイエット</div>             
+                </div>                                
+                <div class="items-creator">
+                  <div class="thumb">
+                    <img src="./common/images/img_category/cat_list9.jpg" alt="thumbnail">
+                  </div>   
+                  <div class="ttl"> 名前：○○○○○○○○○</div>            
+                  <div class="age"> 年齢：20代</div>
+                  <div class="desc"> 得意な動画：美容・ダイエット</div>             
+                </div>                                
+                <div class="items-creator">
+                  <div class="thumb">
+                    <img src="./common/images/img_category/cat_list10.jpg" alt="thumbnail">
+                  </div>    
+                  <div class="ttl"> 名前：○○○○○○○○○</div>            
+                  <div class="age"> 年齢：20代</div>
+                  <div class="desc"> 得意な動画：美容・ダイエット</div>            
+                </div>                                
+              </div>             
+            </div>
+          </section>
+          <section class="pagination">
+              <div class="container">
+                <ul class="list">
+                  <li class="tab__pagination arrow-prev">
+                    <a href="" class="page__link">
+                      <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="NavigateBeforeIcon"><path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path></svg>
+                    </a>
+                  </li>
+                  <li class="tab__pagination">
+                    <a href="" class="page__link active">
+                      1
+                    </a>
+                  </li>
+                  <li class="tab__pagination">
+                    <a href="" class="page__link">
+                      2
+                    </a>
+                  </li>
+                  <li class="tab__pagination">
+                    <a href="" class="page__link">
+                      3
+                    </a>
+                  </li>
+                  <li class="tab__pagination arrow-next">
+                    <a href="" class="page__link">
+                      <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="NavigateNextIcon"><path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg>
+                    </a>
+                  </li>
+                </ul>
+                <div class="text__des mt-3">
+                  <span class="font-bold">10</span>
+                    件中 
+                  <span class="font-bold">1</span> 
+                    - 
+                  <span class="font-bold">10</span> 
+                  件
+                </div>
+              </div>
+          </section>
         </div>
        </div>
       <footer class="footer">
