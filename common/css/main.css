@@ -1230,7 +1230,7 @@ ul {
 }
 .page__archive--deatail .infor__video .video {
   width: 25rem;
-  height: 37.5rem;
+  line-height: 0;
 }
 @media screen and (max-width: 968px) {
   .page__archive--deatail .infor__video .video {
@@ -1240,7 +1240,6 @@ ul {
 }
 .page__archive--deatail .infor__video .video video {
   width: 100%;
-  height: 100%;
 }
 .page__archive--deatail .infor__video .detail {
   flex: 1;
