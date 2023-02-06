@@ -587,7 +587,7 @@ ul {
     height: unset;
   }
 }
-@media only screen and (min-width: 969px) and (max-width: 1056px) {
+@media only screen and (min-width: 969px) and (max-width: 1150px) {
   .filter__category .row-form .select-form {
     max-width: 20.4rem;
   }
