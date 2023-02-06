@@ -1020,16 +1020,6 @@ ul {
 .p__taro .thumb {
   margin-bottom: 0 !important;
 }
-.p__taro .dis-none {
-  display: none;
-}
-.p__taro .show {
-  display: flex !important;
-}
-
-.flex {
-  display: flex !important;
-}
 
 .archive__category .title {
   font-size: 3rem;
@@ -1197,13 +1187,20 @@ ul {
   justify-content: flex-start;
   align-items: center;
   gap: 0.5rem;
-  padding-right: 4rem;
+  margin-right: 4rem;
+  cursor: pointer;
 }
 .archive__category .tab__content .label {
   font-size: 1.4rem;
   color: #121212;
   font-family: "yugothic-medium";
   font-weight: 600;
+}
+.archive__category .cate-items {
+  display: none;
+}
+.archive__category .dis-flex {
+  display: flex;
 }
 
 .page__form .main {

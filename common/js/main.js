@@ -97,8 +97,8 @@ $(document).ready(function() {
   //page list archive category
   $("input[type=radio]").click(function() {  
     let val = $(this).val();
-    $('.cate-items').removeClass('show');
-    $('#'+val).addClass('show')
+    $('.cate-items').removeClass('dis-flex');
+    $('#'+val).addClass('dis-flex');
     // console.log('#'+val);
     // if($(this).val() == "SQUARE,LANDSCAPE"){
     //   $(this).parents(".tab__content").siblings(".js-second").show();

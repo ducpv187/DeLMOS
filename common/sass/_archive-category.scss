@@ -13,19 +13,7 @@
   .thumb {
     margin-bottom: 0 !important;
   }
-  .dis-none {
-    display: none;
-  }
-  .show {
-    display: flex !important;
-  }
-
 }
-.flex {
-    display: flex !important;
-}
-
-
 
 //cpn for all page archive-category
 .archive__category {
@@ -166,7 +154,8 @@
       justify-content: flex-start;
       align-items: center;
       gap: 0.5rem;
-      padding-right: 4rem;
+      margin-right: 4rem;
+      cursor: pointer;
     }
     .label {
       font-size: 1.4rem;
@@ -174,5 +163,11 @@
       font-family: "yugothic-medium";
       font-weight: 600;
     }
+  }
+  .cate-items {
+    display: none;
+  }
+  .dis-flex {
+    display: flex;
   }
 }
