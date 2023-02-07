@@ -35,14 +35,33 @@
     .detail {
       flex: 1;
       &--text {
-        font-size: 1.6rem;
-        line-height: calc(27/16);
-        color: #6F706F;
-        font-family: "yugothic-medium";
-        margin-bottom: 2.5rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;      
+        margin-bottom: 2rem;
         @include mq_max_968 {
          font-size: 1.4rem;
-         margin-bottom: 2rem;
+         margin-bottom: 1.5rem;
+        }
+        @include mq_max_767 {
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          flex-direction: column;
+          margin-bottom: 0.5rem;
+        }
+        .field {
+          width: 16rem;
+          @include mq_max_767 {
+           width: 100%; 
+          }
+        }
+        .content {
+          width: calc(100% - 16rem);
+          @include mq_max_767 {
+            width: 100%; 
+          }
         }
       }
       &--btn {
@@ -51,9 +70,11 @@
         align-items: stretch;
         flex-wrap: wrap;
         gap: 3rem;
+        margin-top: 3.5rem;
         @include mq_max_968 {
           width: 100%;
           gap: 2rem;
+          margin-top: 2rem;
         }
       }
     }
@@ -80,7 +101,7 @@
         margin-bottom: 3rem;
       } 
     }
-    .video-items {
+    .video--items {
       width: calc(calc(100% /5 ) - 1.6rem);
       margin: 0 0.8rem;
       @include mq_max_968 {
@@ -96,6 +117,12 @@
     .others--btn {
       text-align: center;
     }
+  }
+  .cpn__detail--text {
+    font-size: 1.6rem;
+    line-height: calc(27/16);
+    color: #6F706F;
+    font-family: "yugothic-medium";
   }
   .cpn__btn {
     display: inline-block;

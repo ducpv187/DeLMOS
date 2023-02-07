@@ -1245,16 +1245,41 @@ ul {
   flex: 1;
 }
 .page__archive--deatail .infor__video .detail--text {
-  font-size: 1.6rem;
-  line-height: 1.6875;
-  color: #6F706F;
-  font-family: "yugothic-medium";
-  margin-bottom: 2.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
 }
 @media screen and (max-width: 968px) {
   .page__archive--deatail .infor__video .detail--text {
     font-size: 1.4rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .page__archive--deatail .infor__video .detail--text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+  }
+}
+.page__archive--deatail .infor__video .detail--text .field {
+  width: 16rem;
+}
+@media screen and (max-width: 767px) {
+  .page__archive--deatail .infor__video .detail--text .field {
+    width: 100%;
+  }
+}
+.page__archive--deatail .infor__video .detail--text .content {
+  width: calc(100% - 16rem);
+}
+@media screen and (max-width: 767px) {
+  .page__archive--deatail .infor__video .detail--text .content {
+    width: 100%;
   }
 }
 .page__archive--deatail .infor__video .detail--btn {
@@ -1263,11 +1288,13 @@ ul {
   align-items: stretch;
   flex-wrap: wrap;
   gap: 3rem;
+  margin-top: 3.5rem;
 }
 @media screen and (max-width: 968px) {
   .page__archive--deatail .infor__video .detail--btn {
     width: 100%;
     gap: 2rem;
+    margin-top: 2rem;
   }
 }
 .page__archive--deatail .orthes__video .title {
@@ -1295,25 +1322,31 @@ ul {
     margin-bottom: 3rem;
   }
 }
-.page__archive--deatail .orthes__video .video-items {
+.page__archive--deatail .orthes__video .video--items {
   width: calc(20% - 1.6rem);
   margin: 0 0.8rem;
 }
 @media screen and (max-width: 968px) {
-  .page__archive--deatail .orthes__video .video-items {
+  .page__archive--deatail .orthes__video .video--items {
     width: calc(33.3333333333% - 1.6rem);
   }
 }
 @media screen and (max-width: 767px) {
-  .page__archive--deatail .orthes__video .video-items {
+  .page__archive--deatail .orthes__video .video--items {
     width: calc(50% - 1.6rem);
   }
 }
-.page__archive--deatail .orthes__video .video-items video {
+.page__archive--deatail .orthes__video .video--items video {
   width: 100%;
 }
 .page__archive--deatail .orthes__video .others--btn {
   text-align: center;
+}
+.page__archive--deatail .cpn__detail--text {
+  font-size: 1.6rem;
+  line-height: 1.6875;
+  color: #6F706F;
+  font-family: "yugothic-medium";
 }
 .page__archive--deatail .cpn__btn {
   display: inline-block;
