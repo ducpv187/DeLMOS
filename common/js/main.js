@@ -115,7 +115,8 @@ $(document).ready(function() {
   //hover autoplay video
   $(".video").mousemove(function(){
     $(this).parent().find(".video_test").addClass("active-video");
-    document.getElementById("video").controls = false;    
+    // $(this).parent().find(".video_test").controls = false;    
+    document.getElementsByTagName("video").controls = false;    
   }
   );
   $(".video").mouseout(function(){
@@ -123,6 +124,22 @@ $(document).ready(function() {
     
     //đoạn này để mỗi lần hover vào thì video đc load lại 
     // document.getElementById("video").load();
+  });
+  $( ".video_test" ).each(function( index ) {
+    // console.log($(this).attr("id"));
+    document.getElementById($(this).attr("id")).controls = false; 
+  });
+
+  // var video = $("video");    
+  var video = document.getElementsByTagName("video");
+  // console.log(video);
+  // Check if video is ready to play
+  $(video).on('canplay', function () {
+      $(video).mouseenter(function () {
+          $(this).get(0).play();
+      }).mouseleave(function () {
+          $(this).get(0).pause();
+      })
   });
 
   // $(".video").hover(
@@ -136,15 +153,7 @@ $(document).ready(function() {
     
   // );
   
-  var video = $("#video");    
-  // Check if video is ready to play
-  $(video).on('canplay', function () {
-      $(video).mouseenter(function () {
-          $(this).get(0).play();
-      }).mouseleave(function () {
-          $(this).get(0).pause();
-      })
-  });
+
   
 
   //Validate form
