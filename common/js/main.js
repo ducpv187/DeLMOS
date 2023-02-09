@@ -112,6 +112,39 @@ $(document).ready(function() {
 
   })
 
+  //hover autoplay video
+  $(".video").mousemove(function(){
+    $(this).parent().find(".video_test").addClass("active-video");
+    document.getElementById("video").controls = false;    
+  }
+  );
+  $(".video").mouseout(function(){
+    $(this).parent().find(".video_test").removeClass("active-video");
+    
+    //đoạn này để mỗi lần hover vào thì video đc load lại 
+    // document.getElementById("video").load();
+  });
+
+  // $(".video").hover(
+  //   function () {
+  //     $(this).parent().find(".video_test").addClass("active-video");
+  //     document.getElementById("video").controls = false;    
+  //   }, 
+  //   function () {
+  //     $(this).parent().find(".video_test").removeClass("active-video");
+  //   }
+    
+  // );
+  
+  var video = $("#video");    
+  // Check if video is ready to play
+  $(video).on('canplay', function () {
+      $(video).mouseenter(function () {
+          $(this).get(0).play();
+      }).mouseleave(function () {
+          $(this).get(0).pause();
+      })
+  });
   
 
   //Validate form

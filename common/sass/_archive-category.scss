@@ -9,10 +9,31 @@
 .p__taro {
   .items-creator {
     margin-bottom: 2rem !important;
+    &:hover {
+      opacity: 1;
+    }
   }
   .thumb {
     margin-bottom: 0 !important;
   }
+}
+.video {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+}
+.img_hover {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.video_test {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #121212;
 }
 
 //cpn for all page archive-category

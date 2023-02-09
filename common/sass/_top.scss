@@ -1,31 +1,40 @@
-.page {
-  position: relative;
-}
 .main {
   position: relative;
   z-index: 99;
-  padding: 3.5rem 0 ;
+  padding: 0 0 3.5rem;
   @include mq_min_969 {
-    padding: 5.5rem 0 3.5rem 0;
+    padding: 0 0 5.5rem;
   }   
+  .usage {
+    .row {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      gap: 3rem;
+    }
+    .cpn__text {
+      font-size: 1.4rem;
+      line-height: calc(40/14);
+      color: $white;
+    }
+  }
   .category {
-    .title {
-      font-size: 3rem;  
-      font-family: 'yugothic-medium';
-      font-weight: 500;
-      color: #6F706F;
-      margin-bottom: 3rem;
-      @include mq_max_968 {
-        font-size: 2rem;
-        margin-bottom: 2rem;
-      }
+    .ttl__child--cate {
+      position: relative;
+    }
+    .model {
+      font-size: 7rem;
+      font-family: 'antro-ectra-bolder';
+      position: absolute;
+      top: -6rem;
+      left: -7rem;
+      z-index: -1;
+      transform: rotate(-10deg);
     }
     .child-category {
-      font-size: 2.4rem;
+      font-size: 2.8rem;
       line-height: calc(41/24);
-      font-family: 'yugothic-medium';
-      font-weight: 500;
-      color: #6F706F;
+      font-family: 'marupro-regular';
       margin-bottom: 1.5rem;
       @include mq_max_968 {
         font-size: 1.6rem;
@@ -33,7 +42,7 @@
         margin-top: 0.5rem;
       }
      }
-    .post {   
+    .post {    
       margin-bottom: 4.5rem;  
       @include mq_max_968 {
         margin-bottom: 2rem;
@@ -41,7 +50,7 @@
       .items-top {  
         margin-bottom: 2rem;
         .thumb {
-          height: 32.3rem;
+          height: 27.5rem;
           cursor: pointer;
           @include mq_max_968 {
            height: 20rem;
@@ -54,8 +63,9 @@
         .ttl-thumb {
           font-size: 3rem;
           line-height: calc(51/30);
-          font-family: 'yugothic-medium';
-          color: #6F706F;
+          font-family: 'notosansCJK';
+          font-weight: 500;
+          color: $pink;
           text-align: center;
           margin-top: 1.7rem;
           @include mq_max_968 {
@@ -65,9 +75,9 @@
         }
         .des-thumb {
           font-size: 1.6rem; 
-          line-height: calc(27/19);
-          font-family: 'yugothic-medium';
-          color: #6F706F;
+          line-height: calc(40/16);
+          font-family: 'notosansCJK';
+          color: $black;
           margin-top: 2rem;
           @include mq_max_968 {
             font-size: 1.2rem;
@@ -119,43 +129,41 @@
           font-size: 1.35rem;
         }
        }
-
       }
-      .btn__cat {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
+    }    
+    .cpn__btn--top {
+      width: 100%;
+      font-size: 1.8rem;
+      line-height: 1.2;
+      font-family: 'notosansCJK';
+      padding: 2.3rem 1rem;
+      color: $white;
+      border: 1px solid transparent;
+      border-radius: 1rem;
+      cursor: pointer;
+      @include mq_max_968 {
+        font-size: 1.2rem;  
+        padding: 0.55rem 0.65rem;       
       }
-      .cpn__btn--top{
-        width: 100%;
-        font-size: 1.8rem;
-        line-height: 1.2;
-        font-family: 'yugothic-medium';
-        padding: 1.3rem 1.5rem;
-        background-color: #ffffff;
-        color: #6F706F;
-        border: 1px solid #707070;
-        border-radius: 1rem;
-        cursor: pointer;
-        @include mq_max_968 {
-          font-size: 1.2rem;  
-          padding: 0.55rem 0.65rem;       
-        }
+    }
+    .group__btn {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin-bottom: 15rem;
+      @include mq_max_968 {
+        margin-bottom: 5rem;
       }
-      .btn__readmore {
-        max-width: 31rem;  
-        @include mq_max_968 {
-          max-width: 100%;
-         width: 100%;
-        }    
-      }
-      .btn__search-category {
-        max-width: 16.8rem;       
-        @include mq_max_968 {
-          max-width: 100%;
-          width: 100%;
-         }    
-      }
+    }
+    .btn__bg--pink {
+      max-width: 32rem;
+      background-color: $pink;
+      box-shadow: 0.5rem 1rem 0.5rem -0.5rem $pink_dark;            
+    }
+    .btn__bg--blue {
+      max-width: 32rem;
+      background-color: $blue;
+      box-shadow: 0.5rem 1rem 0.5rem -0.5rem $blue;            
     }
   }
 }

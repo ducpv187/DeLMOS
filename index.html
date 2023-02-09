@@ -2,26 +2,22 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./common/images/favicon-svg.png">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" crossorigin as="font">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Sans:wght@300&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="common/css/main.css">
     <title> UGC </title>
   </head>
 
   <body>
-    <main class="page">
+    <main class="page p_top">
       <header>
         <div class="header">
           <div class="container">
-            <div class="d__flex">
+            <!-- <div class="d__flex header__logout">
               <div class="img__logo">
                <a href="/" class="link__logo">
-                <img src="./common/images/logo.svg" alt="logo" class="img">
+                <img src="./common/images/logo.png" alt="logo" class="img">
                </a>
               </div>
               <div class="header__btn">
@@ -38,63 +34,120 @@
                   ログイン
                 </button>
               </div>
+            </div> -->
+            <div class="d__flex header__login">
+              <div class="header__logo">
+                <a href="/" class="link__logo">
+                  <img src="./common/images/logo.png" alt="logo" class="img">
+                </a>
+              </div>
+              <div class="header__navigation">
+                <ul class="header__navigation__bar header__btn">
+                  <!-- <li>
+                    <button class="btn btn-purple">
+                      事例ダウンロード
+                    </button>
+                  </li> -->
+                  <li>
+                    <a href="#" class="link__nav">
+                      <img src="./common/images/img_header/icon1.png" alt="icon_header" class="icon">
+                     マイページ
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="link__nav">
+                     <img src="./common/images/img_header/icon2.png" alt="icon_header" class="icon">
+                      お気に入り
+                    </a>                    
+                  </li>
+                  <li>
+                    <a href="#" class="link__nav">
+                      <img src="./common/images/img_header/icon3.png" alt="icon_header" class="icon">
+                      閲覧履歴
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="link__nav">
+                      <img src="./common/images/img_header/icon4.png" alt="icon_header" class="icon">
+                      購入履歴
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- <div class="account">                
+                <div class="account__icon">
+                  <button class="account__btn">
+                    <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall text-d-black mr-1 css-1k33q06 icon" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="PersonOutlineIcon"><path d="M12 5.9c1.16 0 2.1.94 2.1 2.1s-.94 2.1-2.1 2.1S9.9 9.16 9.9 8s.94-2.1 2.1-2.1m0 9c2.97 0 6.1 1.46 6.1 2.1v1.1H5.9V17c0-.64 3.13-2.1 6.1-2.1M12 4C9.79 4 8 5.79 8 8s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 9c-2.67 0-8 1.34-8 4v3h16v-3c0-2.66-5.33-4-8-4z"></path></svg>
+                    huynhamさん
+                  </button>
+                </div>
+               <div class="account__drop">
+                <button class="account__logout" role="menuitem">
+                  <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall text-d-gray-10 mr-1 css-1k33q06 icon" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ExitToAppIcon"><path d="M10.09 15.59 11.5 17l5-5-5-5-1.41 1.41L12.67 11H3v2h9.67l-2.58 2.59zM19 3H5c-1.11 0-2 .9-2 2v4h2V5h14v14H5v-4H3v4c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"></path>
+                  </svg>
+                  ログアウト
+                </button>
+               </div>
+              </div> -->
             </div>
           </div>
         </div>
       </header>
       <div class="main">
-        <div class="container">
-          <!-- <section class="form__search">
-            <form action="">
-              <div class="d__flex">
-              <input class="input__search w-100" name="query" placeholder="キーワードを入力" value="">
-              <button type="submit" class="btn__search">
-                <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium text-d-gray-10 css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="SearchIcon" style="color: rgb(255, 255, 255);"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
-                </svg>
-              </button>
-              </div>
-            </form>
-          </section> -->
-          <section class="filter__category">
-            <form action="#" class="form">                    
-              <div class="select">
-                <div class="row-form">                                
-                  <select name="option1" tabindex="-1" class="select-form">
-                    <option value="1">カテゴリーから選ぶ</option>
-                    <option value="2">ダイエット</option>
-                    <option value="3">美容</option>
-                  </select>                 
-                </div>     
-                <div class="row-form">                                
-                  <select name="option2" tabindex="-1" class="select-form">
-                    <option value="1">年齢・性別で選ぶ</option>
-                    <option value="2">10代　女性</option>
-                    <option value="3">20代　女性</option>
-                  </select>                 
-                </div>  
-                <div class="row-form">                               
-                  <input type="text" id="keyword" name="keyword" placeholder="キーワードを入力する" class="select-form">
-                </div>        
-              </div> 
-              <div class="gr__btn">
-                <button class="cpn__gr--btn gr__btn--search">
-                  検索
-                </button>
-                <button class="cpn__gr--btn gr__btn--reset">
-                  リセット
-                </button>
-              </div>
+        <section class="usage bg-pink">
+          <div class="container">
+            <div class="row">
+              <div class="usage__plan cpn__text">ご利用プラン：サブスクプラン</div>
+              <div class="remain__down cpn__text">残りのダウンロード数：5/10</div>
+            </div>
+          </div>
+        </section> 
+        <section class="filter__category">
+          <div class="container">
+           <form action="#" class="form">                    
+             <div class="select">
+               <div class="row-form">                                
+                 <select name="option1" tabindex="-1" class="select-form">
+                   <option value="1">カテゴリーから選ぶ</option>
+                   <option value="2">ダイエット</option>
+                   <option value="3">美容</option>
+                 </select>                 
+               </div>     
+               <div class="row-form">                                
+                 <select name="option2" tabindex="-1" class="select-form">
+                   <option value="1">年齢・性別で選ぶ</option>
+                   <option value="2">10代　女性</option>
+                   <option value="3">20代　女性</option>
+                 </select>                 
+               </div>  
+               <div class="row-form">                               
+                 <input type="text" id="keyword" name="keyword" placeholder="キーワードを入力する" class="select-form">
+               </div>        
+             </div> 
+             <div class="gr__btn">
+               <button class="cpn__gr--btn gr__btn--search">
+                 検索
+               </button>
+               <button class="cpn__gr--btn gr__btn--reset">
+                 リセット
+               </button>
+             </div>
            </form>
-          </section>
-          <section class="category">
-            <h1 class="title">
-              人気ランキングTOP5
-            </h1>
+          </div>
+         </section>
+         <section class="category">
+          <div class="container">
+            <div class="title">
+              <span class="icon__title w-35">
+                <img src="./common/images/icon-ttl1.png" alt="icon-ttl1">
+              </span>
+              <span class="span__title">人気ランキングTOP5</span>
+            </div>
             <div class="post">
               <div class="list__post">
                 <div class="items-top">
                   <div class="thumb">
-                    <img src="./common/images/img_category/cat_img1.jpg" alt="thumbnail">
+                    <img src="./common/images/img_category/cat_img1.png" alt="thumbnail">
                   </div>   
                   <div class="ttl-thumb">
                     No.1
@@ -107,7 +160,7 @@
                 </div>
                 <div class="items-top">
                   <div class="thumb">
-                    <img src="./common/images/img_category/cat_img2.jpeg" alt="thumbnail">
+                    <img src="./common/images/img_category/cat_img2.png" alt="thumbnail">
                   </div>
                   <div class="ttl-thumb">
                     No.2
@@ -120,7 +173,7 @@
                 </div>
                 <div class="items-top">
                   <div class="thumb">
-                    <img src="./common/images/img_category/cat_img3.jpeg" alt="thumbnail">
+                    <img src="./common/images/img_category/cat_img3.png" alt="thumbnail">
                   </div>
                   <div class="ttl-thumb">
                     No.3
@@ -133,7 +186,7 @@
                 </div>
                 <div class="items-top">
                   <div class="thumb">
-                    <img src="./common/images/img_category/cat_img4.jpg" alt="thumbnail">
+                    <img src="./common/images/img_category/cat_img4.png" alt="thumbnail">
                   </div>
                   <div class="ttl-thumb">
                     No.4
@@ -146,7 +199,7 @@
                 </div>  
                 <div class="items-top">
                   <div class="thumb">
-                    <img src="./common/images/img_category/cat_img4.jpg" alt="thumbnail">
+                    <img src="./common/images/img_category/cat_img5.png" alt="thumbnail">
                   </div>
                   <div class="ttl-thumb">
                     No.5
@@ -159,12 +212,70 @@
                 </div>                               
               </div>
             </div>
-            <h1 class="title">
-              クリエイターから探す
-            </h1>
+            <div class="group__btn">
+              <button class="cpn__btn--top btn__bg--pink">
+                カテゴリは探す
+              </button>
+            </div>
+            <div class="title">
+              <span class="icon__title w-31">
+                <img src="./common/images/icon-ttl2.png" alt="icon-ttl1">
+              </span>
+              <span class="span__title">モデルから探す</span>     
+            </div>
             <div class="post">
-              <div class="child-category">
-                女性のクリエイター
+              <div class="ttl__child--cate">
+                <div class="child-category cl-pink">
+                  女性のクリエイター
+                </div>
+                <div class="model cl-pinkL1">Female model</div>
+              </div>              
+              <div class="list__post">
+                <div class="items-creator">
+                  <div class="thumb">
+                    <img src="./common/images/img_category/cat_img1.png" alt="thumbnail">
+                  </div>
+                  <div class="ttl__img">
+                    ２０代
+                  </div>
+                </div>
+                <div class="items-creator">
+                  <div class="thumb">
+                    <img src="./common/images/img_category/cat_img2.png" alt="thumbnail">
+                  </div>
+                  <div class="ttl__img">
+                    ３０代
+                  </div>
+                </div>
+                <div class="items-creator">
+                  <div class="thumb">
+                    <img src="./common/images/img_category/cat_img3.png" alt="thumbnail">
+                  </div>
+                  <div class="ttl__img">
+                    ４０代
+                  </div>
+                </div>
+                <div class="items-creator">
+                  <div class="thumb">
+                    <img src="./common/images/img_category/cat_img4.png" alt="thumbnail">
+                  </div>
+                  <div class="ttl__img">
+                    ５０代
+                  </div>
+                </div>                                
+              </div>
+              <div class="group__btn">
+                <button class="cpn__btn--top btn__bg--pink">
+                  女性のクリエイター
+                </button>
+              </div>
+            </div>
+            <div class="post">
+              <div class="ttl__child--cate">
+                <div class="child-category cl-blue">
+                  男性のクリエイター
+                </div>
+                <div class="model cl-blueL">Male model</div>
               </div>
               <div class="list__post">
                 <div class="items-creator">
@@ -200,66 +311,25 @@
                   </div>
                 </div>                                
               </div>
-              <div class="btn__cat">
-                <button class="cpn__btn--top btn__readmore">
-                  男性のクリエイター一覧はこちら
+              <div class="group__btn">
+                <button class="cpn__btn--top btn__bg--blue">                  
+                  男性モデル一覧はこちら
                 </button>
               </div>
             </div>
-            <div class="post">
-              <div class="child-category">
-                男性のクリエイター
-              </div>
-              <div class="list__post">
-                <div class="items-creator">
-                  <div class="thumb">
-                    <img src="./common/images/img_category/cat_img1.jpg" alt="thumbnail">
-                  </div>
-                  <div class="ttl__img">
-                    ２０代
-                  </div>
-                </div>
-                <div class="items-creator">
-                  <div class="thumb">
-                    <img src="./common/images/img_category/cat_img2.jpeg" alt="thumbnail">
-                  </div>
-                  <div class="ttl__img">
-                    ３０代
-                  </div>
-                </div>
-                <div class="items-creator">
-                  <div class="thumb">
-                    <img src="./common/images/img_category/cat_img3.jpeg" alt="thumbnail">
-                  </div>
-                  <div class="ttl__img">
-                    ４０代
-                  </div>
-                </div>
-                <div class="items-creator">
-                  <div class="thumb">
-                    <img src="./common/images/img_category/cat_img4.jpg" alt="thumbnail">
-                  </div>
-                  <div class="ttl__img">
-                    ５０代
-                  </div>
-                </div>                                
-              </div>
-              <div class="btn__cat">
-                <button class="cpn__btn--top btn__readmore">
-                  女性のクリエイター一覧はこちら
-                </button>
-              </div>
-            </div>
-            <h1 class="title">
-              カテゴリから探す
-            </h1>
+            <div class="title">
+              <span class="icon__title w-26">
+                <img src="./common/images/icon-ttl3.png" alt="icon-ttl1">
+              </span>
+              <span class="span__title">カテゴリから探す</span>
+             </div>            
             <div class="post">
               <div class="list__post">
                 <div class="items-cat">
                   <div class="thumb">
                     <img src="./common/images/img_category/cat_img5.jpg" alt="thumbnail">
                   </div>
-                  <!-- <div class="ttl__item">
+                  <div class="ttl__item">
                     アプリ・Webサービス
                   </div>
                   <ul class="list__child">
@@ -272,13 +342,13 @@
                     <li class="list__child-item">
                       <a href="#">Webサービス</a>
                     </li>
-                  </ul> -->
+                  </ul>
                 </div>
                 <div class="items-cat">
                   <div class="thumb">
                     <img src="./common/images/img_category/cat_img6.jpg" alt="thumbnail">
                   </div>
-                  <!-- <div class="ttl__item">
+                  <div class="ttl__item">
                     美容
                   </div>
                   <ul class="list__child">
@@ -291,13 +361,13 @@
                     <li class="list__child-item">
                       <a href="#">その他美容</a>
                     </li>
-                  </ul> -->
+                  </ul>
                 </div>  
                 <div class="items-cat">
                   <div class="thumb">
                     <img src="./common/images/img_category/cat_img7.jpg" alt="thumbnail">
                   </div>
-                  <!-- <div class="ttl__item">
+                  <div class="ttl__item">
                     健康
                   </div>
                   <ul class="list__child">
@@ -307,13 +377,13 @@
                     <li class="list__child-item">
                       <a href="#">その他健康</a>
                     </li>
-                  </ul> -->
+                  </ul>
                 </div>  
                 <div class="items-cat">
                   <div class="thumb">
                     <img src="./common/images/img_category/cat_img8.jpg" alt="thumbnail">
                   </div>
-                  <!-- <div class="ttl__item">
+                  <div class="ttl__item">
                     ペット
                   </div>
                   <ul class="list__child">
@@ -323,13 +393,13 @@
                     <li class="list__child-item">
                       <a href="#">猫</a>
                     </li>
-                  </ul> -->
+                  </ul>
                 </div> 
                 <div class="items-cat">
                   <div class="thumb">
                     <img src="./common/images/img_category/cat_img9.jpg" alt="thumbnail">
                   </div>
-                  <!-- <div class="ttl__item">
+                  <div class="ttl__item">
                     教育
                   </div>
                   <ul class="list__child">
@@ -339,30 +409,30 @@
                     <li class="list__child-item">
                       <a href="#">学習全般</a>
                     </li>
-                  </ul> -->
+                  </ul>
                 </div> 
                 <div class="items-cat">
                   <div class="thumb">
                     <img src="./common/images/img_category/cat_img10.jpg" alt="thumbnail">
                   </div>
-                  <!-- <div class="ttl__item">
+                  <div class="ttl__item">
                     金融
                   </div>
                   <ul class="list__child">
                     <li class="list__child-item">
                       <a href="#">金融</a>
                     </li>                    
-                  </ul> -->
+                  </ul>
                 </div>                        
               </div>
-              <div class="btn__cat">
-                <button class="cpn__btn--top btn__search-category">
-                  カテゴリは探す
-                </button>
-              </div>
             </div>
-          </section>
-        </div>
+          </div>
+         </section>
+         <section class="banner">
+            <div class="container">
+              <img src="./common/images/banner.png" alt="banner">
+            </div>
+         </section>
        </div>
       <footer class="footer">
         <ul class="footer__list">
@@ -399,6 +469,7 @@
         </ul>
         <p class="footer__text">Copyright©2022 Makiyama brothers Inc.</p>
       </footer>
+
       <!-- popup login -->
       <div class="modal__popup">
         <div class="modal__content">

@@ -1,10 +1,10 @@
 .header {
   position: relative;
-  height: 6rem;
+  height: 8rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #F8F8F8;
+  background-color: $gray_light;
   z-index: 9999;
   .container {
     @include mq_max_968 {
@@ -19,7 +19,11 @@
   &__logout {   
   }
   &__login {
-    .navigation {
+    .header__navigation {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex: 1;
       @include mq_max_968 {
         display: none;
       }
@@ -122,8 +126,8 @@
   }
   .icon {
     user-select: none;
-    width: 2rem;
-    height: 2rem;
+    width: 2.1rem;
+    height: 1.7rem;
     display: inline-block;
     fill: currentcolor;
     flex-shrink: 0;
@@ -135,12 +139,11 @@
   .link__logo {
     display: inline-block;
   }
-  .img__logo {
+  .header__logo {
     display: flex;
-    flex: 1;
     line-height: 0;
     .img {
-      width: 9.8rem
+      width: 23rem
     }
   }
 }
