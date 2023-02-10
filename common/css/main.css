@@ -979,11 +979,6 @@ ul {
   font-size: 1.6rem;
 }
 
-.p_top .list__model .items-model {
-  width: 27.5rem;
-  height: 27.5rem;
-  margin: 0;
-}
 .p_top .list__model .thumb {
   height: 100%;
 }
@@ -1033,6 +1028,8 @@ ul {
 }
 .p_top .model__wrap .list__model .items-model {
   width: 50%;
+  height: 27.5rem;
+  margin: 0;
 }
 
 .main {

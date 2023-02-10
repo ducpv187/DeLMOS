@@ -1,11 +1,5 @@
 .p_top {
-  .list__model {
-
-    .items-model {
-      width: 27.5rem;
-      height: 27.5rem;
-      margin: 0;
-    }   
+  .list__model { 
     .thumb {
       height: 100%;
       img {
@@ -55,6 +49,8 @@
       margin: 0 0 6.5rem 0;
       .items-model {
         width: 50%;
+        height: 27.5rem;
+          margin: 0;
       }
     }
   }
