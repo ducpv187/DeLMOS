@@ -22,18 +22,12 @@
   display: flex;
   align-items: stretch;
 }
-.img_hover {
-  position: relative;
-  top: 0;
-  left: 0;
-  z-index: 2;
-}
+
 .video_test {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
-  background-color: #121212;
 }
 
 //cpn for all page archive-category
@@ -112,7 +106,8 @@
     }
   }
   .list__post {
-    margin: 0 -1.6rem;
+    width: calc(100% + 2rem);
+    margin: 0 -1rem;
     @include mq_max_968 {
       margin: 0;
     }

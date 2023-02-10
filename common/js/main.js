@@ -127,6 +127,7 @@ $(document).ready(function() {
   });
   $( ".video_test" ).each(function( index ) {
     // console.log($(this).attr("id"));
+    console.log($(this));
     document.getElementById($(this).attr("id")).controls = false; 
   });
 
