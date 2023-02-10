@@ -122,27 +122,40 @@ $(document).ready(function() {
   $(".video").mouseout(function(){
     $(this).parent().find(".video_test").removeClass("active-video");
     
-    //đoạn này để mỗi lần hover vào thì video đc load lại 
+    //hover reload video  when hover
     // document.getElementById("video").load();
   });
   $( ".video_test" ).each(function( index ) {
     // console.log($(this).attr("id"));
     console.log($(this));
+    console.log(typeof $(this));
     document.getElementById($(this).attr("id")).controls = false; 
   });
+  //c2
+  // let x = document.getElementsByClassName("video_test");
+  // console.log(x);
+  // $.each(x, function( index, value ) {
+  //   // console.log(value);
+  //   let id = $(value).attr("id")
+  //   // console.log(id);
+  //       document.getElementById(id).controls = false; 
+  // });
 
-  // var video = $("video");    
+
+  // var video = $("video"); 
+  //c1   
   var video = document.getElementsByTagName("video");
   // console.log(video);
   // Check if video is ready to play
   $(video).on('canplay', function () {
-      $(video).mouseenter(function () {
-          $(this).get(0).play();
-      }).mouseleave(function () {
-          $(this).get(0).pause();
-      })
+    $(video).mouseenter(function () {
+        $(this).get(0).play();
+    }).mouseleave(function () {
+        $(this).get(0).pause();
+    })
   });
 
+  //c2
   // $(".video").hover(
   //   function () {
   //     $(this).parent().find(".video_test").addClass("active-video");
