@@ -1,9 +1,6 @@
 .p_top {
   .list__model {
-    display: flex;
-    justify-content: flex-start;
-    align-items: stretch;
-    margin: 0 0 6.5rem 0;
+
     .items-model {
       width: 27.5rem;
       height: 27.5rem;
@@ -38,6 +35,26 @@
             min-height: 26rem;
           }
         }
+      }
+    }
+  }
+  .model__wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    .post {
+      width: calc(50% - 4rem);
+    }
+    .list__model {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      margin: 0 0 6.5rem 0;
+      .items-model {
+        width: 50%;
       }
     }
   }
