@@ -1,8 +1,15 @@
 .footer {
-  padding: 4rem 0 5rem;
-  background-color: #F8F8F8;
-  @include mq_max_968 {
-    padding: 2.5rem 0 3rem;
+  &__top {
+    padding: 4rem 0 5rem;
+    @include mq_max_968 {
+      padding: 2.5rem 0 3rem;
+    }
+    background-color: $gray_light;
+  }
+  &__logo {
+    width: 23rem;
+    margin: 0 auto;
+    margin-bottom: 4rem;    
   }
   &__list {
     width: 100%;
@@ -17,21 +24,25 @@
         padding: 0.5rem;
       }
       a {
-      font-size: 1.2rem;
       display: inline-block;
+      font-size: 1.6rem;
       padding: 1rem 1.5rem;
-      color: #808080;
+      color: $black;
       @include mq_max_968 {
         padding: 0;
       }
       }
     }
   }
-  .footer__text {
+  .footer__bot {
+    padding: 1.5rem 0;
     font-size: 1.2rem;
     line-height: 1.2;
-    color: #b2b2b2;
+    color: $white;
+    background-color: $black1;
     text-align: center;
-    margin-top: 1.5rem;
+    @include mq_max_968 {
+      padding: 1rem 0;
+    }
   }
 }
