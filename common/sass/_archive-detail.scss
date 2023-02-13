@@ -21,7 +21,7 @@
         justify-content: center;
       }
     }
-    .video {
+    .l__video {
       width: 25rem;   
       line-height: 0;
       @include mq_max_968 {
@@ -110,6 +110,9 @@
       @include mq_max_767 {
         width: calc(calc(100% /2 ) - 1.6rem);        
       } 
+      .video {
+        width: 100%;
+      }
       video {
         width: 100%;
       }

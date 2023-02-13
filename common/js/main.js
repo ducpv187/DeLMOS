@@ -120,15 +120,15 @@ $(document).ready(function() {
   }
   );
   $(".video").mouseout(function(){
-    $(this).parent().find(".video_play").removeClass("active-video");
-    
-    //hover reload video  when hover
+    $(this).parent().find(".video_play").removeClass("active-video");    
+    //reload video  when hover
     // document.getElementById("video").load();
+
   });
   $( ".video_play" ).each(function( index ) {
     // console.log($(this).attr("id"));
-    console.log($(this));
-    console.log(typeof $(this));
+    // console.log($(this));
+    // console.log(typeof $(this));
     document.getElementById($(this).attr("id")).controls = false; 
   });
   //c2
@@ -144,7 +144,7 @@ $(document).ready(function() {
 
   // var video = $("video"); 
   //c1   
-  var video = document.getElementsByTagName("video");
+  var video = document.getElementsByClassName("js-hoverVideo");
   // console.log(video);
   // Check if video is ready to play
   $(video).on('canplay', function () {

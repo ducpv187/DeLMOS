@@ -1463,17 +1463,17 @@ ul {
     justify-content: center;
   }
 }
-.page__archive--deatail .infor__video .video {
+.page__archive--deatail .infor__video .l__video {
   width: 25rem;
   line-height: 0;
 }
 @media screen and (max-width: 968px) {
-  .page__archive--deatail .infor__video .video {
+  .page__archive--deatail .infor__video .l__video {
     width: 30rem;
     text-align: center;
   }
 }
-.page__archive--deatail .infor__video .video video {
+.page__archive--deatail .infor__video .l__video video {
   width: 100%;
 }
 .page__archive--deatail .infor__video .detail {
@@ -1570,6 +1570,9 @@ ul {
   .page__archive--deatail .orthes__video .video--items {
     width: calc(50% - 1.6rem);
   }
+}
+.page__archive--deatail .orthes__video .video--items .video {
+  width: 100%;
 }
 .page__archive--deatail .orthes__video .video--items video {
   width: 100%;
