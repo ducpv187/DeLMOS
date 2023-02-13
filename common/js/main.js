@@ -115,9 +115,10 @@ $(document).ready(function() {
   //hover autoplay video
   $(".video").mousemove(function(){
     $(this).parent().find(".video_play").addClass("active-video");
-    // $(this).parent().find(".video_play").controls = false;    
-    document.getElementsByTagName("video").controls = false;    
-  }
+
+      // $(this).parent().find(".video_play").controls = false;    
+      // document.getElementsByTagName("video").controls = false;    
+    }
   );
   $(".video").mouseout(function(){
     $(this).parent().find(".video_play").removeClass("active-video");    
@@ -126,9 +127,6 @@ $(document).ready(function() {
 
   });
   $( ".video_play" ).each(function( index ) {
-    // console.log($(this).attr("id"));
-    // console.log($(this));
-    // console.log(typeof $(this));
     document.getElementById($(this).attr("id")).controls = false; 
   });
   //c2
