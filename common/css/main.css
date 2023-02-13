@@ -1654,7 +1654,6 @@ ul {
 .page__form .form-description {
   font-size: 1.8rem;
   line-height: 1.2;
-  font-weight: bold;
   color: #393838;
   text-align: center;
 }
@@ -1682,15 +1681,16 @@ ul {
 .page__form .form .label {
   font-size: 1.8rem;
   line-height: 1.2;
-  color: #222222;
-  font-weight: bold;
+  color: #282828;
+  font-weight: 500;
 }
 .page__form .form .requied {
   font-size: 1.2rem;
   line-height: 1.2;
   padding: 0.5rem 1rem;
-  color: #ffffff;
-  background-color: #405080;
+  border-radius: 0.5rem;
+  color: #fefefe;
+  background-color: #d02e8c;
 }
 .page__form .form .input {
   width: 100%;
@@ -1769,8 +1769,8 @@ ul {
 }
 .page__form .form .cs-link {
   font-size: 1.6rem;
-  line-height: 1.2;
-  color: #405080;
+  line-height: 2.5;
+  color: #1076bd;
 }
 .page__form .form .error {
   font-size: 1.2rem;

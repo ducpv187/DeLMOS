@@ -16,8 +16,7 @@
     }
     &-description {
       font-size: 1.8rem;
-      line-height: 1.2;
-      font-weight: bold;
+      line-height: 1.2;      
       color: $black1;
       text-align: center;
     }
@@ -43,15 +42,16 @@
     .label {
       font-size: 1.8rem;
       line-height: 1.2;
-      color: #222222;
-      font-weight: bold;
+      color: $black;
+      font-weight: 500;
     }
     .requied {
       font-size: 1.2rem;
       line-height: 1.2;
       padding: 0.5rem 1rem;
-      color: #ffffff;
-      background-color: #405080;
+      border-radius: 0.5rem;
+      color: $white1;
+      background-color: $pink;
     }
     .input {
       width: 100%;
@@ -128,8 +128,8 @@
     }
     .cs-link {
       font-size: 1.6rem;
-      line-height: 1.2;
-      color: #405080;
+      line-height: calc(40/16);
+      color: #1076bd;
     }
     .error {
       font-size: 1.2rem;
