@@ -389,7 +389,8 @@ ul {
   padding: 1.5rem 0;
   font-size: 1.2rem;
   line-height: 1.2;
-  color: #ffffff;
+  font-family: "shinGoPro";
+  color: #f3f3f3;
   background-color: #393838;
   text-align: center;
 }
@@ -515,6 +516,10 @@ ul {
 @font-face {
   font-family: "mmascript";
   src: url("../font/Emmascript-MVB-Std-Regular.otf");
+}
+@font-face {
+  font-family: "shinGoPro";
+  src: url("../font/A-OTF-ShinGoPro-Light.otf");
 }
 @font-face {
   font-family: "yugothic-medium";
