@@ -2,18 +2,23 @@
   .main {
     padding: 5.5rem 0 7.5rem 0;
   }
-  .title {
-    text-align: center;
-  }
   .form {
     .container {
       max-width: 71.2rem;
     }
-    .description {
+    &-ttl {
+      text-align: center;
+      font-size: 3rem;
+      line-height: calc(40/30);
+      font-weight: bold;
+      color: $black1;
+      margin-bottom: 3rem;
+    }
+    &-description {
       font-size: 1.8rem;
       line-height: 1.2;
       font-weight: bold;
-      color: #222222;
+      color: $black1;
       text-align: center;
     }
     &__input {
@@ -28,7 +33,7 @@
     .c-full {
       width: 100%;     
     }
-    .title {
+    .row-txt {
       display: flex;
       align-items: center;
       justify-content: flex-start;
