@@ -911,6 +911,19 @@ ul {
   display: block !important;
 }
 
+.video {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+}
+
+.video_play {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
 .pagination {
   text-align: center;
 }
@@ -1240,19 +1253,6 @@ ul {
 }
 .p__taro .thumb {
   margin-bottom: 0 !important;
-}
-
-.video {
-  position: relative;
-  display: flex;
-  align-items: stretch;
-}
-
-.video_test {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
 }
 
 .archive__category .title {

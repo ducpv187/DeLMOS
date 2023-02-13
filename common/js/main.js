@@ -114,25 +114,25 @@ $(document).ready(function() {
 
   //hover autoplay video
   $(".video").mousemove(function(){
-    $(this).parent().find(".video_test").addClass("active-video");
-    // $(this).parent().find(".video_test").controls = false;    
+    $(this).parent().find(".video_play").addClass("active-video");
+    // $(this).parent().find(".video_play").controls = false;    
     document.getElementsByTagName("video").controls = false;    
   }
   );
   $(".video").mouseout(function(){
-    $(this).parent().find(".video_test").removeClass("active-video");
+    $(this).parent().find(".video_play").removeClass("active-video");
     
     //hover reload video  when hover
     // document.getElementById("video").load();
   });
-  $( ".video_test" ).each(function( index ) {
+  $( ".video_play" ).each(function( index ) {
     // console.log($(this).attr("id"));
     console.log($(this));
     console.log(typeof $(this));
     document.getElementById($(this).attr("id")).controls = false; 
   });
   //c2
-  // let x = document.getElementsByClassName("video_test");
+  // let x = document.getElementsByClassName("video_play");
   // console.log(x);
   // $.each(x, function( index, value ) {
   //   // console.log(value);
@@ -158,11 +158,11 @@ $(document).ready(function() {
   //c2
   // $(".video").hover(
   //   function () {
-  //     $(this).parent().find(".video_test").addClass("active-video");
+  //     $(this).parent().find(".video_play").addClass("active-video");
   //     document.getElementById("video").controls = false;    
   //   }, 
   //   function () {
-  //     $(this).parent().find(".video_test").removeClass("active-video");
+  //     $(this).parent().find(".video_play").removeClass("active-video");
   //   }
     
   // );

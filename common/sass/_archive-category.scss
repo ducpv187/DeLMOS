@@ -18,20 +18,6 @@
   }
 }
 
-
-.video {
-  position: relative;
-  display: flex;
-  align-items: stretch;
-}
-
-.video_test {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-
 //cpn for all page archive-category
 .archive__category {
   .title {
@@ -109,7 +95,7 @@
   }
   .list__post {
     width: calc(100% + 2rem);
-    margin: 0 -1rem;
+    margin: 0 -1rem;    
     @include mq_max_968 {
       margin: 0;
     }
