@@ -1638,7 +1638,12 @@ ul {
 }
 
 .page__form .main {
-  padding: 5.5rem 0 7.5rem 0;
+  padding: 7.5rem 0 10.5rem 0;
+}
+@media screen and (max-width: 968px) {
+  .page__form .main {
+    padding: 5.5rem 0 7.5rem 0;
+  }
 }
 .page__form .form .container {
   max-width: 71.2rem;
@@ -1678,6 +1683,13 @@ ul {
   gap: 1rem;
   padding-bottom: 1rem;
 }
+.page__form .form .row-radio {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3rem;
+  padding-left: 2rem;
+}
 .page__form .form .label {
   font-size: 1.8rem;
   line-height: 1.2;
@@ -1715,11 +1727,24 @@ ul {
   line-height: 1.2;
   color: #666666;
 }
+.page__form .form .input-radio {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+.page__form .form .input-radio .type-radio {
+  accent-color: #c72c86;
+}
 .page__form .form .input__number {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   gap: 1.5rem;
+}
+.page__form .form .type-radio {
+  width: 1.5rem;
+  height: 1.5rem;
 }
 .page__form .form .form__checkbox {
   margin: 4rem 0;
@@ -1758,14 +1783,22 @@ ul {
   text-align: center;
 }
 .page__form .form .btn__submit {
+  max-width: 19rem;
+  width: 100%;
   font-size: 1.6rem;
   line-height: 1.2;
   color: #ffffff;
   background-color: #999999;
-  padding: 1.25rem 2.8rem;
-  border-radius: 0.25rem;
+  padding: 2.5rem 2.8rem;
+  border-radius: 1rem;
   border: none;
   cursor: pointer;
+}
+@media screen and (max-width: 968px) {
+  .page__form .form .btn__submit {
+    max-width: 15rem;
+    padding: 1.5rem 1rem;
+  }
 }
 .page__form .form .cs-link {
   font-size: 1.6rem;

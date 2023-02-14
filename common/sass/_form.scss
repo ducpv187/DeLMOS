@@ -1,6 +1,9 @@
 .page__form {
   .main {
-    padding: 5.5rem 0 7.5rem 0;
+    padding: 7.5rem 0 10.5rem 0;
+    @include mq_max_968 {
+      padding: 5.5rem 0 7.5rem 0;
+    }
   }
   .form {
     .container {
@@ -39,6 +42,13 @@
       gap: 1rem;
       padding-bottom: 1rem;
     }
+    .row-radio {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 3rem;
+      padding-left: 2rem;
+    }
     .label {
       font-size: 1.8rem;
       line-height: 1.2;
@@ -76,11 +86,24 @@
       line-height: 1.2;
       color: #666666;
     }
+    .input-radio {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 0.5rem;
+      .type-radio {
+        accent-color: #c72c86;
+      }
+    }
     .input__number {
       display: flex;
       justify-content: flex-start;
       align-items: flex-start;
       gap: 1.5rem;
+    }
+    .type-radio {
+      width: 1.5rem;
+      height: 1.5rem;
     }
     .form__checkbox {
       margin: 4rem 0;
@@ -116,14 +139,20 @@
     .btn {
       text-align: center;
       &__submit {
+        max-width: 19rem;
+        width: 100%;
         font-size: 1.6rem;
         line-height: 1.2;
         color: #ffffff;
         background-color: #999999;
-        padding: 1.25rem 2.8rem;
-        border-radius: 0.25rem;
+        padding: 2.5rem 2.8rem;
+        border-radius: 1rem;
         border: none;
         cursor: pointer;
+        @include mq_max_968 {
+          max-width: 15rem;
+          padding: 1.5rem 1rem;
+        }
       }
     }
     .cs-link {
