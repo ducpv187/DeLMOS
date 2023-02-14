@@ -1811,6 +1811,31 @@ ul {
   color: #A70000;
 }
 
+.p__register-confirm .info-confirm .container {
+  max-width: 67rem;
+}
+.p__register-confirm .row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+.p__register-confirm .field {
+  width: 20.5rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.2222222222;
+  color: #282828;
+}
+.p__register-confirm .content {
+  width: auto;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.2222222222;
+  color: #282828;
+}
+
 .form__expired {
   background-color: #000000;
   width: 100%;

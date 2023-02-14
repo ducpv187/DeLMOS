@@ -167,3 +167,31 @@
     }
   }  
 }
+.p__register-confirm {
+  .info-confirm {
+    .container {
+      max-width: 67rem;
+    }
+  }  
+  .row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+  }
+  .field {
+    width: 20.5rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: calc( 40/18);
+    color: $black;
+  }
+  .content {
+    width: auto;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: calc( 40/18);
+    color: $black;
+  }
+}
