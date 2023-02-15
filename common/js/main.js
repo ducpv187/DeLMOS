@@ -127,6 +127,7 @@ $(document).ready(function() {
 
   });
   $( ".video_play" ).each(function( index ) {
+    console.log(this);
     document.getElementById($(this).attr("id")).controls = false; 
   });
   //c2
@@ -194,6 +195,8 @@ $(document).ready(function() {
     },
     errorPlacement: function(error, element) 
     {
+      console.log(element);
+      console.log(error);
       if ( element.is(":radio") ) 
       {
         error.appendTo( element.parents('.row-radio') );
