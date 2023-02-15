@@ -63,6 +63,36 @@
   margin-bottom: 7rem;
 }
 
+@include mq_min_969 {
+  .mt-lg-1 {
+    margin-top: 1rem;
+  }
+  .mt-lg-2 {
+    margin-top: 2rem;
+  }
+  .mt-lg-3 {
+    margin-top: 3rem;
+  }
+  .mt-lg-4 {
+    margin-top: 4rem;
+  }
+  .mb-lg-1 {
+    margin-bottom: 1rem;
+  }
+  .mb-lg-2 {
+    margin-bottom: 2rem;
+  }
+  .mb-lg-3 {
+    margin-bottom: 3rem;
+  }
+  .mb-lg-5 {
+    margin-bottom: 5rem;
+  }
+  .mb-lg-7 {
+    margin-bottom: 7rem;
+  }
+}
+
 //padding
 .px-2 {
   padding: 0 2rem;

@@ -473,6 +473,35 @@ ul {
   margin-bottom: 7rem;
 }
 
+@media screen and (min-width: 969px) {
+  .mt-lg-1 {
+    margin-top: 1rem;
+  }
+  .mt-lg-2 {
+    margin-top: 2rem;
+  }
+  .mt-lg-3 {
+    margin-top: 3rem;
+  }
+  .mt-lg-4 {
+    margin-top: 4rem;
+  }
+  .mb-lg-1 {
+    margin-bottom: 1rem;
+  }
+  .mb-lg-2 {
+    margin-bottom: 2rem;
+  }
+  .mb-lg-3 {
+    margin-bottom: 3rem;
+  }
+  .mb-lg-5 {
+    margin-bottom: 5rem;
+  }
+  .mb-lg-7 {
+    margin-bottom: 7rem;
+  }
+}
 .px-2 {
   padding: 0 2rem;
 }
@@ -1813,6 +1842,14 @@ ul {
   color: #A70000;
 }
 
+.p__register-confirm .info-confirm {
+  margin-bottom: 6rem;
+}
+@media screen and (max-width: 968px) {
+  .p__register-confirm .info-confirm {
+    margin-bottom: 3rem;
+  }
+}
 .p__register-confirm .info-confirm .container {
   max-width: 67rem;
 }
@@ -1830,12 +1867,55 @@ ul {
   line-height: 2.2222222222;
   color: #282828;
 }
+@media screen and (max-width: 968px) {
+  .p__register-confirm .field {
+    width: 15rem;
+  }
+}
 .p__register-confirm .content {
   width: auto;
   font-size: 1.8rem;
   font-weight: 500;
   line-height: 2.2222222222;
   color: #282828;
+}
+.p__register-confirm .group__btn {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.p__register-confirm .group__btn .cpn__gr--btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 19rem;
+  width: 100%;
+  height: 7rem;
+  font-size: 1.8rem;
+  line-height: 2.2222222222;
+  font-weight: 500;
+  padding: 1.2rem 1.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 968px) {
+  .p__register-confirm .group__btn .cpn__gr--btn {
+    font-size: 1.4rem;
+    padding: 0.4rem 1.75rem;
+    height: unset;
+  }
+}
+.p__register-confirm .group__btn--fix {
+  color: #d6479a;
+  border: 2px solid #e690c2;
+  background-color: transparent;
+}
+.p__register-confirm .group__btn--send {
+  color: #ffffff;
+  border: 2px solid transparent;
+  background-color: #d02e8c;
 }
 
 .form__expired {

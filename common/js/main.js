@@ -194,14 +194,14 @@ $(document).ready(function() {
     },
     errorPlacement: function(error, element) 
     {
-        if ( element.is(":radio") ) 
-        {
-            error.appendTo( element.parents('.row-radio') );
-        }
-        else 
-        { // This is the default behavior 
-            error.insertAfter( element );
-        }
+      if ( element.is(":radio") ) 
+      {
+        error.appendTo( element.parents('.row-radio') );
+      }
+      else 
+      { // This is the default behavior 
+        error.insertAfter( element );
+      }
      },
   });
 
