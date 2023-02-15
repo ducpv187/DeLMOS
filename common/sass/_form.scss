@@ -14,13 +14,13 @@
       font-size: 3rem;
       line-height: calc(40/30);
       font-weight: bold;
-      color: $black1;
+      color: $black;
       margin-bottom: 3rem;
     }
     &-description {
       font-size: 1.8rem;
       line-height: 1.2;      
-      color: $black1;
+      color: $black;
       text-align: center;
     }
     &__input {
@@ -78,7 +78,12 @@
         background-color: #E8F0FE;
       }
       &__checkbox {
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .label--checkbox {
+          margin-left: 1rem;
+        }
       }
       &.error {
         border:  1px solid #A70000;
@@ -171,7 +176,7 @@
   }  
 }
 .p__register-confirm {
-  .info-confirm {
+  .infor-confirm {
     margin-bottom: 6rem;
     @include mq_max_968 {
       margin-bottom: 3rem;
@@ -240,5 +245,32 @@
       border: 2px solid transparent;
       background-color: $pink;
     }
+  }
+}
+.p__register-confirmed {
+  .infor-confirmed {
+    .container {
+      max-width: 67rem;
+    }
+  }
+  .infor-txt {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: calc(30/16);
+    color: $black2;
+    margin-bottom: 3.5rem;
+  }
+  .mail-confirmed {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: calc(40/18);
+    padding: 1.5rem 1rem;
+    color: $black;
+    margin-bottom: 3.5rem;
+    text-align: center;
+    background-color: $gray_light;
+  }
+  .link {
+    color: $blue1;
   }
 }

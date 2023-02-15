@@ -179,7 +179,7 @@ $(document).ready(function() {
       staffNameFirstName: "required",
       staffNameLastNameKana: "required",
       staffNameFirstNameKana: "required",
-      // acceptPolicy: "required",
+      acceptPolicy: "required",
     },
     messages: {
       email: "メールアドレスを入力してください。",
@@ -190,7 +190,7 @@ $(document).ready(function() {
       staffNameFirstName: "「姓」を入力してください。", 
       staffNameLastNameKana: "「セイ」を入力してください。", 
       staffNameFirstNameKana: "「セイ」を入力してください。", 
-      // acceptPolicy: "利用規約とプライバシーポリシーに同意の上チェックを入れてください。", 
+      acceptPolicy: "利用規約とプライバシーポリシーに同意の上チェックを入れてください。", 
     },
     errorPlacement: function(error, element) 
     {
@@ -198,8 +198,11 @@ $(document).ready(function() {
       {
         error.appendTo( element.parents('.row-radio') );
       }
+      else if ( element.is(":checkbox") ) {
+        error.appendTo( element.parents('.input__checkbox') );
+      }
       else 
-      { // This is the default behavior 
+      { 
         error.insertAfter( element );
       }
      },
