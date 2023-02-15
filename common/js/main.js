@@ -174,6 +174,7 @@ $(document).ready(function() {
       email: "required",
       password: "required",
       number: "required",
+      accountType: "required",
       staffNameLastName: "required",
       staffNameFirstName: "required",
       staffNameLastNameKana: "required",
@@ -184,12 +185,24 @@ $(document).ready(function() {
       email: "メールアドレスを入力してください。",
       password: "メールアドレスを入力してください。", 
       number: "メールアドレスを入力してください。", 
+      accountType: "メールアドレスを入力してください。", 
       staffNameLastName: "「姓」を入力してください。", 
       staffNameFirstName: "「姓」を入力してください。", 
       staffNameLastNameKana: "「セイ」を入力してください。", 
       staffNameFirstNameKana: "「セイ」を入力してください。", 
       // acceptPolicy: "利用規約とプライバシーポリシーに同意の上チェックを入れてください。", 
     },
+    errorPlacement: function(error, element) 
+    {
+        if ( element.is(":radio") ) 
+        {
+            error.appendTo( element.parents('.row-radio') );
+        }
+        else 
+        { // This is the default behavior 
+            error.insertAfter( element );
+        }
+     },
   });
 
 

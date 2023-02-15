@@ -1684,11 +1684,13 @@ ul {
   padding-bottom: 1rem;
 }
 .page__form .form .row-radio {
+  padding-left: 2rem;
+}
+.page__form .form .gr-radio {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 3rem;
-  padding-left: 2rem;
 }
 .page__form .form .label {
   font-size: 1.8rem;
@@ -2011,4 +2013,4 @@ ul {
 }
 .form__resetpass .form .icon-hidden {
   display: none;
-}/*# sourceMappingURL=main.css.map */
+}

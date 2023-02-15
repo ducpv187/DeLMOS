@@ -42,12 +42,15 @@
       gap: 1rem;
       padding-bottom: 1rem;
     }
-    .row-radio {
+    .row-radio {      
+      padding-left: 2rem;     
+
+    }
+    .gr-radio {
       display: flex;
       align-items: center;
       justify-content: flex-start;
       gap: 3rem;
-      padding-left: 2rem;
     }
     .label {
       font-size: 1.8rem;
