@@ -124,12 +124,18 @@ $(document).ready(function() {
     $(this).parent().find(".video_play").removeClass("active-video");    
     //reload video  when hover
     // document.getElementById("video").load();
-
   });
+
   $( ".video_play" ).each(function( index ) {
     // console.log(this);
     document.getElementById($(this).attr("id")).controls = false; 
   });
+
+  //cach viet khac cach tren jquery
+  // $.each( $( ".video_play" ), function( index ) {
+  //   document.getElementById($(this).attr("id")).controls = false; 
+  // });
+
   //c2
   // let x = document.getElementsByClassName("video_play");
   // console.log(x);
