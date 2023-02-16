@@ -127,7 +127,7 @@ $(document).ready(function() {
 
   });
   $( ".video_play" ).each(function( index ) {
-    console.log(this);
+    // console.log(this);
     document.getElementById($(this).attr("id")).controls = false; 
   });
   //c2
@@ -168,18 +168,32 @@ $(document).ready(function() {
   
 
   
+  jQuery.validator.addMethod(
+    'katakana',
+    function (value, element) {
+      return this.optional(element) || /^([ァ-ヶー]+)$/.test(value);
+    },
+    '<br/>全角カタカナを入力してください'
+  );
 
   //Validate form
-  $('#my__form').validate({
+  $('#my__form').validate({    
     rules: {
       email: "required",
       password: "required",
       number: "required",
       accountType: "required",
-      staffNameLastName: "required",
+      staffNameLastName: "required",      
       staffNameFirstName: "required",
-      staffNameLastNameKana: "required",
-      staffNameFirstNameKana: "required",
+      staffNameLastNameKana: 
+      {
+        required: true,
+        katakana : true,
+      },
+      staffNameFirstNameKana: {
+        required: true,
+        katakana : true,
+      },
       acceptPolicy: "required",
     },
     messages: {
@@ -187,16 +201,21 @@ $(document).ready(function() {
       password: "メールアドレスを入力してください。", 
       number: "メールアドレスを入力してください。", 
       accountType: "メールアドレスを入力してください。", 
-      staffNameLastName: "「姓」を入力してください。", 
+      staffNameLastName: "「セイ」を入力してください。",      
       staffNameFirstName: "「姓」を入力してください。", 
-      staffNameLastNameKana: "「セイ」を入力してください。", 
-      staffNameFirstNameKana: "「セイ」を入力してください。", 
+      staffNameLastNameKana: 
+      {
+        required:"「姓」を入力してください。", 
+        katakana: '「カタカナ」で入力してください。', 
+      },      
+      staffNameFirstNameKana: {
+        required:"「姓」を入力してください。", 
+        katakana: '「カタカナ」で入力してください。', 
+      },    
       acceptPolicy: "利用規約とプライバシーポリシーに同意の上チェックを入れてください。", 
     },
     errorPlacement: function(error, element) 
     {
-      console.log(element);
-      console.log(error);
       if ( element.is(":radio") ) 
       {
         error.appendTo( element.parents('.row-radio') );
@@ -208,9 +227,12 @@ $(document).ready(function() {
       { 
         error.insertAfter( element );
       }
-     },
+     },     
   });
-
+  jQuery.validator.addMethod("katakana", function(value, element) {
+    return this.optional(element) || /^([ァ-ヶー]+)$/.test(value);
+    }, "<br/>全角カタカナを入力してください"
+   );
 
 
   $('#form__reset').validate({

@@ -1947,6 +1947,11 @@ ul {
   color: #1076bd;
 }
 
+.p__register-login .form-description {
+  font-size: 1.6rem;
+  line-height: 1.875;
+}
+
 .form__expired {
   background-color: #000000;
   width: 100%;
