@@ -167,7 +167,7 @@ $(document).ready(function() {
   // );
   
 
-  
+  //validate check input katana
   jQuery.validator.addMethod(
     'katakana',
     function (value, element) {
