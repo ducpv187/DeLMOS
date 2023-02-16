@@ -83,6 +83,9 @@
         flex-wrap: wrap;
         .label--checkbox {
           margin-left: 1rem;
+          @include mq_max_968 {
+            font-size: 1.2rem;
+          }
         }
       }
       &.error {
@@ -115,6 +118,9 @@
     }
     .form__checkbox {
       margin: 4rem 0;
+      @include mq_max_968 {
+        margin: 2rem 0;
+      }
     }
     .input__password {
         position: relative;
@@ -167,6 +173,10 @@
       font-size: 1.6rem;
       line-height: calc(40/16);
       color: #1076bd;
+      @include mq_max_968 {
+        font-size: 1.2rem;
+        line-height: calc(30/12);
+      }
     }
     .error {
       font-size: 1.2rem;
@@ -208,7 +218,6 @@
   .input-txt {
     border: none;
     font-size: 1.8rem;
-    font-weight: 500;
     font-family: 'notosansCJK';
     font-weight: 500;
     line-height: calc( 40/18);

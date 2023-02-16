@@ -1755,6 +1755,11 @@ ul {
 .page__form .form .input__checkbox .label--checkbox {
   margin-left: 1rem;
 }
+@media screen and (max-width: 968px) {
+  .page__form .form .input__checkbox .label--checkbox {
+    font-size: 1.2rem;
+  }
+}
 .page__form .form .input.error {
   border: 1px solid #A70000;
 }
@@ -1784,6 +1789,11 @@ ul {
 }
 .page__form .form .form__checkbox {
   margin: 4rem 0;
+}
+@media screen and (max-width: 968px) {
+  .page__form .form .form__checkbox {
+    margin: 2rem 0;
+  }
 }
 .page__form .form .input__password {
   position: relative;
@@ -1841,6 +1851,12 @@ ul {
   line-height: 2.5;
   color: #1076bd;
 }
+@media screen and (max-width: 968px) {
+  .page__form .form .cs-link {
+    font-size: 1.2rem;
+    line-height: 2.5;
+  }
+}
 .page__form .form .error {
   font-size: 1.2rem;
   line-height: 1.2;
@@ -1883,7 +1899,6 @@ ul {
 .p__register-confirm .input-txt {
   border: none;
   font-size: 1.8rem;
-  font-weight: 500;
   font-family: "notosansCJK";
   font-weight: 500;
   line-height: 2.2222222222;
