@@ -173,6 +173,7 @@ $(document).ready(function() {
     function (value, element) {
       return this.optional(element) || /^([ァ-ヶー]+)$/.test(value);
     },
+    
     '<br/>全角カタカナを入力してください'
   );
 
