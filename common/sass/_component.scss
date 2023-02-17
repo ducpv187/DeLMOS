@@ -269,28 +269,54 @@
       gap: 0.5rem;
     }
   }
-  .row-form {
-    transform: translate();
+  .row-form {   
    .select-form {
-    width: 26.4rem;      
+    width: 28rem;      
     height: 7rem;
     padding: 1rem 1.5rem;
-    font-size: 2rem;
-    line-height: calc(34/20);
-    font-family: 'yugothic-medium';
-    color: #707070;
-    border: 1px solid #707070;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    color: $black;
+    border: 1px solid $gray_dark2;
     border-radius: 0.5rem;
+    appearance: none;    
+    position: relative;
+    z-index: 2;
+    background-color: transparent;
     @include mq_max_968 {
       max-width: 13.2rem;
       font-size: 1.4rem;
       padding: 0.4rem 1.75rem;
       height: unset;
     }   
-    @media only screen and (min-width: 969px) and (max-width: 1150px)  {
-      max-width: 20.4rem;  
+    @media only screen and (min-width: 969px) and (max-width: 1170px)  {
+      max-width: 21rem;  
     }    
    } 
+  }
+  .input-form {
+    background-color: $white !important;
+  }
+  .arrow-down {
+    position: relative;
+    background-color: $white;
+    &::before {
+      content: "";
+      width: 0;
+      height: 0;
+      border-style: solid;            
+      border-width: 1rem 1rem 0 1rem;
+      border-color: $black transparent transparent transparent;
+      position: absolute;
+      top: 45%;
+      transform: translateX(-45%);
+      right: 1rem;
+      z-index: 1;
+      @media only screen and (min-width: 969px) and (max-width: 1170px)  {
+        border-width: 0.8rem;
+        right: 0.5rem;
+      }  
+    }
   }
   .gr__btn {
     display: flex;
@@ -344,7 +370,7 @@
   &::before,   
   &::after {
     content: "";
-    width: 60%;
+    width: 58%;
     height: 1px;
     background-image: url(../images/line.png);
     background-size: 100% 100%;
