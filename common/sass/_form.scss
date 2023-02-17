@@ -213,15 +213,18 @@
     }
   }
   .content {
-    width: auto;   
+    flex: 1;
   }
   .input-txt {
+    width: 100%;
+    padding: 0.5rem 1rem;
     border: none;
     font-size: 1.8rem;
     font-family: 'notosansCJK';
     font-weight: 500;
     line-height: calc( 40/18);
     color: $black;
+    background-color: $white;
     text-align: left;
   }
   .group__btn {    

@@ -250,9 +250,9 @@
   .form {
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: wrap;      
-    gap: 3rem;
+    gap: 5rem;
     overflow: hidden;
     @include mq_max_968 {
       gap: 1.5rem;
@@ -273,7 +273,7 @@
     transform: translate();
    .select-form {
     width: 26.4rem;      
-    height: 5rem;
+    height: 7rem;
     padding: 1rem 1.5rem;
     font-size: 2rem;
     line-height: calc(34/20);
@@ -338,15 +338,13 @@
   justify-content: center; 
   align-items: flex-end;
   gap: 1.5rem;       
-  width: 58.8rem;
-  margin: 0 auto;
   margin-bottom: 8.5rem;
   padding: 3rem 0;
   position: relative;  
   &::before,   
   &::after {
     content: "";
-    width: 32.8rem;
+    width: 60%;
     height: 1px;
     background-image: url(../images/line.png);
     background-size: 100% 100%;
@@ -379,6 +377,25 @@
       margin-bottom: 2rem;
     }
   }      
+}
+
+//cpn
+.sub-title {
+  font-size: 2.8rem;
+  line-height: calc(35/28);
+  color: $black;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+  &::after {
+    content: "";
+    width: 2px;
+    height: 100%;
+    background-color: $pink;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
 
 //position-relative
