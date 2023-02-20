@@ -195,6 +195,9 @@ ul {
   background-color: #ffffff;
   z-index: 9999;
 }
+.header .container {
+  max-width: 144rem;
+}
 @media screen and (max-width: 968px) {
   .header .container {
     padding: 0 1rem;
@@ -226,7 +229,9 @@ ul {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  color: #000;
+  color: #282828;
+  font-size: 1.6rem;
+  line-height: 1.2;
 }
 .header__login .account {
   margin-left: 3rem;
@@ -557,6 +562,10 @@ ul {
 @font-face {
   font-family: "shinGoPro";
   src: url("../font/A-OTF-ShinGoPro-Light.otf");
+}
+@font-face {
+  font-family: "arial";
+  src: url("../font/Arialn.ttf");
 }
 @font-face {
   font-family: "yugothic-medium";
@@ -1734,7 +1743,7 @@ ul {
   margin-bottom: 3rem;
 }
 .page__form .form-description {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 1.2;
   color: #282828;
   text-align: center;
@@ -1785,7 +1794,7 @@ ul {
 }
 .page__form .form .input {
   width: 100%;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   line-height: 1.2;
   padding: 1.2rem 1rem;
   margin-bottom: 1rem;
@@ -2241,4 +2250,111 @@ ul {
 }
 .form__resetpass .form .icon-hidden {
   display: none;
+}
+
+/* Tabs */
+.p__my--page .main {
+  padding: 3.5rem 0;
+}
+@media screen and (min-width: 969px) {
+  .p__my--page .main {
+    padding: 7.5rem 0;
+  }
+}
+.p__my--page .tabs {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 7rem;
+  background-color: #ffffff;
+  width: 100%;
+}
+.p__my--page .list__tab {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 32rem;
+  list-style: none;
+  margin: 0;
+  padding: 5px;
+  overflow: auto;
+}
+.p__my--page .tab--items {
+  width: 100%;
+  padding: 2.5rem 2rem 1.5rem 0;
+  border-bottom: 1px solid #3D3A39;
+  cursor: pointer;
+}
+.p__my--page .tab--items.active .link-tab {
+  font-weight: 700;
+}
+.p__my--page .tab--items:last-child {
+  border-bottom: 0;
+}
+.p__my--page .link-tab {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  font-family: "arial";
+  font-weight: 400;
+  color: #282828;
+  text-decoration: none;
+}
+.p__my--page .tab-wrap {
+  flex: 1;
+}
+.p__my--page .tab-content {
+  padding: 1.5rem 1rem;
+}
+.p__my--page .member-infor .ttl {
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #282828;
+  margin-bottom: 3rem;
+}
+.p__my--page .member-infor .content-txt .row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+.p__my--page .member-infor .content-txt .c-left {
+  width: 21rem;
+}
+.p__my--page .member-infor .content-txt .c-right {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.p__my--page .member-infor .content-txt .field {
+  font-family: "arial";
+  font-size: 2.4rem;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #3D3A39;
+}
+.p__my--page .member-infor .content-txt .name {
+  font-family: "arial";
+  font-size: 2.4rem;
+  line-height: 1.2;
+  font-weight: 400;
+  border: none;
+  color: #3D3A39;
+  width: 100%;
+}
+.p__my--page .member-infor .content-txt .edit {
+  width: 9.4rem;
+  text-align: center;
+  font-family: "arial";
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 400;
+  padding: 0.25rem 0.5rem;
+  border-radius: 1rem;
+  border: 1px solid #3D3A39;
+  cursor: pointer;
 }
