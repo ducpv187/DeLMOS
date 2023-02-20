@@ -187,6 +187,7 @@ $(document).ready(function() {
     $('.tab-content').hide();
     
     var activeTab = $(this).find('a').attr('href');
+    // console.log(activeTab);
     $(activeTab).fadeIn();
     return false;
   });

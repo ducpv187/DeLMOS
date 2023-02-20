@@ -2255,6 +2255,7 @@ ul {
 
 /* Tabs */
 .p__my--page .main {
+  min-height: calc(100vh - 34rem);
   padding: 3.5rem 0;
 }
 @media screen and (min-width: 969px) {
@@ -2278,12 +2279,16 @@ ul {
   width: 32rem;
   list-style: none;
   margin: 0;
-  padding: 5px;
-  overflow: auto;
+}
+.p__my--page .tab-wrap {
+  flex: 1;
+}
+.p__my--page .tab-content {
+  padding: 1.5rem 1rem;
 }
 .p__my--page .tab--items {
   width: 100%;
-  padding: 2.5rem 2rem 1.5rem 0;
+  padding: 2.5rem 2rem 2.5rem 0;
   border-bottom: 1px solid #3D3A39;
   cursor: pointer;
 }
@@ -2300,19 +2305,6 @@ ul {
   font-weight: 400;
   color: #282828;
   text-decoration: none;
-}
-.p__my--page .tab-wrap {
-  flex: 1;
-}
-.p__my--page .tab-content {
-  padding: 1.5rem 1rem;
-}
-.p__my--page .member-infor .ttl {
-  font-size: 3.2rem;
-  font-weight: 400;
-  line-height: 1.2;
-  color: #282828;
-  margin-bottom: 3rem;
 }
 .p__my--page .member-infor .content-txt .row {
   display: flex;
@@ -2358,4 +2350,30 @@ ul {
   border-radius: 1rem;
   border: 1px solid #3D3A39;
   cursor: pointer;
+}
+.p__my--page .down-videos .cate-wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: calc(100% + 4rem);
+  margin: 0 -2rem;
+}
+.p__my--page .down-videos .cate-items {
+  width: calc(50% - 4rem);
+  margin: 0 2rem;
+  text-align: center;
+}
+.p__my--page .down-videos .title-cate {
+  font-size: 2rem;
+  line-height: 1.2;
+  font-family: "arial";
+  font-weight: 400;
+  color: #282828;
+}
+.p__my--page .ttl {
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #282828;
+  margin-bottom: 3rem;
 }
