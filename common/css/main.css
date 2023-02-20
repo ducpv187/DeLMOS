@@ -371,6 +371,7 @@ ul {
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
+  gap: 5rem;
 }
 @media screen and (max-width: 968px) {
   .footer__list-items {
@@ -382,7 +383,7 @@ ul {
 .footer__list-items a {
   display: inline-block;
   font-size: 1.6rem;
-  padding: 1rem 1.5rem;
+  padding: 1rem 0.5rem;
   color: #282828;
 }
 @media screen and (max-width: 968px) {
