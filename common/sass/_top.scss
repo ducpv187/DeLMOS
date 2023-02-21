@@ -1,4 +1,49 @@
 .p_top {
+  .title { 
+    display: flex;
+    justify-content: center; 
+    align-items: flex-end;
+    gap: 1.5rem;       
+    margin-bottom: 8.5rem;
+    padding: 3rem 0;
+    position: relative;  
+    &::before,   
+    &::after {
+      content: "";
+      width: 58%;
+      height: 1px;
+      background-image: url(../images/line.png);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      position: absolute;
+    }
+    &::before {  
+      top: 0;
+      left: 0;
+    }
+    &::after {       
+      bottom: 0;
+      right: 0;
+    }
+    .icon__title {
+      position: relative;
+      display: inline-block;        
+      line-height: 0;
+    }
+    .span__title {
+      font-size: 3.5rem;  
+      line-height: calc(40/35);
+      letter-spacing: .5rem;
+      font-family: 'folkPro';      
+      background: -webkit-linear-gradient(left, #0069b5 30%, #d4338d 70%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      @include mq_max_968 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+      }
+    }      
+  }
   .list__model { 
     .thumb {
       height: 100%;

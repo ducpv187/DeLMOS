@@ -795,53 +795,6 @@ ul {
   background-color: #d2d2d2;
 }
 
-.title {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  gap: 1.5rem;
-  margin-bottom: 8.5rem;
-  padding: 3rem 0;
-  position: relative;
-}
-.title::before, .title::after {
-  content: "";
-  width: 58%;
-  height: 1px;
-  background-image: url(../images/line.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  position: absolute;
-}
-.title::before {
-  top: 0;
-  left: 0;
-}
-.title::after {
-  bottom: 0;
-  right: 0;
-}
-.title .icon__title {
-  position: relative;
-  display: inline-block;
-  line-height: 0;
-}
-.title .span__title {
-  font-size: 3.5rem;
-  line-height: 1.1428571429;
-  letter-spacing: 0.5rem;
-  font-family: "folkPro";
-  background: -webkit-linear-gradient(left, #0069b5 30%, #d4338d 70%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-@media screen and (max-width: 968px) {
-  .title .span__title {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-  }
-}
-
 .sub-title {
   font-size: 2.8rem;
   line-height: 1.25;
@@ -1088,6 +1041,52 @@ ul {
   font-size: 1.6rem;
 }
 
+.p_top .title {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1.5rem;
+  margin-bottom: 8.5rem;
+  padding: 3rem 0;
+  position: relative;
+}
+.p_top .title::before, .p_top .title::after {
+  content: "";
+  width: 58%;
+  height: 1px;
+  background-image: url(../images/line.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+.p_top .title::before {
+  top: 0;
+  left: 0;
+}
+.p_top .title::after {
+  bottom: 0;
+  right: 0;
+}
+.p_top .title .icon__title {
+  position: relative;
+  display: inline-block;
+  line-height: 0;
+}
+.p_top .title .span__title {
+  font-size: 3.5rem;
+  line-height: 1.1428571429;
+  letter-spacing: 0.5rem;
+  font-family: "folkPro";
+  background: -webkit-linear-gradient(left, #0069b5 30%, #d4338d 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media screen and (max-width: 968px) {
+  .p_top .title .span__title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+}
 .p_top .list__model .thumb {
   height: 100%;
 }
