@@ -237,10 +237,12 @@
       font-weight: bold;
     }
     .cpn__btn--top {
+      display: inline-block;
       width: 100%;
       font-size: 1.8rem;
-      line-height: 1.2;
       font-family: 'notosansCJK';
+      line-height: 1.2;
+      text-align: center;
       padding: 2.3rem 1rem;
       color: $white;
       border: 1px solid transparent;
