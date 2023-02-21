@@ -191,7 +191,7 @@ $(document).ready(function() {
     $(activeTab).fadeIn();
     return false;
   });
-
+0
   
   //validate check input katana
   jQuery.validator.addMethod(
@@ -256,11 +256,6 @@ $(document).ready(function() {
       }
      },     
   });
-  jQuery.validator.addMethod("katakana", function(value, element) {
-    return this.optional(element) || /^([ァ-ヶー]+)$/.test(value);
-    }, "<br/>全角カタカナを入力してください"
-   );
-
 
   $('#form__reset').validate({
     rules: {

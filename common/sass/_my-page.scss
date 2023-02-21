@@ -129,6 +129,71 @@
       color: $black;
     }
   }
+  .favorites-creator {
+    .row {
+      margin-bottom: 5rem;
+    }
+    .ttl-cate {
+      font-size: 2rem;
+      line-height: 1.2;
+      font-family: 'arial';
+      font-weight: 400;
+      color: $black;
+      margin-bottom: 1.5rem;
+    }
+    .wrap-cate {
+      width: calc(100% + 4rem);
+      margin: 0 -2rem;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    .list-cate {
+      width: calc(calc(100% / 3) - 4rem);  
+      margin: 0 2rem;  
+    }
+  }
+  .purchase-history {
+    .content-txt {
+      padding-left: 7.5rem;
+    }
+    .field {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 11.5rem;
+    padding: 0 0 3rem 0;
+    border-bottom: 1px solid #F2F2F2;
+    }
+    .ttl-field {
+      font-family: 'arial';
+      font-weight: 600;
+      font-size: 1.6rem;
+      line-height: 1.2;
+      width: 10.5rem;
+    }
+    .information {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 5rem;
+      padding: 3rem 0;
+      border-bottom: 1px solid #F2F2F2;
+    }
+    .txt {
+      font-size: 1.6rem;
+      line-height: 1.2;
+      font-family: 'arial';
+      font-weight: 400;
+      color: #595959;
+      max-width: 17rem;
+      width: 100%;
+    }
+  }
+
   //cpn-ttl
   .ttl {
     font-size: 3.2rem;
