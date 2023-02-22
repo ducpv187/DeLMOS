@@ -2,7 +2,47 @@
   .main {
     padding: 2rem 0;
     @include mq_min_969 {
-      padding: 5.5rem 0 10rem;
+      padding: 0rem 0 10rem;
+    }
+  }
+}
+.p__ichiran--cre {
+  .ttl {
+    margin-bottom: 5rem;
+    .span-ttl {
+      font-size: 3.5rem;  
+      line-height: calc(40/35);
+      letter-spacing: .5rem;
+      font-family: 'folkPro';      
+      background: -webkit-linear-gradient(left, #0069b5 30%, #d4338d 70%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      @include mq_max_968 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  .post {
+    .thumb {
+      height: 27rem;
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .txt-cate , .age , .desc {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      font-size: 1.4rem;
+      line-height: calc(40/16);
+      font-weight: 500;
+      color: $black;    
+    }
+    .txt-cate , .age {
+      border-bottom: 1px dashed $gray_dark1 ;
     }
   }
 }
@@ -31,7 +71,7 @@
     }
   }
   .tab {
-    margin: 2rem 0 1rem;
+    margin-bottom: 5rem;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -50,9 +90,9 @@
         margin: 0 -0.5rem;
       }  
       .items {
-        max-width: 13rem;
+        max-width: 14rem;
         width: 100%;
-        margin-right: 2rem;
+        margin-right: 1.5rem;
         border-radius: 0.5rem;
         @include mq_table {
           width: auto;
@@ -63,19 +103,19 @@
         }
        a {
         display: inline-block; 
-        padding: 0.5rem 1rem;  
+        padding: 0.75rem 1rem;  
         text-align: center;
         width: 100%;
         font-size: 2rem;    
         line-height: calc(34/20);
         font-family: "yugothic-medium";
-        color: #707070;
-        background-color: #ffffff;
-        border: 1px solid #707070;
-        border-radius: 0.5rem;
+        color: $pink;
+        background-color: $white;
+        border: .15rem solid $pink_light4;
+        border-radius: 2.5rem;
         &.active {
-          color: #ffffff;
-          background-color: #707070;
+          color: $white;;
+          background-color: $pink;
         }
         @include mq_max_968 {
           margin-bottom: 0.5rem;
@@ -121,19 +161,6 @@
       @include mq_max_767 {
         width: calc(calc(100% / 2 ) - 1rem);
         margin: 0 0.5rem 1rem;  
-      }
-      .ttl , 
-      .age , 
-      .desc {
-        font-size: 1.5rem;
-        line-height: calc(27/15);
-        font-family: "yugothic-medium";
-        font-weight: 500;
-        color: #6F706F;
-        @include mq_max_968 {
-          font-size: 1.2rem;
-          overflow: hidden;
-        }
       }
     }
   }

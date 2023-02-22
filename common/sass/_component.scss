@@ -179,6 +179,13 @@
 }
 
 
+//cpn usage 
+.usage {
+   .container {
+    max-width: 146rem;
+   }
+}
+
 //col
 .list__post {
   display: flex;
@@ -551,7 +558,7 @@
     margin-right: .5rem;
     border-radius: 0.5rem;
     background-color: #ffffff;   
-    border: 1px solid #405080;  
+    border: 1px solid $pink;  
     &.arrow-prev {
       border: 1px solid #999999;
       background-color: rgba($color: #999999, $alpha: 0.1);
@@ -560,11 +567,8 @@
       }
     }
     &.arrow-next {  
-      border: 1px solid #999999;    
-      background-color: rgba($color: #999999, $alpha: 0.1);
-      .page__link {
-        color: #999999;        
-      }
+      border: 1px solid $pink;    
+      background-color: $white;
     }
   }
   .page__link {
@@ -575,10 +579,10 @@
     height: 4.7rem;
     font-size: 1.8rem;
     line-height: 1.2;
-    color:  #405080;;
+    color: $pink;;
     &.active {
-      color: #ffffff;
-      background-color: #405080;
+      color: $white;
+      background-color: $pink;
       @include mq_max_968 {
        border-radius: 0.5rem;     
       }

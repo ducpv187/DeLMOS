@@ -582,6 +582,10 @@ ul {
   line-height: 0;
 }
 
+.usage .container {
+  max-width: 146rem;
+}
+
 .list__post {
   display: flex;
   justify-content: flex-start;
@@ -985,7 +989,7 @@ ul {
   margin-right: 0.5rem;
   border-radius: 0.5rem;
   background-color: #ffffff;
-  border: 1px solid #405080;
+  border: 1px solid #d02e8c;
 }
 .pagination .tab__pagination.arrow-prev {
   border: 1px solid #999999;
@@ -995,11 +999,8 @@ ul {
   color: #999999;
 }
 .pagination .tab__pagination.arrow-next {
-  border: 1px solid #999999;
-  background-color: rgba(153, 153, 153, 0.1);
-}
-.pagination .tab__pagination.arrow-next .page__link {
-  color: #999999;
+  border: 1px solid #d02e8c;
+  background-color: #ffffff;
 }
 .pagination .page__link {
   display: flex;
@@ -1009,11 +1010,11 @@ ul {
   height: 4.7rem;
   font-size: 1.8rem;
   line-height: 1.2;
-  color: #405080;
+  color: #d02e8c;
 }
 .pagination .page__link.active {
   color: #ffffff;
-  background-color: #405080;
+  background-color: #d02e8c;
 }
 @media screen and (max-width: 968px) {
   .pagination .page__link.active {
@@ -1342,8 +1343,48 @@ ul {
 }
 @media screen and (min-width: 969px) {
   .page__archive .main {
-    padding: 5.5rem 0 10rem;
+    padding: 0rem 0 10rem;
   }
+}
+
+.p__ichiran--cre .ttl {
+  margin-bottom: 5rem;
+}
+.p__ichiran--cre .ttl .span-ttl {
+  font-size: 3.5rem;
+  line-height: 1.1428571429;
+  letter-spacing: 0.5rem;
+  font-family: "folkPro";
+  background: -webkit-linear-gradient(left, #0069b5 30%, #d4338d 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media screen and (max-width: 968px) {
+  .p__ichiran--cre .ttl .span-ttl {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+.p__ichiran--cre .post .thumb {
+  height: 27rem;
+}
+.p__ichiran--cre .post .thumb img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.p__ichiran--cre .post .txt-cate, .p__ichiran--cre .post .age, .p__ichiran--cre .post .desc {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  font-size: 1.4rem;
+  line-height: 2.5;
+  font-weight: 500;
+  color: #282828;
+}
+.p__ichiran--cre .post .txt-cate, .p__ichiran--cre .post .age {
+  border-bottom: 1px dashed #a8a8a8;
 }
 
 .p__taro .items-creator {
@@ -1369,7 +1410,7 @@ ul {
   }
 }
 .archive__category .tab {
-  margin: 2rem 0 1rem;
+  margin-bottom: 5rem;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -1394,9 +1435,9 @@ ul {
   }
 }
 .archive__category .tab__category .items {
-  max-width: 13rem;
+  max-width: 14rem;
   width: 100%;
-  margin-right: 2rem;
+  margin-right: 1.5rem;
   border-radius: 0.5rem;
 }
 @media only screen and (min-width: 768px) and (max-width: 969px) {
@@ -1412,20 +1453,20 @@ ul {
 }
 .archive__category .tab__category .items a {
   display: inline-block;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1rem;
   text-align: center;
   width: 100%;
   font-size: 2rem;
   line-height: 1.7;
   font-family: "yugothic-medium";
-  color: #707070;
+  color: #d02e8c;
   background-color: #ffffff;
-  border: 1px solid #707070;
-  border-radius: 0.5rem;
+  border: 0.15rem solid #dd66ab;
+  border-radius: 2.5rem;
 }
 .archive__category .tab__category .items a.active {
   color: #ffffff;
-  background-color: #707070;
+  background-color: #d02e8c;
 }
 @media screen and (max-width: 968px) {
   .archive__category .tab__category .items a {
@@ -1482,23 +1523,6 @@ ul {
   .archive__category .list__post .items-creator {
     width: calc(50% - 1rem);
     margin: 0 0.5rem 1rem;
-  }
-}
-.archive__category .list__post .items-creator .ttl,
-.archive__category .list__post .items-creator .age,
-.archive__category .list__post .items-creator .desc {
-  font-size: 1.5rem;
-  line-height: 1.8;
-  font-family: "yugothic-medium";
-  font-weight: 500;
-  color: #6F706F;
-}
-@media screen and (max-width: 968px) {
-  .archive__category .list__post .items-creator .ttl,
-  .archive__category .list__post .items-creator .age,
-  .archive__category .list__post .items-creator .desc {
-    font-size: 1.2rem;
-    overflow: hidden;
   }
 }
 .archive__category .thumb {
