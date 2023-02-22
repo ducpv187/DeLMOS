@@ -46,6 +46,49 @@
     }
   }
 }
+.p__ichiran--ctg {
+  .cate-items {   
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .list__post {
+    margin-bottom: 5rem !important;
+  }
+  .ttl {
+    margin-bottom: 5rem;
+    .span-ttl {
+      font-size: 3.5rem;  
+      line-height: calc(40/35);
+      letter-spacing: .5rem;
+      font-family: 'folkPro';      
+      background: -webkit-linear-gradient(left, #0069b5 30%, #d4338d 70%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      @include mq_max_968 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  .title-cate {
+    font-size: 1.6rem;
+    line-height: calc(40/16);
+    color: $black;
+  }
+  .archive__category {
+    .tab {
+    margin-bottom: 3rem;
+    }   
+    .list__post {
+      .items-creator {
+        width: calc(20% - 2rem);
+        margin: 0 1rem;
+      }
+    }  
+  }
+}
+
 .p__taro {
   .items-creator {
     margin-bottom: 2rem !important;
@@ -83,6 +126,9 @@
       flex-wrap: wrap;  
       width: 100%;
       margin-bottom: 3rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
       @include mq_max_968 {     
         margin: 0 -0.5rem;
       }  
@@ -103,12 +149,12 @@
         }
        a {
         display: inline-block; 
-        padding: 0.75rem 1rem;  
+        padding: 0.5rem 1rem;  
         text-align: center;
         width: 100%;
-        font-size: 2rem;    
-        line-height: calc(34/20);
-        font-family: "yugothic-medium";
+        font-size: 1.6rem;    
+        line-height: calc(40/16);
+        font-weight: 500;
         color: $pink;
         background-color: $white;
         border: .15rem solid $pink_light4;
@@ -179,7 +225,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
-    margin-bottom: 2.5rem;
+    margin-bottom: 5rem;
     .btn--radio {
       display: flex;
       justify-content: flex-start;
@@ -188,11 +234,13 @@
       margin-right: 4rem;
       cursor: pointer;
     }
+    input {
+      accent-color: $pink;
+    }
     .label {
-      font-size: 1.4rem;
-      color: #121212;
-      font-family: "yugothic-medium";
-      font-weight: 600;
+      font-size: 1.6rem;
+      color: $black;
+      font-weight: 500;
     }
   }
   .cate-items {

@@ -569,11 +569,6 @@ ul {
   src: url("../font/Arialn.ttf");
 }
 @font-face {
-  font-family: "yugothic-medium";
-  src: url("../font/yugothic-medium.otf");
-  font-weight: 500;
-}
-@font-face {
   font-family: "yugothic-light";
   src: url("../font/Yu-Gothic-Light.ttf");
   font-weight: 400;
@@ -1387,6 +1382,45 @@ ul {
   border-bottom: 1px dashed #a8a8a8;
 }
 
+.p__ichiran--ctg .cate-items {
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.p__ichiran--ctg .list__post {
+  margin-bottom: 5rem !important;
+}
+.p__ichiran--ctg .ttl {
+  margin-bottom: 5rem;
+}
+.p__ichiran--ctg .ttl .span-ttl {
+  font-size: 3.5rem;
+  line-height: 1.1428571429;
+  letter-spacing: 0.5rem;
+  font-family: "folkPro";
+  background: -webkit-linear-gradient(left, #0069b5 30%, #d4338d 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media screen and (max-width: 968px) {
+  .p__ichiran--ctg .ttl .span-ttl {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+.p__ichiran--ctg .title-cate {
+  font-size: 1.6rem;
+  line-height: 2.5;
+  color: #282828;
+}
+.p__ichiran--ctg .archive__category .tab {
+  margin-bottom: 3rem;
+}
+.p__ichiran--ctg .archive__category .list__post .items-creator {
+  width: calc(20% - 2rem);
+  margin: 0 1rem;
+}
+
 .p__taro .items-creator {
   margin-bottom: 2rem !important;
 }
@@ -1424,6 +1458,9 @@ ul {
   width: 100%;
   margin-bottom: 3rem;
 }
+.archive__category .tab__category:last-child {
+  margin-bottom: 0;
+}
 @media screen and (max-width: 968px) {
   .archive__category .tab__category {
     margin: 0 -0.5rem;
@@ -1453,12 +1490,12 @@ ul {
 }
 .archive__category .tab__category .items a {
   display: inline-block;
-  padding: 0.75rem 1rem;
+  padding: 0.5rem 1rem;
   text-align: center;
   width: 100%;
-  font-size: 2rem;
-  line-height: 1.7;
-  font-family: "yugothic-medium";
+  font-size: 1.6rem;
+  line-height: 2.5;
+  font-weight: 500;
   color: #d02e8c;
   background-color: #ffffff;
   border: 0.15rem solid #dd66ab;
@@ -1540,7 +1577,7 @@ ul {
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
-  margin-bottom: 2.5rem;
+  margin-bottom: 5rem;
 }
 .archive__category .tab__content .btn--radio {
   display: flex;
@@ -1550,11 +1587,13 @@ ul {
   margin-right: 4rem;
   cursor: pointer;
 }
+.archive__category .tab__content input {
+  accent-color: #d02e8c;
+}
 .archive__category .tab__content .label {
-  font-size: 1.4rem;
-  color: #121212;
-  font-family: "yugothic-medium";
-  font-weight: 600;
+  font-size: 1.6rem;
+  color: #282828;
+  font-weight: 500;
 }
 .archive__category .cate-items {
   display: none;
