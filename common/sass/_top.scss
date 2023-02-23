@@ -1,4 +1,10 @@
 .p_top {
+  .main {
+    padding: 0 0 3.5rem;
+    @include mq_min_969 {
+      padding: 0 0 5.5rem;
+    } 
+  }
   .title { 
     display: flex;
     justify-content: center; 
@@ -151,11 +157,7 @@
 }
 .main {
   position: relative;
-  z-index: 99;
-  padding: 0 0 3.5rem;
-  @include mq_min_969 {
-    padding: 0 0 5.5rem;
-  }   
+  z-index: 99;  
   .usage {
     .row {
       display: flex;

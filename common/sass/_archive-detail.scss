@@ -1,14 +1,15 @@
-.page__archive--deatail {
+.page__deatail {
   .main {
-   @include mq_min_969 {
-    padding: 5.5rem 0 6.5rem 0;
-   }
+    padding-top: 0;
+    @include mq_min_969 {
+     padding-bottom: 15rem;
+    }
   }
   .infor__video {
     width: 100%;
     margin-bottom: 5rem;
     .row {
-      width: 84rem;
+      width: 95rem;
       margin: 0 auto;
       display: flex;
       align-items: flex-start;
@@ -34,12 +35,11 @@
     }
     .detail {
       flex: 1;
-      &--text {
+        .flex--text {
         display: flex;
         justify-content: flex-start;
-        align-items: flex-start;
+        align-items: center;
         flex-wrap: wrap;      
-        margin-bottom: 2rem;
         @include mq_max_968 {
          font-size: 1.4rem;
          margin-bottom: 1.5rem;
@@ -51,17 +51,17 @@
           flex-direction: column;
           margin-bottom: 0.5rem;
         }
-        .field {
-          width: 16rem;
-          @include mq_max_767 {
-           width: 100%; 
-          }
+      }
+      .field {
+        width: 19.5rem;
+        @include mq_max_767 {
+         width: 100%; 
         }
-        .content {
-          width: calc(100% - 16rem);
-          @include mq_max_767 {
-            width: 100%; 
-          }
+      }
+      .content {
+        flex: 1;
+        @include mq_max_767 {
+          width: 100%; 
         }
       }
       &--btn {
@@ -81,10 +81,9 @@
   }
   .orthes__video {
     .title {
-      font-size: 2.4rem;
-      line-height: calc(41/24);
-      font-family: "yugothic-medium";      
-      color: #6F706F;
+      font-size: 2.5rem;
+      line-height: calc(40/25);      
+      color: $black;
       margin-bottom: 4rem;
       @include mq_max_968 {
         margin-bottom: 2.5rem;
@@ -124,38 +123,52 @@
   }
   .cpn__detail--text {
     font-size: 1.6rem;
-    line-height: calc(27/16);
-    color: #6F706F;
-    font-family: "yugothic-medium";
+    line-height: calc(30/16);
+    padding: 1.5rem 0;
+    color: $black;
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+  .cpn__detail--text + .cpn__detail--text {
+    border-top: 1px dashed $gray_dark3;
   }
   .cpn__btn {
     display: inline-block;
     padding: 0.5rem 1rem;
     text-align: center;
-    font-size: 1.6rem;
-    line-height: calc(27/16);
-    color: #6F706F;
-    font-family: "yugothic-medium";
-    border-radius: 0.8rem;
-    border: 1px solid #707070;
+    font-size: 1.8rem;
+    font-family: 'notosansCJK-medium';
+    line-height: calc(40/16); 
+    letter-spacing: 0.2rem;
+    border-radius: 1rem;
     cursor: pointer;
     @include mq_max_968 {
       font-size: 1.4rem;
     } 
   }
   .btn--favorites {    
-    width: 14.2rem;    
+    width: 21.8rem;
+    color: $pink;    
+    background-color: $white;
+    border: 2px solid $pink;
     @include mq_max_968 {
       width: 100%;
     }     
   }
   .btn--procedure {
-    width: 28.1rem;
+    width: 35rem;
+    color: $white;
+    background-color: $pink;
+    border: 1px solid transparent;
     @include mq_max_968 {
       width: 100%;
     } 
   }
   .btn--readmore {
-    width: 28.1rem;
+    width: 45rem;
+    color: $white;
+    background-color: $pink;
+    border: 1px solid transparent;
   }
 }

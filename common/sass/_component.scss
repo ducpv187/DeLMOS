@@ -120,6 +120,10 @@
 .cl-blueL {
   color: $blue_light;
 }
+.cl-blue3 {
+  color: $blue3;
+}
+
 
 //background
 .bg-pink {
@@ -130,6 +134,11 @@
 @font-face {
   font-family: 'notosansCJK';
   src: url("../font/Noto-Sans-Mono-CJK-JP-Regular.otf");
+}
+
+@font-face {
+  font-family: 'notosansCJK-medium';
+  src: url("../font/NotoSansCJKjp-Medium.otf");
 }
 
 @font-face {

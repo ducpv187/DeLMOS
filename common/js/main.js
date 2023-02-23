@@ -153,9 +153,11 @@ $(document).ready(function() {
   // console.log(video);
   // Check if video is ready to play
   $(video).on('canplay', function () {
-    $(video).mouseenter(function () {
+    $(video)
+    .mouseenter( () => {
         $(this).get(0).play();
-    }).mouseleave(function () {
+    })
+    .mouseleave( () => {
         $(this).get(0).pause();
     })
   });
