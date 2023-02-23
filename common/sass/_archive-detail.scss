@@ -23,7 +23,8 @@
       }
     }
     .l__video {
-      width: 25rem;   
+      max-width: 32rem;
+      width: 100%;
       line-height: 0;
       @include mq_max_968 {
         width: 30rem;      

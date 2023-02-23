@@ -1646,7 +1646,8 @@ ul {
   }
 }
 .page__deatail .infor__video .l__video {
-  width: 25rem;
+  max-width: 32rem;
+  width: 100%;
   line-height: 0;
 }
 @media screen and (max-width: 968px) {
