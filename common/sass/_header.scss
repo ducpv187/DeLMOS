@@ -4,9 +4,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: $gray_light;
+  background-color: $white;
   z-index: 9999;
   .container {
+    max-width: 144rem;
     @include mq_max_968 {
       padding: 0 1rem;
     }
@@ -31,14 +32,16 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        gap: 2.5rem;
+        gap: 5rem;
       }
     }
     .link__nav {
       display: flex;
       align-items: center;
       justify-content: flex-start;
-      color: #000;
+      color: $black;
+      font-size: 1.6rem;
+      line-height: 1.2;
     }
     .account {
       margin-left: 3rem;    
@@ -69,7 +72,7 @@
       line-height: 1.2;
       padding: 1.5rem 2rem;
       color: #222222;
-      background-color: #ffffff;
+      background-color: $white;
       cursor: pointer;
       position: absolute;
       top: 3rem;
@@ -97,7 +100,7 @@
       }
     }
     .btn-white {
-      background-color: #ffffff;
+      background-color: $white;
       color: #717DA0;
       border: 1px solid #405080;
       margin-left: 1rem;
@@ -107,7 +110,7 @@
     }
     .btn-blue {
       background-color: #405080;
-      color: #ffffff;
+      color: $white;
       border: none;
       margin-left: 1rem;  
       border: 1px solid transparent;

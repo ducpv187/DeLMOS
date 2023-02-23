@@ -1,0 +1,205 @@
+/* Tabs */
+.p__my--page {
+  .main {
+    min-height: calc(100vh - 34rem);
+    padding: 3.5rem 0;
+    @include mq_min_969 {
+      padding: 7.5rem 0;
+    }
+  }
+  .tabs {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 7rem;
+    background-color: $white;
+    width: 100%;    
+  }
+  .list__tab {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 32rem;
+    list-style: none;
+    margin: 0;
+  } 
+  .tab-wrap {
+    flex: 1;
+  }
+  .tab-content {
+    padding: 1.5rem 1rem;     
+  } 
+  .tab--items {
+    width: 100%;  
+    padding: 2.5rem 2rem 2.5rem 0;
+    border-bottom: 1px solid #3D3A39;
+    cursor: pointer;
+    &.active .link-tab {
+      font-weight: 700;
+    }
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+  .link-tab {
+    font-size: 2.4rem;
+    line-height: 1.2;
+    font-family: 'arial';
+    font-weight: 400;
+    color: $black;
+    text-decoration: none;
+  }     
+  .member-infor {
+    .content-txt {
+      .row {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-bottom: 5rem;
+      }
+      .c-left {
+        width: 21rem;
+      }
+      .c-right {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .field {
+        font-family: 'arial';
+        font-size: 2.4rem;
+        line-height: 1.2;
+        font-weight: 400;
+        color: #3D3A39;
+      }
+      .name {   
+        font-family: 'arial';
+        font-size: 2.4rem;
+        line-height: 1.2;
+        font-weight: 400;
+        border: none;
+        color: #3D3A39;
+        width: 100%;     
+      }
+      // .input {
+      //   font-family: 'arial';
+      //   font-size: 2.4rem;
+      //   line-height: 1.2;
+      //   font-weight: 400;
+      //   border: none;
+      //   color: #3D3A39;
+      //   width: 100%;
+      // }
+      .edit {
+        width: 9.4rem;
+        text-align: center;
+        font-family: 'arial';
+        font-size: 2rem;
+        line-height: 1.2;
+        font-weight: 400;
+        padding: .25rem .5rem;
+        border-radius: 1rem;
+        border: 1px solid #3D3A39;
+        cursor: pointer;
+      }
+    }
+  }
+  .down-videos {
+    .cate-wrap {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: calc(100% + 4rem);
+      margin: 0 -2rem;
+    }
+    .cate-items {
+      width: calc(calc(100% / 2) - 4rem );
+      margin: 0 2rem;
+      text-align: center;
+    }
+    .title-cate {
+      font-size: 2rem;
+      line-height: 1.2;
+      font-family: 'arial';
+      font-weight: 400;
+      color: $black;
+    }
+  }
+  .favorites-creator {
+    .row {
+      margin-bottom: 5rem;
+    }
+    .ttl-cate {
+      font-size: 2rem;
+      line-height: 1.2;
+      font-family: 'arial';
+      font-weight: 400;
+      color: $black;
+      margin-bottom: 1.5rem;
+    }
+    .wrap-cate {
+      width: calc(100% + 4rem);
+      margin: 0 -2rem;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    .list-cate {
+      width: calc(calc(100% / 3) - 4rem);  
+      margin: 0 2rem;  
+    }
+  }
+  .purchase-history {
+    .content-txt {
+      padding-left: 7.5rem;
+    }
+    .field {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 11.5rem;
+    padding: 0 0 3rem 0;
+    border-bottom: 1px solid #F2F2F2;
+    }
+    .ttl-field {
+      font-family: 'arial';
+      font-weight: 600;
+      font-size: 1.6rem;
+      line-height: 1.2;
+      width: 10.5rem;
+    }
+    .information {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 5rem;
+      padding: 3rem 0;
+      border-bottom: 1px solid #F2F2F2;
+    }
+    .txt {
+      font-size: 1.6rem;
+      line-height: 1.2;
+      font-family: 'arial';
+      font-weight: 400;
+      color: #595959;
+      max-width: 17rem;
+      width: 100%;
+    }
+  }
+
+  //cpn-ttl
+  .ttl {
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: $black;
+    margin-bottom: 3rem;
+  }
+}

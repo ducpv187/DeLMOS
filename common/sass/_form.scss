@@ -14,13 +14,13 @@
       font-size: 3rem;
       line-height: calc(40/30);
       font-weight: bold;
-      color: $black1;
+      color: $black;
       margin-bottom: 3rem;
     }
     &-description {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       line-height: 1.2;      
-      color: $black1;
+      color: $black;
       text-align: center;
     }
     &__input {
@@ -42,12 +42,15 @@
       gap: 1rem;
       padding-bottom: 1rem;
     }
-    .row-radio {
+    .row-radio {      
+      padding-left: 2rem;     
+
+    }
+    .gr-radio {
       display: flex;
       align-items: center;
       justify-content: flex-start;
       gap: 3rem;
-      padding-left: 2rem;
     }
     .label {
       font-size: 1.8rem;
@@ -65,7 +68,7 @@
     }
     .input {
       width: 100%;
-      font-size: 1.4rem;
+      font-size: 1.8rem;
       line-height: 1.2;
       padding: 1.2rem 1rem;
       margin-bottom: 1rem;
@@ -75,10 +78,18 @@
         background-color: #E8F0FE;
       }
       &__checkbox {
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .label--checkbox {
+          margin-left: 1rem;
+          @include mq_max_968 {
+            font-size: 1.2rem;
+          }
+        }
       }
       &.error {
-        border:  1px solid #A70000;
+        border:  1px solid $red;
       }
     }    
     .des__input {
@@ -107,6 +118,9 @@
     }
     .form__checkbox {
       margin: 4rem 0;
+      @include mq_max_968 {
+        margin: 2rem 0;
+      }
     }
     .input__password {
         position: relative;
@@ -159,16 +173,24 @@
       font-size: 1.6rem;
       line-height: calc(40/16);
       color: #1076bd;
+      @include mq_max_968 {
+        font-size: 1.2rem;
+        line-height: calc(30/12);
+      }
     }
     .error {
       font-size: 1.2rem;
       line-height: 1.2;
-      color: #A70000;  
+      color: $red;  
     }
   }  
 }
 .p__register-confirm {
-  .info-confirm {
+  .infor-confirm {
+    margin-bottom: 6rem;
+    @include mq_max_968 {
+      margin-bottom: 3rem;
+    }
     .container {
       max-width: 67rem;
     }
@@ -182,16 +204,141 @@
   }
   .field {
     width: 20.5rem;
+    padding: 0.5rem 1rem;
     font-size: 1.8rem;
     font-weight: 500;
     line-height: calc( 40/18);
     color: $black;
+    @include mq_max_968 {
+      width: 15rem;
+    }
   }
   .content {
-    width: auto;
+    flex: 1;
+  }
+  .input-txt {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: none;
     font-size: 1.8rem;
+    font-family: 'notosansCJK';
     font-weight: 500;
     line-height: calc( 40/18);
     color: $black;
+    background-color: $white;
+    text-align: left;
+  }
+  .group__btn {    
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    .cpn__gr--btn{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 19rem;
+      width: 100%;
+      height: 7rem;
+      font-size: 1.8rem;
+      line-height: calc(40/18);
+      font-weight: 500;
+      padding: 1.2rem 1.5rem; 
+      border-radius: 1rem;
+      cursor: pointer;    
+      @include mq_max_968 {
+        font-size: 1.4rem;
+        padding: 0.4rem 1.75rem; 
+        height: unset;         
+      }  
+
+    }
+    &--fix {
+      color: $pink_light3;
+      border: 2px solid $pink_light2;
+      background-color: transparent;
+    }
+    &--send {
+      color: $white;
+      border: 2px solid transparent;
+      background-color: $pink;
+    }
+  }
+}
+.p__register-confirmed {
+  .infor-confirmed {
+    .container {
+      max-width: 67rem;
+    }
+  }
+  .infor-txt {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: calc(30/16);
+    color: $black2;
+    margin-bottom: 3.5rem;
+  }
+  .mail-confirmed {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: calc(40/18);
+    padding: 1.5rem 1rem;
+    color: $black;
+    margin-bottom: 3.5rem;
+    text-align: center;
+    background-color: $gray_light;
+  }
+  .link {
+    color: $blue1;
+  }
+}
+.p__register-login{
+  .form-description {
+    font-size: 1.6rem;
+    line-height: calc(30/16);
+  }
+  .form-infor {
+    .container {
+      max-width: 55.5rem;
+    }
+    .row-form {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;   
+    }
+    .input-login {
+      max-width: 33rem;
+      width: 100%;
+      font-size: 1.4rem;
+      font-weight: 500;
+      line-height: 1.2;
+      color: $black;
+      padding: 2.1rem 1.5rem;
+      border-radius: 0.5rem;
+      background-color: #e5f2fb;
+      border: transparent;
+      border-right: 1px solid $blue_light1;
+      border-bottom: 1px solid $blue_light1;
+    }
+    .btn__submit-login {
+      max-width: 33rem;      
+      width: 100%;
+      font-size: 1.8rem;
+      line-height: calc(40/18);
+      color: $white;
+      background-color: $gray_dark1;
+      padding: 1rem 1.5rem;
+      border-radius: 1rem;
+      border: none;
+      cursor: pointer;
+    }
+    .txt {
+      font-size: 1.2rem;
+      line-height: calc(40/12);
+      color: $blue2;
+    }
   }
 }

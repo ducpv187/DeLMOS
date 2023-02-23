@@ -124,11 +124,18 @@ $(document).ready(function() {
     $(this).parent().find(".video_play").removeClass("active-video");    
     //reload video  when hover
     // document.getElementById("video").load();
-
   });
+
   $( ".video_play" ).each(function( index ) {
+    // console.log(this);
     document.getElementById($(this).attr("id")).controls = false; 
   });
+
+  //cach viet khac cach tren jquery
+  // $.each( $( ".video_play" ), function( index ) {
+  //   document.getElementById($(this).attr("id")).controls = false; 
+  // });
+
   //c2
   // let x = document.getElementsByClassName("video_play");
   // console.log(x);
@@ -146,9 +153,11 @@ $(document).ready(function() {
   // console.log(video);
   // Check if video is ready to play
   $(video).on('canplay', function () {
-    $(video).mouseenter(function () {
+    $(video)
+    .mouseenter( () => {
         $(this).get(0).play();
-    }).mouseleave(function () {
+    })
+    .mouseleave( () => {
         $(this).get(0).pause();
     })
   });
@@ -165,34 +174,90 @@ $(document).ready(function() {
     
   // );
   
+  //page__my--page 
+  //function tab next
 
+  // Show the first tab and hide the rest
+  $('#tabs-nav li:first-child').addClass('active');
+  $('.tab-content').hide();
+  $('.tab-content:first').show();
+
+  // Click function
+  $('#tabs-nav li').click(function(){
+    $('#tabs-nav li').removeClass('active');
+    $(this).addClass('active');
+    $('.tab-content').hide();
+    
+    var activeTab = $(this).find('a').attr('href');
+    // console.log(activeTab);
+    $(activeTab).fadeIn();
+    return false;
+  });
+0
   
+  //validate check input katana
+  jQuery.validator.addMethod(
+    'katakana',
+    function (value, element) {
+      return this.optional(element) || /^([ァ-ヶー]+)$/.test(value);
+    },
+    
+    '<br/>全角カタカナを入力してください'
+  );
 
   //Validate form
-  $('#my__form').validate({
+  $('#my__form').validate({    
     rules: {
       email: "required",
       password: "required",
       number: "required",
-      staffNameLastName: "required",
+      accountType: "required",
+      staffNameLastName: "required",      
       staffNameFirstName: "required",
-      staffNameLastNameKana: "required",
-      staffNameFirstNameKana: "required",
-      // acceptPolicy: "required",
+      staffNameLastNameKana: 
+      {
+        required: true,
+        katakana : true,
+      },
+      staffNameFirstNameKana: {
+        required: true,
+        katakana : true,
+      },
+      acceptPolicy: "required",
     },
     messages: {
       email: "メールアドレスを入力してください。",
       password: "メールアドレスを入力してください。", 
       number: "メールアドレスを入力してください。", 
-      staffNameLastName: "「姓」を入力してください。", 
+      accountType: "メールアドレスを入力してください。", 
+      staffNameLastName: "「セイ」を入力してください。",      
       staffNameFirstName: "「姓」を入力してください。", 
-      staffNameLastNameKana: "「セイ」を入力してください。", 
-      staffNameFirstNameKana: "「セイ」を入力してください。", 
-      // acceptPolicy: "利用規約とプライバシーポリシーに同意の上チェックを入れてください。", 
+      staffNameLastNameKana: 
+      {
+        required:"「姓」を入力してください。", 
+        katakana: '「カタカナ」で入力してください。', 
+      },      
+      staffNameFirstNameKana: {
+        required:"「姓」を入力してください。", 
+        katakana: '「カタカナ」で入力してください。', 
+      },    
+      acceptPolicy: "利用規約とプライバシーポリシーに同意の上チェックを入れてください。", 
     },
+    errorPlacement: function(error, element) 
+    {
+      if ( element.is(":radio") ) 
+      {
+        error.appendTo( element.parents('.row-radio') );
+      }
+      else if ( element.is(":checkbox") ) {
+        error.appendTo( element.parents('.input__checkbox') );
+      }
+      else 
+      { 
+        error.insertAfter( element );
+      }
+     },     
   });
-
-
 
   $('#form__reset').validate({
     rules: {
