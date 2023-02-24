@@ -129,4 +129,23 @@
      line-height: 0;
   }
 }
+.p__archive--hashtag {
+  .main {
+    padding-top: 0;
+    @include mq_min_969 {
+     padding-bottom: 15rem;
+    }
+  }
+  .ttl {
+    font-size: 3.5rem;
+    line-height:calc(40/35);
+    font-weight: 400;
+    color: $black;
+    margin-bottom: 3.5rem;
+  }
+  .link-details {
+    display: inline-block;
+    line-height: 0;
+ }
+}
 

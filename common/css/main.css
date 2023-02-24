@@ -1646,6 +1646,26 @@ ul {
   line-height: 0;
 }
 
+.p__archive--hashtag .main {
+  padding-top: 0;
+}
+@media screen and (min-width: 969px) {
+  .p__archive--hashtag .main {
+    padding-bottom: 15rem;
+  }
+}
+.p__archive--hashtag .ttl {
+  font-size: 3.5rem;
+  line-height: 1.1428571429;
+  font-weight: 400;
+  color: #282828;
+  margin-bottom: 3.5rem;
+}
+.p__archive--hashtag .link-details {
+  display: inline-block;
+  line-height: 0;
+}
+
 .page__deatail .main {
   padding-top: 0;
 }
