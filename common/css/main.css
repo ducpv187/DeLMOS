@@ -1576,6 +1576,10 @@ ul {
 .p__ichiran--ctg .list__post {
   margin-bottom: 5rem !important;
 }
+.p__ichiran--ctg .link {
+  display: inline-block;
+  width: 100%;
+}
 .p__ichiran--ctg .ttl {
   margin-bottom: 5rem;
 }
