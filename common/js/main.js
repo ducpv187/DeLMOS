@@ -128,6 +128,8 @@ $(document).ready(function() {
 
   $( ".video_play" ).each(function( index ) {
     // console.log(this);
+    // const idTag = document.getElementById($(this).attr("id"));
+    // console.log(idTag);
     document.getElementById($(this).attr("id")).controls = false; 
   });
 
@@ -150,7 +152,10 @@ $(document).ready(function() {
   // var video = $("video"); 
   //c1   
   var video = document.getElementsByClassName("js-hoverVideo");
-  // console.log(video);
+  //c2
+  // var videoQuery = document.querySelectorAll(".js-hoverVideo");
+  // console.log(typeof video);  a
+  // console.log(typeof videoQuery);  
   // Check if video is ready to play
   $(video).on('canplay', function () {
     $(video)
