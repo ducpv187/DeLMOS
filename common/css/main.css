@@ -1666,6 +1666,26 @@ ul {
   line-height: 0;
 }
 
+.p__rireki-etsuran .main {
+  padding-top: 0;
+}
+@media screen and (min-width: 969px) {
+  .p__rireki-etsuran .main {
+    padding-bottom: 15rem;
+  }
+}
+.p__rireki-etsuran .ttl {
+  font-size: 3.5rem;
+  line-height: 1.1428571429;
+  font-weight: 400;
+  color: #282828;
+  margin-bottom: 6.5rem;
+}
+.p__rireki-etsuran .link-details {
+  display: inline-block;
+  line-height: 0;
+}
+
 .page__deatail .main {
   padding-top: 0;
 }
