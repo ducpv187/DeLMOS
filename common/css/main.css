@@ -2470,11 +2470,11 @@ ul {
 .p__my--page .member-infor .content-txt .field {
   font-family: "arial";
   font-size: 2.4rem;
-  line-height: 1.2;
+  line-height: 1.4;
   font-weight: 400;
   color: #3D3A39;
 }
-.p__my--page .member-infor .content-txt .name {
+.p__my--page .member-infor .content-txt .info-txt {
   font-family: "arial";
   font-size: 2.4rem;
   line-height: 1.2;
