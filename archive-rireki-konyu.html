@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./common/images/favicon-svg.png">
+    <link rel="stylesheet" type="text/css" href="common/css/main.css">
+    <title> UGC </title>
+  </head>
+
+  <body>
+    <main class="page p__rireki-konyu">
+      <header>
+        <div class="header">
+          <div class="container">
+            <!-- <div class="d__flex header__logout">
+              <div class="img__logo">
+               <a href="/" class="link__logo">
+                <img src="./common/images/logo.png" alt="logo" class="img">
+               </a>
+              </div>
+              <div class="header__btn">
+                <button class="btn btn-purple h-sp">
+                  事例ダウンロード
+                </button>
+                <button class="btn btn-purple h-pc">
+                  事例DL
+                </button>
+                <button class="btn btn-white">
+                  新規登録
+                </button>
+                <button class="btn btn-blue">
+                  ログイン
+                </button>
+              </div>
+            </div> -->
+            <div class="d__flex header__login">
+              <div class="header__logo">
+                <a href="/" class="link__logo">
+                  <img src="./common/images/logo.png" alt="logo" class="img">
+                </a>
+              </div>
+              <div class="header__navigation">
+                <ul class="header__navigation__bar header__btn">
+                  <!-- <li>
+                    <button class="btn btn-purple">
+                      事例ダウンロード
+                    </button>
+                  </li> -->
+                  <li>
+                    <a href="#" class="link__nav">
+                      <img src="./common/images/img_header/icon1.png" alt="icon_header" class="icon">
+                     マイページ
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="link__nav">
+                     <img src="./common/images/img_header/icon2.png" alt="icon_header" class="icon">
+                      お気に入り
+                    </a>                    
+                  </li>
+                  <li>
+                    <a href="#" class="link__nav">
+                      <img src="./common/images/img_header/icon3.png" alt="icon_header" class="icon">
+                      閲覧履歴
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="link__nav">
+                      <img src="./common/images/img_header/icon4.png" alt="icon_header" class="icon">
+                      購入履歴
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- <div class="account">                
+                <div class="account__icon">
+                  <button class="account__btn">
+                    <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall text-d-black mr-1 css-1k33q06 icon" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="PersonOutlineIcon"><path d="M12 5.9c1.16 0 2.1.94 2.1 2.1s-.94 2.1-2.1 2.1S9.9 9.16 9.9 8s.94-2.1 2.1-2.1m0 9c2.97 0 6.1 1.46 6.1 2.1v1.1H5.9V17c0-.64 3.13-2.1 6.1-2.1M12 4C9.79 4 8 5.79 8 8s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 9c-2.67 0-8 1.34-8 4v3h16v-3c0-2.66-5.33-4-8-4z"></path></svg>
+                    huynhamさん
+                  </button>
+                </div>
+               <div class="account__drop">
+                <button class="account__logout" role="menuitem">
+                  <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall text-d-gray-10 mr-1 css-1k33q06 icon" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ExitToAppIcon"><path d="M10.09 15.59 11.5 17l5-5-5-5-1.41 1.41L12.67 11H3v2h9.67l-2.58 2.59zM19 3H5c-1.11 0-2 .9-2 2v4h2V5h14v14H5v-4H3v4c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"></path>
+                  </svg>
+                  ログアウト
+                </button>
+               </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="main">
+        <section class="filter__category">
+          <div class="container">
+           <form action="#" class="form">                    
+             <div class="select">
+               <div class="row-form arrow-down">                                
+                 <select name="option1" tabindex="-1" class="select-form">
+                   <option value="1">カテゴリーから選ぶ</option>
+                   <option value="2">ダイエット</option>
+                   <option value="3">美容</option>
+                 </select>                 
+               </div>     
+               <div class="row-form arrow-down">                                
+                 <select name="option2" tabindex="-1" class="select-form">
+                   <option value="1">年齢・性別で選ぶ</option>
+                   <option value="2">10代　女性</option>
+                   <option value="3">20代　女性</option>
+                 </select>                 
+               </div>  
+               <div class="row-form">                               
+                 <input type="text" id="keyword" name="keyword" placeholder="キーワードを入力する" class="select-form input-form">
+               </div>        
+             </div> 
+             <div class="gr__btn">
+               <button class="cpn__gr--btn gr__btn--search">
+                 検索
+               </button>
+               <button class="cpn__gr--btn gr__btn--reset">
+                 リセット
+               </button>
+             </div>
+           </form>
+          </div>
+        </section>       
+        <section class="archive__category mb-5">
+          <div class="container">
+            <h1 class="ttl">
+              閲覧履歴
+            </h1>
+            <div class="tab__content">
+              <div class="btn--radio">
+                <input type="radio" class="input--radio" id="portrait" value="PORTRAIT" name="radio" checked="">
+                <label class="label" for="portrait">縦長</label>
+              </div>
+              <div class="btn--radio">
+                <input type="radio" class="input--radio" id="square-and-landscape" value="SQUARE_LANDSCAPE" name="radio">
+                <label class="label" for="square-and-landscape">正方形・横長</label>
+              </div>
+            </div>
+            <div class="post"> 
+              <div class="cate-items dis-flex" id="PORTRAIT">
+                <div class="list__post w-100">
+                  <div class="items-creator">
+                    <div class="video w-100">                      
+                      <a href="#" class="link-details">
+                        <img src="./common/images/img_category/hashtag_1.jpg" alt="" class="img_hover">
+                        <video id="video1" width="100%" height="100%" 
+                        controls="false" data-play="hover" muted="muted" class="video_play js-hoverVideo">
+                          <source src="./common/video/short-hashtag1.mp4" type="video/mp4">
+                        </video>
+                      </a>
+                    </div>
+                  </div>   
+                  <div class="items-creator">
+                    <div class="video w-100">                      
+                      <a href="#" class="link-details">
+                        <img src="./common/images/img_category/hashtag_1.jpg" alt="" class="img_hover">
+                        <video id="video2" width="100%" height="100%" 
+                        controls="false" data-play="hover" muted="muted" class="video_play js-hoverVideo">
+                          <source src="./common/video/short-hashtag1.mp4" type="video/mp4">
+                        </video>
+                      </a>
+                    </div>
+                  </div>   
+                  <div class="items-creator">
+                    <div class="video w-100">                      
+                      <a href="#" class="link-details">
+                        <img src="./common/images/img_category/hashtag_1.jpg" alt="" class="img_hover">
+                        <video id="video3" width="100%" height="100%" 
+                        controls="false" data-play="hover" muted="muted" class="video_play js-hoverVideo">
+                          <source src="./common/video/short-hashtag1.mp4" type="video/mp4">
+                        </video>
+                      </a>
+                    </div>
+                  </div>   
+                  <div class="items-creator">
+                    <div class="video w-100">                      
+                      <a href="#" class="link-details">
+                        <img src="./common/images/img_category/hashtag_1.jpg" alt="" class="img_hover">
+                        <video id="video4" width="100%" height="100%" 
+                        controls="false" data-play="hover" muted="muted" class="video_play js-hoverVideo">
+                          <source src="./common/video/short-hashtag1.mp4" type="video/mp4">
+                        </video>
+                      </a>
+                    </div>
+                  </div>   
+                  <div class="items-creator">
+                    <div class="video w-100">                      
+                      <a href="#" class="link-details">
+                        <img src="./common/images/img_category/hashtag_1.jpg" alt="" class="img_hover">
+                        <video id="video5" width="100%" height="100%" 
+                        controls="false" data-play="hover" muted="muted" class="video_play js-hoverVideo">
+                          <source src="./common/video/short-hashtag1.mp4" type="video/mp4">
+                        </video>
+                      </a>
+                    </div>
+                  </div>                                
+                  <div class="items-creator">
+                    <div class="video w-100">                      
+                      <a href="#" class="link-details">
+                        <img src="./common/images/img_category/hashtag_1.jpg" alt="" class="img_hover">
+                        <video id="video6" width="100%" height="100%" 
+                        controls="false" data-play="hover" muted="muted" class="video_play js-hoverVideo">
+                          <source src="./common/video/short-hashtag1.mp4" type="video/mp4">
+                        </video>
+                      </a>
+                    </div>
+                  </div>                                
+                </div>   
+              </div> 
+              <div class="cate-items" id="SQUARE_LANDSCAPE">
+                <div class="list__post w-100">
+                  <div class="items-creator">
+                    <div class="video w-100">                      
+                      <a href="#" class="link-details">
+                        <img src="./common/images/img_archivevideo.jpg" alt="" class="img_hover">
+                        <video id="video1" width="100%" height="100%" 
+                        controls="false" data-play="hover" muted="muted" class="video_play js-hoverVideo">
+                          <source src="./common/video/video-detail.mp4" type="video/mp4">
+                        </video>
+                      </a>
+                    </div>
+                  </div>   
+                  <div class="items-creator">
+                    <div class="video w-100">                      
+                      <a href="#" class="link-details">
+                        <img src="./common/images/img_archivevideo.jpg" alt="" class="img_hover">
+                        <video id="video1" width="100%" height="100%" 
+                        controls="false" data-play="hover" muted="muted" class="video_play js-hoverVideo">
+                          <source src="./common/video/video-detail.mp4" type="video/mp4">
+                        </video>
+                      </a>
+                    </div>
+                  </div>               
+                </div> 
+              </div>    
+            </div>
+          </div>
+        </section>
+        <section class="pagination">
+          <div class="container">
+            <ul class="list">
+              <li class="tab__pagination arrow-prev">
+                <a href="" class="page__link">
+                  <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="NavigateBeforeIcon"><path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path></svg>
+                </a>
+              </li>
+              <li class="tab__pagination">
+                <a href="" class="page__link active">
+                  1
+                </a>
+              </li>
+              <li class="tab__pagination">
+                <a href="" class="page__link">
+                  2
+                </a>
+              </li>
+              <li class="tab__pagination">
+                <a href="" class="page__link">
+                  3
+                </a>
+              </li>
+              <li class="tab__pagination arrow-next">
+                <a href="" class="page__link">
+                  <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="NavigateNextIcon"><path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg>
+                </a>
+              </li>
+            </ul>
+            <div class="text__des mt-3">
+              <span class="font-bold">10</span>
+                件中 
+              <span class="font-bold">1</span> 
+                - 
+              <span class="font-bold">10</span> 
+              件
+            </div>
+          </div>
+        </section>
+       </div>
+       <footer class="footer">
+        <div class="footer__top">
+          <div class="footer__logo">
+            <img src="./common/images/logo.png" alt="">
+          </div>
+          <ul class="footer__list">
+            <li class="footer__list-items">
+              <a href="#">
+                運営会社
+              </a>
+            </li>
+            <li class="footer__list-items">
+              <a href="#">
+                利用規約
+              </a>
+            </li>
+            <li class="footer__list-items">
+              <a href="#">
+                プライバシーポリシー
+              </a>
+            </li>
+            <li class="footer__list-items">
+              <a href="#">
+                特定商取引法
+              </a>
+            </li>
+            <li class="footer__list-items">
+              <a href="#">
+                お問い合わせ
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__bot">©2023 バズり屋.UGC All Rights Reserved.</div>
+      </footer>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="./common/js/main.js"></script>
+  </body> 
+</html>
