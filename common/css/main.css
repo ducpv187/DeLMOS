@@ -2580,4 +2580,101 @@ ul {
   line-height: 1.2;
   color: #282828;
   margin-bottom: 3rem;
-}/*# sourceMappingURL=main.css.map */
+}
+
+.page__subcription .main {
+  padding: 7.5rem 0 10.5rem 0;
+}
+@media screen and (max-width: 968px) {
+  .page__subcription .main {
+    padding: 5.5rem 0 7.5rem 0;
+  }
+}
+.page__subcription .form-ttl {
+  text-align: center;
+  font-size: 3rem;
+  line-height: 1.3333333333;
+  font-weight: bold;
+  color: #282828;
+  margin-bottom: 3rem;
+}
+.page__subcription .form-description {
+  font-size: 1.6rem;
+  line-height: 1.2;
+  color: #282828;
+  text-align: center;
+}
+.page__subcription .form__input {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+@media screen and (max-width: 968px) {
+  .page__subcription .form__input {
+    gap: 2.5rem;
+  }
+}
+.page__subcription .form .c-full {
+  width: 100%;
+}
+.page__subcription .form .row-txt {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+.page__subcription .form .label {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  color: #282828;
+  font-weight: 500;
+}
+.page__subcription .form .input {
+  width: 100%;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  padding: 1.2rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #CCCCCC;
+}
+.page__subcription .form .input:focus {
+  background-color: #E8F0FE;
+}
+.page__subcription .form .des__input {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  color: #666666;
+}
+.page__subcription .form .input-radio {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+.page__subcription .form .input-radio .type-radio {
+  accent-color: #c72c86;
+}
+.page__subcription .form .btn {
+  text-align: center;
+}
+.page__subcription .form .btn__submit {
+  max-width: 19rem;
+  width: 100%;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  color: #ffffff;
+  background-color: #999999;
+  padding: 2.5rem 2.8rem;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 968px) {
+  .page__subcription .form .btn__submit {
+    max-width: 15rem;
+    padding: 1.5rem 1rem;
+  }
+}

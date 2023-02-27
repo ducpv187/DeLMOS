@@ -1,0 +1,94 @@
+.page__subcription {
+  .main {
+    padding: 7.5rem 0 10.5rem 0;
+    @include mq_max_968 {
+      padding: 5.5rem 0 7.5rem 0;
+    }
+  }
+  .form {
+    &-ttl {
+      text-align: center;
+      font-size: 3rem;
+      line-height: calc(40/30);
+      font-weight: bold;
+      color: $black;
+      margin-bottom: 3rem;
+    }
+    &-description {
+      font-size: 1.6rem;
+      line-height: 1.2;      
+      color: $black;
+      text-align: center;
+    }
+    &__input {
+      margin-top: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 5rem;
+      @include mq_max_968 {
+        gap: 2.5rem;
+      }
+    }
+    .c-full {
+      width: 100%;     
+    }
+    .row-txt {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 1rem;
+      padding-bottom: 1rem;
+    }
+    .label {
+      font-size: 1.8rem;
+      line-height: 1.2;
+      color: $black;
+      font-weight: 500;
+    }
+    .input {
+      width: 100%;
+      font-size: 1.8rem;
+      line-height: 1.2;
+      padding: 1.2rem 1rem;
+      margin-bottom: 1rem;
+      border-radius: 0.5rem;
+      border: 1px solid #CCCCCC;
+      &:focus {
+        background-color: #E8F0FE;
+      }
+    }    
+    .des__input {
+      font-size: 1.2rem;
+      line-height: 1.2;
+      color: #666666;
+    }
+    .input-radio {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 0.5rem;
+      .type-radio {
+        accent-color: #c72c86;
+      }
+    }
+    .btn {
+      text-align: center;
+      &__submit {
+        max-width: 19rem;
+        width: 100%;
+        font-size: 1.6rem;
+        line-height: 1.2;
+        color: #ffffff;
+        background-color: #999999;
+        padding: 2.5rem 2.8rem;
+        border-radius: 1rem;
+        border: none;
+        cursor: pointer;
+        @include mq_max_968 {
+          max-width: 15rem;
+          padding: 1.5rem 1rem;
+        }
+      }
+    }
+  }  
+}
