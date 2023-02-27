@@ -2679,22 +2679,27 @@ ul {
   }
 }
 
-.page__subcription-success .ttl {
-  color: #88B04B;
-  font-weight: bold;
+.page__subcription-success-fail .ttl {
   font-size: 4rem;
+  font-weight: bold;
   margin-bottom: 1rem;
   text-align: center;
 }
-.page__subcription-success .desc {
+.page__subcription-success-fail .desc {
   color: #404F5E;
   font-size: 20px;
   margin: 0;
   text-align: center;
 }
-.page__subcription-success .img {
+.page__subcription-success-fail .img-success {
   width: 36rem;
   text-align: center;
   margin: 0 auto;
   margin-bottom: 5rem;
+}
+.page__subcription-success-fail .success {
+  color: #45FC57;
+}
+.page__subcription-success-fail .failed {
+  color: #A70000;
 }
