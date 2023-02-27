@@ -2678,3 +2678,23 @@ ul {
     padding: 1.5rem 1rem;
   }
 }
+
+.page__subcription-success .ttl {
+  color: #88B04B;
+  font-weight: bold;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.page__subcription-success .desc {
+  color: #404F5E;
+  font-size: 20px;
+  margin: 0;
+  text-align: center;
+}
+.page__subcription-success .img {
+  width: 36rem;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
