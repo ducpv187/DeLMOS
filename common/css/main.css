@@ -1165,21 +1165,24 @@ ul {
   align-items: center;
 }
 .pagination .tab__pagination {
-  margin-right: 0.5rem;
+  margin-right: 1.5rem;
   border-radius: 0.5rem;
   background-color: #ffffff;
   border: 1px solid #d02e8c;
 }
 .pagination .tab__pagination.arrow-prev {
-  border: 1px solid #999999;
-  background-color: rgba(153, 153, 153, 0.1);
+  border: 1px solid transparent;
+  background-color: #d2d2d2;
 }
 .pagination .tab__pagination.arrow-prev .page__link {
-  color: #999999;
+  color: #707070;
 }
 .pagination .tab__pagination.arrow-next {
   border: 1px solid #d02e8c;
   background-color: #ffffff;
+}
+.pagination .tab__pagination:last-child {
+  margin-right: 0;
 }
 .pagination .page__link {
   display: flex;
@@ -2483,6 +2486,7 @@ ul {
 .p__my--page .link-tab {
   font-size: 1.6rem;
   line-height: 2.5;
+  letter-spacing: 0.2rem;
   font-weight: 500;
   color: #282828;
   text-decoration: none;
@@ -2622,41 +2626,60 @@ ul {
   cursor: pointer;
 }
 .p__my--page .purchase-history .content-txt {
-  padding-left: 7.5rem;
+  padding: 2rem 0;
 }
-.p__my--page .purchase-history .field {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 11.5rem;
-  padding: 0 0 3rem 0;
-  border-bottom: 1px solid #F2F2F2;
+.p__my--page .purchase-history .table, .p__my--page .purchase-history .th, .p__my--page .purchase-history .td {
+  border: none;
+  text-align: center;
 }
-.p__my--page .purchase-history .ttl-field {
-  font-family: "arial";
-  font-weight: 600;
-  font-size: 1.6rem;
-  line-height: 1.2;
-  width: 10.5rem;
-}
-.p__my--page .purchase-history .information {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 5rem;
-  padding: 3rem 0;
-  border-bottom: 1px solid #F2F2F2;
-}
-.p__my--page .purchase-history .txt {
-  font-size: 1.6rem;
-  line-height: 1.2;
-  font-family: "arial";
-  font-weight: 400;
-  color: #595959;
-  max-width: 17rem;
+.p__my--page .purchase-history .table {
   width: 100%;
+}
+.p__my--page .purchase-history .tr {
+  width: 100%;
+}
+.p__my--page .purchase-history .th {
+  width: 25%;
+  font-size: 1.4rem;
+  line-height: 2.8571428571;
+  border: 2px solid #ffffff;
+  color: #282828;
+  background-color: #f3f3f3;
+}
+.p__my--page .purchase-history .td {
+  border-bottom: 1px dashed #f3f3f3;
+  padding: 1rem 0;
+  font-size: 1.4rem;
+  line-height: 2.8571428571;
+  letter-spacing: 0.2rem;
+  color: #282828;
+}
+.p__my--page .purchase-history .btn-download {
+  display: inline-block;
+  width: 16rem;
+  font-family: "notosansCJK-medium";
+  color: #ffffff;
+  background-color: #d02e8c;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.p__my--page .purchase-history .btn-download:hover {
+  opacity: 0.7;
+}
+.p__my--page .purchase-history .pagination {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 0 2.5rem;
+}
+.p__my--page .purchase-history .pagination .text__des .link-page {
+  font-size: 1.6rem;
+  line-height: 2.5;
+  color: #282828;
+}
+.p__my--page .purchase-history .pagination .current {
+  color: #d02e8c !important;
 }
 .p__my--page .ttl {
   font-size: 2.5rem;

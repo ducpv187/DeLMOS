@@ -713,20 +713,23 @@
     align-items: center;
   }
   .tab__pagination {
-    margin-right: .5rem;
+    margin-right: 1.5rem;
     border-radius: 0.5rem;
-    background-color: #ffffff;   
+    background-color: $white;   
     border: 1px solid $pink;  
     &.arrow-prev {
-      border: 1px solid #999999;
-      background-color: rgba($color: #999999, $alpha: 0.1);
+      border: 1px solid transparent;
+      background-color: $gray_light1;
       .page__link {
-        color: #999999;        
+        color: $gray_dark4;        
       }
     }
     &.arrow-next {  
       border: 1px solid $pink;    
       background-color: $white;
+    }
+    &:last-child {
+      margin-right: 0;
     }
   }
   .page__link {
