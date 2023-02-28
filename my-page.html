@@ -73,18 +73,51 @@
         </div>
       </header>
       <div class="main">
+        <section class="filter__category">
+          <div class="container">
+           <form action="#" class="form">                    
+             <div class="select">
+               <div class="row-form arrow-down">                                
+                 <select name="option1" tabindex="-1" class="select-form">
+                   <option value="1">カテゴリーから選ぶ</option>
+                   <option value="2">ダイエット</option>
+                   <option value="3">美容</option>
+                 </select>                 
+               </div>     
+               <div class="row-form arrow-down">                                
+                 <select name="option2" tabindex="-1" class="select-form">
+                   <option value="1">年齢・性別で選ぶ</option>
+                   <option value="2">10代　女性</option>
+                   <option value="3">20代　女性</option>
+                 </select>                 
+               </div>  
+               <div class="row-form">                               
+                 <input type="text" id="keyword" name="keyword" placeholder="キーワードを入力する" class="select-form input-form">
+               </div>        
+             </div> 
+             <div class="gr__btn">
+               <button class="cpn__gr--btn gr__btn--search">
+                 検索
+               </button>
+               <button class="cpn__gr--btn gr__btn--reset">
+                 リセット
+               </button>
+             </div>
+           </form>
+          </div>
+        </section> 
         <section class="main__content">
           <div class="container">
             <div class="tabs">
               <ul class="list__tab" id="tabs-nav">
                 <li class="tab--items">
-                  <a href="#tab1" class="link-tab">会員情報</a>
+                  <a href="#tab1" class="link-tab">プラン確認・変更</a>
                 </li>
                 <li class="tab--items">
-                  <a href="#tab2" class="link-tab">ダウンロード済み動画</a>
+                  <a href="#tab2" class="link-tab">登録情報の確認・変更</a>
                 </li>
                 <li class="tab--items">
-                  <a href="#tab3" class="link-tab">お気に入りクリエイター</a>
+                  <a href="#tab3" class="link-tab">支払い履歴</a>
                 </li>
                 <li class="tab--items">
                   <a href="#tab4" class="link-tab">購入履歴</a>
@@ -92,125 +125,83 @@
               </ul> 
               <!-- END tabs-nav -->
               <div id="tabs-content" class="tab-wrap">      
-                <div id="tab1" class="tab-content member-infor">
+                <div id="tab1" class="tab-content current-plan">
                   <div class="ttl">
-                    会員情報
+                    現在のプラン
                   </div>
                   <div class="content-txt">
                     <div class="row">
                       <div class="c-left field">アカウント名</div>
                       <div class="c-right">
                         <div class="info-txt">
-                          株式会社〇〇
-                          <!-- <input class="input" type="text" placeholder="株式会社〇〇" value="株式会社〇〇" name="number"> -->
+                          株式会社〇〇                          
                         </div>
-                        <div class="edit">編集</div>
+                        <div class="see">定額プランの詳細を見る</div>
                       </div>
-                    </div>
+                    </div>                    
+                  </div>
+                </div>
+                <div id="tab2" class="tab-content confirmation-screen">
+                  <div class="ttl">
+                    確認画面
+                  </div>
+                  <div class="content-txt">                    
                     <div class="row">
                       <div class="c-left field">メールアドレス</div>
                       <div class="c-right">
-                        <div class="info-txt">XXXXXXXX@sample.com</div>
-                        <div class="edit">編集</div>
+                        <div class="info-txt">zuzzriya＠mail.com</div>         
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="c-left field">電話番号</div>
+                      <div class="c-right">
+                        <div class="info-txt">090-1234-5678</div>
                       </div>
                     </div>
                     <div class="row">
                       <div class="c-left field">パスワード</div>
                       <div class="c-right">
-                        <div class="info-txt">XXXXXXXXXXXXXX@sample.com</div>
-                        <div class="edit">編集</div>
+                        <div class="info-txt">●●●●●●●●</div>                        
                       </div>
                     </div>
                     <div class="row">
-                      <div class="c-left field">お支払方法</div>
+                      <div class="c-left field">会員種別</div>
                       <div class="c-right">
-                        <div class="info-txt">＊＊＊＊＊＊＊＊４１５</div>
-                        <div class="edit">編集</div>
+                        <div class="info-txt">個人</div>                       
                       </div>
                     </div>
                     <div class="row">
-                      <div class="c-left field">残りダウンロードされた動画数数</div>
+                      <div class="c-left field">お名前</div>
                       <div class="c-right">
-                        <div class="info-txt"></div>                       
+                        <div class="info-txt">田中 太郎</div>                       
                       </div>
                     </div>
-                  </div>
+                    <div class="row">
+                      <div class="c-left field">フリガナ</div>
+                      <div class="c-right">
+                        <div class="info-txt">タナカ タロウ</div>                       
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="btn-edit">
+                    <div class="edit">修正する</div>
+                  </div>                 
                 </div>
-                <div id="tab2" class="tab-content down-videos">
+                <div id="tab3" class="tab-content payment-history">
                   <div class="ttl">
-                    ダウンロード済み動画
+                    支払い履歴
                   </div>
-                  <div class="cate-wrap">
-                    <div class="cate-items">
-                      <img src="./common/images/img_category/my_page.png" alt="img-my-page" class="img-cate">
-                      <div class="title-cate">Mayu(20)</div>
-                    </div>
-                    <div class="cate-items">
-                      <img src="./common/images/img_category/my_page.png" alt="img-my-page" class="img-cate">
-                      <div class="title-cate">Mayu(20)</div>
-                    </div>
-                    <div class="cate-items">
-                      <img src="./common/images/img_category/my_page.png" alt="img-my-page" class="img-cate">
-                      <div class="title-cate">Mayu(20)</div>
-                    </div>
-                    <div class="cate-items">
-                      <img src="./common/images/img_category/my_page.png" alt="img-my-page" class="img-cate">
-                      <div class="title-cate">Satoru(30)</div>
-                    </div>
-                    <div class="cate-items">
-                      <img src="./common/images/img_category/my_page.png" alt="img-my-page" class="img-cate">
-                      <div class="title-cate">Satoru(30)</div>
-                    </div>
-                  </div>
-                </div>
-                <div id="tab3" class="tab-content favorites-creator">
-                  <div class="ttl">
-                    お気に入りクリエイター
-                  </div>
-                  <div class="row">
-                    <div class="ttl-cate">
-                      Mayu(20)
-                    </div>
-                    <div class="wrap-cate">
-                      <div class="list-cate">                    
-                        <div class="thumb-cate">
-                          <img src="./common/images/img_category/my_page.png" alt="my_page">
+                  <div class="content-txt">
+                    <div class="row">
+                      <div class="c-left field">サブスクプラン</div>
+                      <div class="c-right">
+                        <div class="info-txt">
+                          ¥50,000                       
                         </div>
+                        <div class="receipt">領収書</div>
                       </div>
-                      <div class="list-cate">                    
-                        <div class="thumb-cate">
-                          <img src="./common/images/img_category/my_page.png" alt="my_page">
-                        </div>
-                      </div>
-                      <div class="list-cate">                    
-                        <div class="thumb-cate">
-                          <img src="./common/images/img_category/my_page.png" alt="my_page">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="ttl-cate">
-                      Satoru
-                    </div>
-                    <div class="wrap-cate">
-                      <div class="list-cate">                    
-                        <div class="thumb-cate">
-                          <img src="./common/images/img_category/my_page.png" alt="my_page">
-                        </div>
-                      </div>
-                      <div class="list-cate">                    
-                        <div class="thumb-cate">
-                          <img src="./common/images/img_category/my_page.png" alt="my_page">
-                        </div>
-                      </div>
-                      <div class="list-cate">                    
-                        <div class="thumb-cate">
-                          <img src="./common/images/img_category/my_page.png" alt="my_page">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                    </div>                    
+                  </div>                  
                 </div>
                 <div id="tab4" class="tab-content purchase-history">
                   <div class="ttl">

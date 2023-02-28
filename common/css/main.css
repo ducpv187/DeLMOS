@@ -2438,13 +2438,16 @@ ul {
 }
 
 /* Tabs */
+.p__my--page .filter__category {
+  margin-bottom: 10rem;
+}
 .p__my--page .main {
   min-height: calc(100vh - 34rem);
-  padding: 3.5rem 0;
+  padding: 2rem 0;
 }
 @media screen and (min-width: 969px) {
   .p__my--page .main {
-    padding: 7.5rem 0;
+    padding: 0rem 0 10rem;
   }
 }
 .p__my--page .tabs {
@@ -2467,115 +2470,156 @@ ul {
 .p__my--page .tab-wrap {
   flex: 1;
 }
-.p__my--page .tab-content {
-  padding: 1.5rem 1rem;
-}
 .p__my--page .tab--items {
   width: 100%;
-  padding: 2.5rem 2rem 2.5rem 0;
-  border-bottom: 1px solid #3D3A39;
+  padding: 1rem 2rem 1rem 3rem;
+  border-bottom: 1px dashed #c0c0c0;
   cursor: pointer;
 }
-.p__my--page .tab--items.active .link-tab {
-  font-weight: 700;
-}
-.p__my--page .tab--items:last-child {
-  border-bottom: 0;
+.p__my--page .tab--items.active {
+  background-color: #f3f3f3;
+  border-left: 3px solid #d02e8c;
 }
 .p__my--page .link-tab {
-  font-size: 2.4rem;
-  line-height: 1.2;
-  font-family: "arial";
-  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.5;
+  font-weight: 500;
   color: #282828;
   text-decoration: none;
 }
-.p__my--page .member-infor .content-txt .row {
+.p__my--page .current-plan .content-txt .row {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  margin-bottom: 5rem;
+  padding: 2rem 0;
 }
-.p__my--page .member-infor .content-txt .c-left {
+.p__my--page .current-plan .content-txt .c-left {
   width: 21rem;
 }
-.p__my--page .member-infor .content-txt .c-right {
+.p__my--page .current-plan .content-txt .c-right {
   flex: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.p__my--page .member-infor .content-txt .field {
-  font-family: "arial";
-  font-size: 2.4rem;
+.p__my--page .current-plan .content-txt .field {
+  font-size: 1.6rem;
   line-height: 1.4;
   font-weight: 400;
-  color: #3D3A39;
+  color: #282828;
 }
-.p__my--page .member-infor .content-txt .info-txt {
-  font-family: "arial";
-  font-size: 2.4rem;
+.p__my--page .current-plan .content-txt .info-txt {
+  font-size: 1.6rem;
   line-height: 1.2;
   font-weight: 400;
   border: none;
-  color: #3D3A39;
-  width: 100%;
+  color: #282828;
 }
-.p__my--page .member-infor .content-txt .edit {
-  width: 9.4rem;
+.p__my--page .current-plan .content-txt .see {
+  width: 25rem;
   text-align: center;
-  font-family: "arial";
-  font-size: 2rem;
+  font-size: 1.6rem;
   line-height: 1.2;
-  font-weight: 400;
-  padding: 0.25rem 0.5rem;
+  font-family: "notosansCJK-medium";
+  padding: 1.45rem 1rem;
   border-radius: 1rem;
-  border: 1px solid #3D3A39;
+  border: 1px solid transparent;
+  color: #ffffff;
+  background-color: #d02e8c;
   cursor: pointer;
 }
-.p__my--page .down-videos .cate-wrap {
+.p__my--page .confirmation-screen .content-txt .row {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
-  width: calc(100% + 4rem);
-  margin: 0 -2rem;
-}
-.p__my--page .down-videos .cate-items {
-  width: calc(50% - 4rem);
-  margin: 0 2rem;
-  text-align: center;
-}
-.p__my--page .down-videos .title-cate {
-  font-size: 2rem;
-  line-height: 1.2;
-  font-family: "arial";
-  font-weight: 400;
-  color: #282828;
-}
-.p__my--page .favorites-creator .row {
-  margin-bottom: 5rem;
-}
-.p__my--page .favorites-creator .ttl-cate {
-  font-size: 2rem;
-  line-height: 1.2;
-  font-family: "arial";
-  font-weight: 400;
-  color: #282828;
-  margin-bottom: 1.5rem;
-}
-.p__my--page .favorites-creator .wrap-cate {
-  width: calc(100% + 4rem);
-  margin: 0 -2rem;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   flex-wrap: wrap;
+  width: 100%;
+  padding: 2rem 0;
 }
-.p__my--page .favorites-creator .list-cate {
-  width: calc(33.3333333333% - 4rem);
-  margin: 0 2rem;
+.p__my--page .confirmation-screen .content-txt .c-left {
+  width: 21rem;
+}
+.p__my--page .confirmation-screen .content-txt .c-right {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.p__my--page .confirmation-screen .content-txt .field {
+  font-size: 1.6rem;
+  line-height: 2.5;
+  color: #282828;
+}
+.p__my--page .confirmation-screen .content-txt .info-txt {
+  font-size: 1.6rem;
+  line-height: 2.5;
+  color: #282828;
+}
+.p__my--page .confirmation-screen .btn-edit {
+  width: 100%;
+  text-align: center;
+  margin-top: 7rem;
+}
+.p__my--page .confirmation-screen .edit {
+  width: 15rem;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 2.5;
+  padding: 0.5rem 0.5rem;
+  color: #ffffff;
+  background-color: #d02e8c;
+  border-radius: 1rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.p__my--page .confirmation-screen .edit:hover {
+  opacity: 0.7;
+}
+.p__my--page .payment-history .content-txt .row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 2rem 0;
+}
+.p__my--page .payment-history .content-txt .c-left {
+  width: 21rem;
+}
+.p__my--page .payment-history .content-txt .c-right {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.p__my--page .payment-history .content-txt .field {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  font-weight: 400;
+  color: #282828;
+}
+.p__my--page .payment-history .content-txt .info-txt {
+  font-size: 1.6rem;
+  line-height: 1.2;
+  font-weight: 400;
+  border: none;
+  color: #282828;
+}
+.p__my--page .payment-history .content-txt .receipt {
+  width: 16rem;
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  font-family: "notosansCJK-medium";
+  padding: 1.45rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid transparent;
+  color: #ffffff;
+  background-color: #d02e8c;
+  cursor: pointer;
 }
 .p__my--page .purchase-history .content-txt {
   padding-left: 7.5rem;
@@ -2615,11 +2659,12 @@ ul {
   width: 100%;
 }
 .p__my--page .ttl {
-  font-size: 3.2rem;
-  font-weight: 400;
-  line-height: 1.2;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.6;
   color: #282828;
-  margin-bottom: 3rem;
+  padding: 0 0 2rem 0;
+  border-bottom: 1px dashed #c0c0c0;
 }
 
 .page__subcription .main {
