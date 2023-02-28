@@ -92,6 +92,9 @@
         color: $white;
         background-color: $pink;
         cursor: pointer;
+        &:hover {
+          opacity: .7;
+        }
       }
     }
   }

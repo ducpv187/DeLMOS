@@ -2534,6 +2534,9 @@ ul {
   background-color: #d02e8c;
   cursor: pointer;
 }
+.p__my--page .current-plan .content-txt .see:hover {
+  opacity: 0.7;
+}
 .p__my--page .confirmation-screen .content-txt .row {
   display: flex;
   justify-content: flex-start;
