@@ -1162,6 +1162,8 @@ ul {
   top: 0;
   left: 0;
   z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .pagination {
