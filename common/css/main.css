@@ -2286,16 +2286,19 @@ ul {
 }
 
 .p-login .form-infor {
+  position: relative;
   max-width: 74rem;
   width: 100%;
-  padding: 0 2rem;
+  padding: 6.5rem 2rem 4.5rem;
   margin: 0 auto;
+  border-radius: 0.6rem;
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2);
 }
 .p-login .form-infor .title {
   font-size: 1.6rem;
   line-height: 1.875;
   text-align: center;
-  margin-bottom: 5.5rem;
+  margin-bottom: 5rem;
 }
 .p-login .form-infor .row-form {
   max-width: 38rem;
@@ -2311,6 +2314,8 @@ ul {
   text-align: center;
 }
 .p-login .form-infor .label {
+  font-size: 1.4rem;
+  line-height: 1.2;
   width: 100%;
   font-family: "notosansCJK-medium";
   margin-bottom: 1.2rem;
@@ -2340,9 +2345,19 @@ ul {
   display: inline-block;
   text-align: center;
   font-size: 1.2rem;
-  line-height: 2.9166666667;
+  line-height: 2.0833333333;
   color: #4b98cd;
   font-family: "notosansCJK-medium";
+}
+.p-login .close {
+  position: absolute;
+  top: 2rem;
+  right: 2.5rem;
+}
+.p-login .img-close {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
 }
 
 .form__expired {
