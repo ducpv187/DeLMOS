@@ -2285,6 +2285,66 @@ ul {
   color: #4b98cd;
 }
 
+.p-login .form-infor {
+  max-width: 74rem;
+  width: 100%;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+.p-login .form-infor .title {
+  font-size: 1.6rem;
+  line-height: 1.875;
+  text-align: center;
+  margin-bottom: 5.5rem;
+}
+.p-login .form-infor .row-form {
+  max-width: 38rem;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+.p-login .form-infor .link {
+  text-align: center;
+}
+.p-login .form-infor .label {
+  width: 100%;
+  font-family: "notosansCJK-medium";
+  margin-bottom: 1.2rem;
+}
+.p-login .form-infor .input-login {
+  width: 100%;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #282828;
+  padding: 1.6rem 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #8a8a8a;
+}
+.p-login .form-infor .btn__submit-login {
+  width: 100%;
+  font-size: 1.8rem;
+  line-height: 2.2222222222;
+  color: #ffffff;
+  background-color: #a8a8a8;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+}
+.p-login .form-infor .txt {
+  display: inline-block;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 2.9166666667;
+  color: #4b98cd;
+  font-family: "notosansCJK-medium";
+}
+
 .form__expired {
   background-color: #000000;
   width: 100%;
@@ -2835,4 +2895,4 @@ ul {
 }
 .page__subcription-success-fail .failed {
   color: #A70000;
-}
+}/*# sourceMappingURL=main.css.map */
