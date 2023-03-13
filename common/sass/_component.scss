@@ -577,15 +577,15 @@
 .modal__popup {
   display: none;
   // opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  background-color: rgba(178, 178, 178, 0.65);
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // bottom: 0;
+  // background-color: rgba(178, 178, 178, 0.65);
   width: 100%;
   height: 100%;
   transition: ease-in-out 1s;
-  z-index: 99999;
+  // z-index: 99999;
 }
 .modal__content {
   background-color: $white; 
@@ -596,79 +596,105 @@
   }
 }
 .modal__login {
-  .form__infor {
-    position: relative;
-    max-width: 74rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(178, 178, 178, 0.65);
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+.modal__forgot-pass {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(178, 178, 178, 0.65);
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+ .form__infor {
+  .ttl {
+    font-size: 2.5rem;
+    line-height: calc(40/25);
+    font-family: 'notosansCJK-medium';
+  }
+ }
+}
+.form__infor {
+  position: relative;
+  max-width: 74rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 6.5rem 2rem 4.5rem;
+  border-radius: 0.6rem;
+  box-shadow: 0 0.3rem 1rem rgb(0 0 0 / 0.2);
+  .ttl {
+    font-size: 1.6rem;
+    line-height: calc(30/16);
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+  .row-form {
+    max-width: 38rem;
     width: 100%;
     margin: 0 auto;
-    padding: 6.5rem 2rem 4.5rem;
-    border-radius: 0.6rem;
-    box-shadow: 0 0.3rem 1rem rgb(0 0 0 / 0.2);
-    .ttl {
-      font-size: 1.6rem;
-      line-height: calc(30/16);
-      text-align: center;
-      margin-bottom: 5rem;
-    }
-    .row-form {
-      max-width: 38rem;
-      width: 100%;
-      margin: 0 auto;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      flex-wrap: wrap;
-      margin-bottom: 2.5rem;   
-    }
-    .link {
-      text-align: center;
-    }
-    .label {
-      font-size: 1.4rem;
-      line-height: 1.2;
-      width: 100%;
-      font-family: 'notosansCJK-medium';
-      margin-bottom: 1.2rem;
-    }
-    .input-login {
-      width: 100%;
-      font-size: 1.4rem;
-      font-weight: 500;
-      line-height: 1.2;
-      color: $black;
-      padding: 1.6rem 1.5rem;
-      border-radius: 0.5rem;
-      border: 1px solid $gray_dark2;
-    }
-    .btn__submit-login {  
-      width: 100%;
-      font-size: 1.8rem;
-      line-height: calc(40/18);
-      color: $white;
-      background-color: $gray_dark1;
-      padding: 1rem 1.5rem;
-      border-radius: 1rem;
-      border: none;
-      cursor: pointer;
-    }
-    .txt {
-      display: inline-block;
-      text-align: center;
-      font-size: 1.2rem;
-      line-height: calc(25/12);
-      color: $blue2;
-      font-family: 'notosansCJK-medium';
-    }
-    .modal__close {
-      position: absolute;
-      top: 2rem;
-      right: 2.5rem;
-    }
-    .img-close {
-      width: 2rem;
-      height: 2rem;
-      cursor: pointer;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 2.5rem;   
+  }
+  .link {
+    text-align: center;
+  }
+  .label {
+    font-size: 1.4rem;
+    line-height: 1.2;
+    width: 100%;
+    font-family: 'notosansCJK-medium';
+    margin-bottom: 1.2rem;
+  }
+  .input-login {
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: $black;
+    padding: 1.6rem 1.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid $gray_dark2;
+  }
+  .btn__submit-login {  
+    width: 100%;
+    font-size: 1.8rem;
+    line-height: calc(40/18);
+    color: $white;
+    background-color: $gray_dark1;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+  }
+  .txt {
+    display: inline-block;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: calc(25/12);
+    color: $blue2;
+    font-family: 'notosansCJK-medium';
+  }
+  .modal__close {
+    position: absolute;
+    top: 2rem;
+    right: 2.5rem;
+  }
+  .img-close {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
   }
 }
 // end modal__popup
@@ -681,7 +707,6 @@
 }
 .show {
   top: 20rem;
-  transition: ease-in-out 1s;
   @include mq_max_968 {
     top: 15rem;
   }

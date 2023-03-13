@@ -1,20 +1,41 @@
 $(document).ready(function() {
   $(".js-showpopup").click(function() {
     $(this).parents().find(".modal__popup").addClass('block');
-    $(this).parents().find(".modal__content").addClass('show');
+    $(this).parents().find(".modal__popup .modal__login").addClass('block');
+    $(this).parents().find(".modal__login .modal__content").addClass('show');
     $(this).parents().find(".modal__close").removeClass('show');
   });
+
   $(".modal__close").click(function() {
     $(this).parents().find(".modal__popup").removeClass('block');
+    $(this).parents().find(".modal__forgot-pass").removeClass('block');
     $(this).parent(".modal__content").removeClass('show'); 
   });
+
   $(".modal__content").click(function(e) {
     e.stopPropagation(e);
   });
+  
   $(".modal__popup").click(function() {
     $(this).removeClass('block');
     $(this).parents().find(".modal__content").removeClass('show');      
+    $(this).parent().find(".modal__forgot-pass").removeClass('block');   
   });
+
+  $(".js-modalLogin").click(function() {
+    $(this).parents(".modal__popup").find(".modal__login .modal__content").removeClass('show');
+    $(this).parents().find(".modal__login").removeClass('block');
+    $(this).parents(".modal__popup").find(".modal__forgot-pass").addClass('block');
+    $(this).parents(".modal__popup").find(".modal__forgot-pass .modal__content").addClass('show');
+  });
+
+  $(".js-modalForgot").click(function() {
+    $(this).parents().find(".modal__forgot-pass").removeClass('block');
+    $(this).parents().find(".modal__login").addClass('block');
+    $(this).parents().find(".modal__login .modal__content").addClass('show');
+  });
+
+
   // click account drop
   $(".account__btn").click(function() {
     $(this).parents().find(".account__drop").toggleClass('active_drop');

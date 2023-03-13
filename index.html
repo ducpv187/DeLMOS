@@ -584,38 +584,64 @@
       </footer>
 
       <!-- popup login -->
-      <div class="modal__popup modal__login">
-        <section class="modal__content form__infor">
-          <div class="ttl">
-            サービスをご利⽤いただくにはログインが必要です
-          </div>   
-          <form action="" class="modal__form">
-            <div class="row-form">
-              <label class="label">メールアドレス</label>
-              <input type="type" placeholder="buzzriya＠mail.com" name="id" class="input-login">
+      <div class="modal__popup">
+        <div class="modal__login">
+          <div class="modal__content form__infor">
+            <div class="ttl">
+              サービスをご利⽤いただくにはログインが必要です
+            </div>   
+            <form action="" class="modal__form">
+              <div class="row-form">
+                <label class="label">メールアドレス</label>
+                <input type="type" placeholder="buzzriya＠mail.com" name="id" class="input-login">
+              </div>
+              <div class="row-form">
+                <label class="label">パスワード</label>
+                <input type="password" placeholder="●●●●●●●●" name="password" class="input-login">
+              </div>
+              <div class="row-form">
+                <button type="submit" class="btn__submit-login">ログイン</button>
+              </div>
+              <div class="link">
+                <a href="#" class="txt js-modalLogin">
+                  パスワードをお忘れになった方はこちら
+                </a>           
+              </div>
+              <div class="link">                
+                <a href="#" class="txt">                  
+                  新規登録はこちら
+                </a> 
+              </div>
+            </form>
+            <div class="modal__close">
+              <img src="./common/images/close.png" alt="img-close" class="img-close"/>
             </div>
-            <div class="row-form">
-              <label class="label">パスワード</label>
-              <input type="password" placeholder="●●●●●●●●" name="password" class="input-login">
-            </div>
-            <div class="row-form">
-              <button type="submit" class="btn__submit-login">ログイン</button>
-            </div>
-            <div class="link">
-              <a href="#" class="txt">
-                パスワードをお忘れになった方はこちら
-              </a>           
-            </div>
-            <div class="link">                
-              <a href="#" class="txt">                  
-                新規登録はこちら
-              </a> 
-            </div>
-          </form>
-          <div class="modal__close">
-            <img src="./common/images/close.png" alt="img-close" class="img-close"/>
           </div>
-        </section>
+        </div>
+        <div class="modal__forgot-pass">
+          <div class="modal__content form__infor">
+            <div class="ttl">
+              パスワードの変更
+            </div>   
+            <form action="" class="modal__form">
+              <div class="row-form">
+                <label class="label">メールアドレス</label>
+                <input type="type" placeholder="buzzriya＠mail.com" name="id" class="input-login">
+              </div>
+              <div class="row-form">
+                <button type="submit" class="btn__submit-login">ログイン</button>
+              </div>
+              <div class="link">
+                <a href="#" class="txt js-modalForgot">
+                  ログインする⽅はこちら
+                </a>           
+              </div>
+            </form>
+            <div class="modal__close">
+              <img src="./common/images/close.png" alt="img-close" class="img-close"/>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- end popup -->
     </main>
