@@ -577,15 +577,8 @@
 .modal__popup {
   display: none;
   // opacity: 0;
-  // position: absolute;
-  // top: 0;
-  // left: 0;
-  // bottom: 0;
-  // background-color: rgba(178, 178, 178, 0.65);
   width: 100%;
   height: 100%;
-  transition: ease-in-out 1s;
-  // z-index: 99999;
 }
 .modal__content {
   background-color: $white; 
@@ -671,6 +664,7 @@
     width: 100%;
     font-size: 1.8rem;
     line-height: calc(40/18);
+    letter-spacing: 0.2rem;
     color: $white;
     background-color: $gray_dark1;
     padding: 1rem 1.5rem;
