@@ -699,6 +699,9 @@
   // z-index: 99999;
   // transition: ease-in-out 0.5s;
 }
+.none {
+  display: none;
+}
 .show {
   top: 20rem;
   @include mq_max_968 {

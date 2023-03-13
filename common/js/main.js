@@ -1,7 +1,6 @@
 $(document).ready(function() {
   $(".js-showpopup").click(function() {
     $(this).parents().find(".modal__popup").addClass('block');
-    $(this).parents().find(".modal__popup .modal__login").addClass('block');
     $(this).parents().find(".modal__login .modal__content").addClass('show');
     $(this).parents().find(".modal__close").removeClass('show');
   });
@@ -24,14 +23,14 @@ $(document).ready(function() {
 
   $(".js-modalLogin").click(function() {
     $(this).parents(".modal__popup").find(".modal__login .modal__content").removeClass('show');
-    $(this).parents().find(".modal__login").removeClass('block');
+    $(this).parents().find(".modal__login").addClass('none');
     $(this).parents(".modal__popup").find(".modal__forgot-pass").addClass('block');
     $(this).parents(".modal__popup").find(".modal__forgot-pass .modal__content").addClass('show');
   });
 
   $(".js-modalForgot").click(function() {
     $(this).parents().find(".modal__forgot-pass").removeClass('block');
-    $(this).parents().find(".modal__login").addClass('block');
+    $(this).parents().find(".modal__login").removeClass('none');
     $(this).parents().find(".modal__login .modal__content").addClass('show');
   });
 

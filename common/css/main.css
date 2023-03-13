@@ -1144,6 +1144,10 @@ ul {
   display: block;
 }
 
+.none {
+  display: none;
+}
+
 .show {
   top: 20rem;
 }
