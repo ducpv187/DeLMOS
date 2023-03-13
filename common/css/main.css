@@ -1032,28 +1032,10 @@ ul {
   z-index: 99999;
 }
 
-.form__modal {
-  padding: 0 0 2rem 0;
-}
-
-.modal_close {
-  width: 2.4rem;
-  height: 2.4rem;
-  position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
-  cursor: pointer;
-}
-
 .modal__content {
-  width: 42.8rem;
-  padding: 3rem;
   background-color: #ffffff;
-  border-radius: 0.5rem;
-  position: relative;
   z-index: 999999;
   top: -100%;
-  margin: 0 auto;
 }
 @media screen and (max-width: 968px) {
   .modal__content {
@@ -1061,46 +1043,79 @@ ul {
   }
 }
 
-.modal__infor {
-  padding-top: 2.5rem;
+.modal__login .form__infor {
+  position: relative;
+  max-width: 74rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 6.5rem 2rem 4.5rem;
+  border-radius: 0.6rem;
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2);
 }
-.modal__infor .text__top {
+.modal__login .form__infor .ttl {
   font-size: 1.6rem;
-  line-height: 1.2;
-  color: #222222;
-  font-weight: 700;
+  line-height: 1.875;
+  text-align: center;
+  margin-bottom: 5rem;
 }
-@media screen and (max-width: 968px) {
-  .modal__infor .text__top {
-    font-size: 1.25rem;
-  }
+.modal__login .form__infor .row-form {
+  max-width: 38rem;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
 }
-.modal__infor .text__bot {
+.modal__login .form__infor .link {
   text-align: center;
 }
-.modal__infor .text__bot a {
-  display: inline-block;
+.modal__login .form__infor .label {
   font-size: 1.4rem;
   line-height: 1.2;
-  color: #405080;
+  width: 100%;
+  font-family: "notosansCJK-medium";
+  margin-bottom: 1.2rem;
 }
-.modal__infor .text__bot a:hover {
-  border-bottom: 1px solid #b2b2b2;
-}
-.modal__infor .btn__submit {
-  padding: 1.5rem 0.5rem;
-  background-color: rgb(178, 178, 178);
-  border: none;
+.modal__login .form__infor .input-login {
+  width: 100%;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #282828;
+  padding: 1.6rem 1.5rem;
   border-radius: 0.5rem;
-  font-size: 1.6rem;
+  border: 1px solid #8a8a8a;
+}
+.modal__login .form__infor .btn__submit-login {
+  width: 100%;
+  font-size: 1.8rem;
+  line-height: 2.2222222222;
   color: #ffffff;
+  background-color: #a8a8a8;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  border: none;
   cursor: pointer;
 }
-.modal__infor input {
-  font-size: 1.6rem;
-  padding: 1.6rem;
-  border: none;
-  border-bottom: 1px solid #b2b2b2;
+.modal__login .form__infor .txt {
+  display: inline-block;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 2.0833333333;
+  color: #4b98cd;
+  font-family: "notosansCJK-medium";
+}
+.modal__login .form__infor .modal__close {
+  position: absolute;
+  top: 2rem;
+  right: 2.5rem;
+}
+.modal__login .form__infor .img-close {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
 }
 
 .block {
@@ -1108,7 +1123,7 @@ ul {
 }
 
 .show {
-  top: 30rem;
+  top: 20rem;
   transition: ease-in-out 1s;
 }
 @media screen and (max-width: 968px) {
@@ -2285,81 +2300,6 @@ ul {
   color: #4b98cd;
 }
 
-.p-login .form-infor {
-  position: relative;
-  max-width: 74rem;
-  width: 100%;
-  padding: 6.5rem 2rem 4.5rem;
-  margin: 0 auto;
-  border-radius: 0.6rem;
-  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2);
-}
-.p-login .form-infor .title {
-  font-size: 1.6rem;
-  line-height: 1.875;
-  text-align: center;
-  margin-bottom: 5rem;
-}
-.p-login .form-infor .row-form {
-  max-width: 38rem;
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  margin-bottom: 2.5rem;
-}
-.p-login .form-infor .link {
-  text-align: center;
-}
-.p-login .form-infor .label {
-  font-size: 1.4rem;
-  line-height: 1.2;
-  width: 100%;
-  font-family: "notosansCJK-medium";
-  margin-bottom: 1.2rem;
-}
-.p-login .form-infor .input-login {
-  width: 100%;
-  font-size: 1.4rem;
-  font-weight: 500;
-  line-height: 1.2;
-  color: #282828;
-  padding: 1.6rem 1.5rem;
-  border-radius: 0.5rem;
-  border: 1px solid #8a8a8a;
-}
-.p-login .form-infor .btn__submit-login {
-  width: 100%;
-  font-size: 1.8rem;
-  line-height: 2.2222222222;
-  color: #ffffff;
-  background-color: #a8a8a8;
-  padding: 1rem 1.5rem;
-  border-radius: 1rem;
-  border: none;
-  cursor: pointer;
-}
-.p-login .form-infor .txt {
-  display: inline-block;
-  text-align: center;
-  font-size: 1.2rem;
-  line-height: 2.0833333333;
-  color: #4b98cd;
-  font-family: "notosansCJK-medium";
-}
-.p-login .close {
-  position: absolute;
-  top: 2rem;
-  right: 2.5rem;
-}
-.p-login .img-close {
-  width: 2rem;
-  height: 2rem;
-  cursor: pointer;
-}
-
 .form__expired {
   background-color: #000000;
   width: 100%;
@@ -2910,4 +2850,4 @@ ul {
 }
 .page__subcription-success-fail .failed {
   color: #A70000;
-}/*# sourceMappingURL=main.css.map */
+}
