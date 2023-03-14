@@ -54,6 +54,7 @@
         }
       }
       .field {
+        display: inline-block;
         width: 19.5rem;
         @include mq_max_767 {
          width: 100%; 
@@ -63,6 +64,27 @@
         flex: 1;
         @include mq_max_767 {
           width: 100%; 
+        }
+      }
+      .cs-flex {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+      .list-tag {
+        display: inline-block;        
+        margin-right: 0.5rem;
+        .link {
+          display: inline-block;
+          font-size: 1.6rem;
+          line-height: 1.2;
+          padding: 0.5rem;        
+          color: $black;
+          border: 1px solid $gray_dark2;
+          border-radius: 0.5rem;
+
         }
       }
       &--btn {
