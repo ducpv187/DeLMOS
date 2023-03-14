@@ -1761,7 +1761,7 @@ ul {
     width: 100%;
   }
 }
-.page__deatail .infor__video .detail .cs-flex {
+.page__deatail .infor__video .detail .cs-detail-flex {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
