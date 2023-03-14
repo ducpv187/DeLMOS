@@ -10,43 +10,121 @@
   </head>
 
   <body>
-    <main class="page">
-      <section class="form__resetpass">
-        <div class="content">
-          <div class="info">
-            <div class="img">
-              <img src="./common/images/trimed-advertiser-logo.png" alt="trimed-advertiser-logo">
+    <main class="page p__reset--pass">
+      <header>
+        <div class="header">
+          <div class="container">
+            <div class="d__flex header__login">
+              <div class="header__logo">
+                <a href="/" class="link__logo">
+                  <img src="./common/images/logo.png" alt="logo" class="img">
+                </a>
+              </div>
+              <div class="header__navigation">
+                <ul class="header__navigation__bar header__btn">
+                  <li>
+                    <a href="#" class="link__nav">
+                      <img src="./common/images/img_header/icon1.png" alt="icon_header" class="icon">
+                     マイページ
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="link__nav">
+                     <img src="./common/images/img_header/icon2.png" alt="icon_header" class="icon">
+                      お気に入り
+                    </a>                    
+                  </li>
+                  <li>
+                    <a href="#" class="link__nav">
+                      <img src="./common/images/img_header/icon3.png" alt="icon_header" class="icon">
+                      閲覧履歴
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="link__nav">
+                      <img src="./common/images/img_header/icon4.png" alt="icon_header" class="icon">
+                      購入履歴
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </header>
+      <div class="main">
+        <section class="form__resetpass">
+          <div class="content">
+            <div class="info">
+              <div class="ttl">パスワードの変更</div>
+              <div class="desc">
+                パスワードを変更するには新しいパスワードを <br>
+                以下に⼊⼒してください。
+              </div>
             </div>
-            <div class="ttl">Change Your Password</div>
-            <div class="desc">Enter a new password below to change your password.</div>
+            <div class="form">
+              <form action="" class="form__reset" id="form__reset">
+                <div class="row-form">
+                  <input type="password" placeholder="新しいパスワード" value="" name="pass" class="form__reset--input input">
+                  <span class="icon icon-show">
+                    <img src="./common/images/img-showpass.svg" alt="img-showpass">
+                  </span>
+                  <span class="icon icon-hidden">
+                    <img src="./common/images/img-hiddenpass.svg" alt="img-hiddenpass">
+                  </span>
+                </div>
+               <div class="row-form">
+                  <input type="password" placeholder="新しいパスワードの再⼊⼒" value="" name="repass"class="form__reset--input input">
+                  <span class="icon icon-show">
+                    <img src="./common/images/img-showpass.svg" alt="img-showpass">
+                  </span>
+                  <span class="icon icon-hidden">
+                    <img src="./common/images/img-hiddenpass.svg" alt="img-hiddenpass">
+                  </span>
+                </div>
+                <div class="row-form">
+                  <button type="submit" class="w-100 btn__submit">パスワードのリセット</button>
+                </div>
+              </form>
+            </div>
+           </div>
+        </section>        
+      </div>     
+      <footer class="footer">
+        <div class="footer__top">
+          <div class="footer__logo">
+            <img src="./common/images/logo.png" alt="">
           </div>
-          <div class="form">
-            <form action="" class="form__reset" id="form__reset">
-              <div class="row-form mt-3">
-                <input type="password" placeholder="New password" value="" name="pass" class="form__reset--input input">
-                <span class="icon icon-show">
-                  <img src="./common/images/img-showpass.svg" alt="img-showpass">
-                </span>
-                <span class="icon icon-hidden">
-                  <img src="./common/images/img-hiddenpass.svg" alt="img-hiddenpass">
-                </span>
-              </div>
-             <div class="row-form mt-3">
-                <input type="password" placeholder="Re-enter new password" value="" name="repass"class="form__reset--input input">
-                <span class="icon icon-show">
-                  <img src="./common/images/img-showpass.svg" alt="img-showpass">
-                </span>
-                <span class="icon icon-hidden">
-                  <img src="./common/images/img-hiddenpass.svg" alt="img-hiddenpass">
-                </span>
-              </div>
-              <div class="mt-3">
-                <button type="submit" class="w-100 btn__submit">Reset password</button>
-              </div>
-            </form>
-          </div>
-         </div>
-       </section>      
+          <ul class="footer__list">
+            <li class="footer__list-items">
+              <a href="#">
+                運営会社
+              </a>
+            </li>
+            <li class="footer__list-items">
+              <a href="#">
+                利用規約
+              </a>
+            </li>
+            <li class="footer__list-items">
+              <a href="#">
+                プライバシーポリシー
+              </a>
+            </li>
+            <li class="footer__list-items">
+              <a href="#">
+                特定商取引法
+              </a>
+            </li>
+            <li class="footer__list-items">
+              <a href="#">
+                お問い合わせ
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__bot">©2023 バズり屋.UGC All Rights Reserved.</div>
+      </footer>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
