@@ -1837,11 +1837,11 @@ ul {
 }
 .page__deatail .cpn__btn {
   display: inline-block;
-  padding: 0.5rem 1rem;
+  padding: 1.75rem 1rem;
   text-align: center;
   font-size: 1.8rem;
   font-family: "notosansCJK-medium";
-  line-height: 2.5;
+  line-height: 1.4;
   letter-spacing: 0.2rem;
   border-radius: 1rem;
   cursor: pointer;
@@ -1878,6 +1878,16 @@ ul {
   color: #ffffff;
   background-color: #d02e8c;
   border: 1px solid transparent;
+}
+.page__deatail .cs-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page__deatail .icon-heart {
+  width: 2rem;
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .page__form .main {

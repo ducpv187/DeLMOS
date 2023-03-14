@@ -136,11 +136,12 @@
   }
   .cpn__btn {
     display: inline-block;
-    padding: 0.5rem 1rem;
+    padding: 1.75rem 1rem;
     text-align: center;
     font-size: 1.8rem;
     font-family: 'notosansCJK-medium';
-    line-height: calc(40/16); 
+    line-height: 1.4; 
+
     letter-spacing: 0.2rem;
     border-radius: 1rem;
     cursor: pointer;
@@ -171,5 +172,15 @@
     color: $white;
     background-color: $pink;
     border: 1px solid transparent;
+  }
+  .cs-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon-heart {
+    width: 2rem;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
   }
 }
