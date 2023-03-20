@@ -17,7 +17,8 @@ $(document).ready(function() {
   
   $(".modal__popup").click(function() {
     $(this).removeClass('block');
-    $(this).parents().find(".modal__content").removeClass('show');      
+    $(this).parents().find(".modal__content").removeClass('show');    
+    $(this).parent().find(".modal__login").removeClass('none');   
     $(this).parent().find(".modal__forgot-pass").removeClass('block');   
   });
 
