@@ -1,8 +1,8 @@
-.p__plan1 {
+.p__plan {
   .main {
     padding: 10rem  0 15rem;
     .container {
-      max-width: 74rem;
+      max-width: 79rem;
     }
   }
   .ttl {
@@ -12,6 +12,8 @@
     text-align: center;
     color: $black;  
   }
+}
+.p__plan1 {
   .information {
     margin-bottom: 8.5rem;
   }
@@ -111,4 +113,7 @@
       border-radius: 1rem;
     }
   }
+}
+.p__plan2 {
+
 }

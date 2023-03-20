@@ -2822,19 +2822,20 @@ ul {
   color: #A70000;
 }
 
-.p__plan1 .main {
+.p__plan .main {
   padding: 10rem 0 15rem;
 }
-.p__plan1 .main .container {
-  max-width: 74rem;
+.p__plan .main .container {
+  max-width: 79rem;
 }
-.p__plan1 .ttl {
+.p__plan .ttl {
   font-size: 3rem;
   font-family: "notosansCJK-bold";
   line-height: 1.3333333333;
   text-align: center;
   color: #282828;
 }
+
 .p__plan1 .information {
   margin-bottom: 8.5rem;
 }
