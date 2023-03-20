@@ -7,6 +7,7 @@ $(document).ready(function() {
 
   $(".modal__close").click(function() {
     $(this).parents().find(".modal__popup").removeClass('block');
+    $(this).parents().find(".modal__login").removeClass('none');
     $(this).parents().find(".modal__forgot-pass").removeClass('block');
     $(this).parent(".modal__content").removeClass('show'); 
   });
