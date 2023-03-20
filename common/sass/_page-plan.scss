@@ -1,0 +1,114 @@
+.p__plan1 {
+  .main {
+    padding: 10rem  0 15rem;
+    .container {
+      max-width: 74rem;
+    }
+  }
+  .ttl {
+    font-size: 3rem;
+    font-family: 'notosansCJK-bold';
+    line-height: calc(40/30);
+    text-align: center;
+    color: $black;  
+  }
+  .information {
+    margin-bottom: 8.5rem;
+  }
+  .row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12rem;
+  }
+  .c-left {
+    width: 20rem;
+    .option-purchase {
+      font-size: 2.5rem;
+      font-family: 'notosansCJK-medium';
+      line-height: calc(40/25);
+      color: $pink;
+      margin-bottom: 2.5rem;
+    }
+    .price {
+      font-family: 'notosansCJK-bold';
+      color: $pink;
+    }
+    .desc-price {
+      font-size: 1.6rem;
+      line-height: calc(40/16);
+      text-align: left;
+      text-indent: -1rem;
+      color: $black;
+    }
+    .txt-big {
+      font-size: 4rem;      
+      line-height: 1.2;
+    }
+    .txt-small {
+      font-size: 2.3rem;
+      line-height: calc(40/23);
+    }
+  }
+  .c-right {
+    flex: 1;
+    .list-field {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem 0.5rem 2rem 1.5rem;
+      border-bottom: 1px dashed $gray_dark3;
+      &:first-child {
+        padding-top: 0;
+      }
+    }
+    .field {
+      display: inline-block;
+      max-width: 15rem;
+      width: 100%;
+      font-size: 1.6rem;
+      line-height: 1.2;
+      color: $black;
+    }
+    .content {
+      display: inline-block;
+      max-width: 12rem;
+      width: 100%;
+      text-align: center;
+      font-size: 1.6rem;
+      line-height: 1.2;
+      color: $black;
+    }
+    .minimum {
+      display: flex;
+      justify-content: flex-end;
+      font-size: 1.2rem;
+      line-height: 1.2;
+      color: $black;
+      padding-top: 1rem;
+    }
+    .icon-checked {
+      width: 2.4rem;
+    }
+  }
+  .btn {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    &__app--procedure {
+      display: inline-block;
+      max-width: 26rem;
+      width: 100%;
+      font-size: 1.6rem;
+      font-family: 'notosansCJK-medium';
+      padding: 1rem 0.5rem;
+      letter-spacing: 0.15rem;
+      line-height: calc(40/16);
+      color: $white;
+      cursor: pointer;
+      background-color: $pink;
+      border: none;
+      border-radius: 1rem;
+    }
+  }
+}

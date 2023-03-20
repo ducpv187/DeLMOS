@@ -194,10 +194,43 @@ $(document).ready(function() {
   //   }, 
   //   function () {
   //     $(this).parent().find(".video_play").removeClass("active-video");
-  //   }
-    
+  //   }    
   // );
+
+
+  // let urlClick  = '.link__nav' ;
+  // $(urlClick).click(function(){
+  //   let clickGetId = $(this).attr('id');
+  //   console.log("click",clickGetId);  
+  //   // console.log("value",value);
+  //   let nextTab = $('#tabs-nav li');    
+  //   let arrId = [];
+  //   $.each(nextTab, function( index, value ) {
+  //     arrId.push($(value).find('a').attr('href'));
+  //     return arrId; 
+  //   });
+  //   console.log(arrId);  
   
+  //   arrId.map((value,index) => {
+  //     console.log("value",value);
+  //     console.log("clickGetId",clickGetId);
+
+  //     if(clickGetId === value){      
+  //       $(clickGetId).parent('.tab--items').addClass('active');          
+  //     }
+  //     else if(clickGetId !== value) {
+  //       $(clickGetId).parent('.tab--items').siblings().removeClass('active');
+  //     }
+  //   })
+  // }); 
+  
+
+    
+  // get url
+  // let url = window.location.href;
+  // let a = url;
+  // console.log(url.split('#')[1]);
+
   //page__my--page 
   //function tab next
 
@@ -217,7 +250,7 @@ $(document).ready(function() {
     $(activeTab).fadeIn();
     return false;
   });
-0
+
   
   //validate check input katana
   jQuery.validator.addMethod(

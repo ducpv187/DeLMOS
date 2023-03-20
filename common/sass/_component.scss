@@ -92,6 +92,9 @@
   .mb-lg-7 {
     margin-bottom: 7rem;
   }
+  .mb-lg-10 {
+    margin-bottom: 10rem;
+  }
 }
 
 //padding
@@ -153,6 +156,11 @@
 }
 
 @font-face {
+  font-family: 'notosansCJK-bold';
+  src: url("../font/Noto-Sans-CJK-Bold.otf");
+}
+
+@font-face {
   font-family: 'folkPro';
   src: url("../font/A-OTF-FolkPro-Regular.otf");
 }
@@ -189,6 +197,9 @@
 }
 
 //light-heigh
+.lh-0 {
+  line-height:0 !important;
+}
 .thumb {
   line-height: 0;
 }
