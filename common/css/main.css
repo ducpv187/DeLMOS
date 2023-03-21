@@ -186,133 +186,6 @@ ul {
   padding: 0 2rem;
 }
 
-.header {
-  position: relative;
-  height: 8rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #ffffff;
-  z-index: 9999;
-}
-.header .container {
-  max-width: 144rem;
-}
-@media screen and (max-width: 968px) {
-  .header .container {
-    padding: 0 1rem;
-  }
-}
-.header .d__flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.header__logo {
-  display: flex;
-  line-height: 0;
-}
-.header__logo .img {
-  width: 23rem;
-}
-.header__navigation {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex: 1;
-}
-@media screen and (max-width: 968px) {
-  .header__navigation {
-    display: none;
-  }
-}
-.header__navigation__bar {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 5rem;
-}
-.header .link__nav {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  color: #282828;
-  font-size: 1.6rem;
-  line-height: 1.2;
-}
-.header .icon {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  width: 2.1rem;
-  height: 1.7rem;
-  display: inline-block;
-  fill: currentcolor;
-  flex-shrink: 0;
-  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  font-size: 1.25rem;
-  color: #000;
-  margin-right: 0.5rem;
-}
-.header .link__logo {
-  display: inline-block;
-}
-
-.footer__top {
-  padding: 4rem 0 5rem;
-  background-color: #f3f3f3;
-}
-@media screen and (max-width: 968px) {
-  .footer__top {
-    padding: 2.5rem 0 3rem;
-  }
-}
-.footer__logo {
-  width: 23rem;
-  margin: 0 auto;
-  margin-bottom: 4rem;
-}
-.footer__list {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 5rem;
-}
-@media screen and (max-width: 968px) {
-  .footer__list-items {
-    text-align: center;
-    width: 100%;
-    padding: 0.5rem;
-  }
-}
-.footer__list-items a {
-  display: inline-block;
-  font-size: 1.6rem;
-  padding: 1rem 0.5rem;
-  color: #282828;
-}
-@media screen and (max-width: 968px) {
-  .footer__list-items a {
-    padding: 0;
-  }
-}
-.footer .footer__bot {
-  padding: 1.5rem 0;
-  font-size: 1.2rem;
-  line-height: 1.2;
-  font-family: "shinGoPro";
-  color: #f3f3f3;
-  background-color: #393838;
-  text-align: center;
-}
-@media screen and (max-width: 968px) {
-  .footer .footer__bot {
-    padding: 1rem 0;
-  }
-}
-
 .page {
   position: relative;
 }
@@ -1194,6 +1067,133 @@ ul {
   flex-shrink: 0;
   transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   font-size: 1.6rem;
+}
+
+.header {
+  position: relative;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  z-index: 9999;
+}
+.header .container {
+  max-width: 144rem;
+}
+@media screen and (max-width: 968px) {
+  .header .container {
+    padding: 0 1rem;
+  }
+}
+.header .d__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  display: flex;
+  line-height: 0;
+}
+.header__logo .img {
+  width: 23rem;
+}
+.header__navigation {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+}
+@media screen and (max-width: 968px) {
+  .header__navigation {
+    display: none;
+  }
+}
+.header__navigation__bar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5rem;
+}
+.header .link__nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #282828;
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+.header .icon {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  width: 2.1rem;
+  height: 1.7rem;
+  display: inline-block;
+  fill: currentcolor;
+  flex-shrink: 0;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-size: 1.25rem;
+  color: #000;
+  margin-right: 0.5rem;
+}
+.header .link__logo {
+  display: inline-block;
+}
+
+.footer__top {
+  padding: 4rem 0 5rem;
+  background-color: #f3f3f3;
+}
+@media screen and (max-width: 968px) {
+  .footer__top {
+    padding: 2.5rem 0 3rem;
+  }
+}
+.footer__logo {
+  width: 23rem;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+.footer__list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+@media screen and (max-width: 968px) {
+  .footer__list-items {
+    text-align: center;
+    width: 100%;
+    padding: 0.5rem;
+  }
+}
+.footer__list-items a {
+  display: inline-block;
+  font-size: 1.6rem;
+  padding: 1rem 0.5rem;
+  color: #282828;
+}
+@media screen and (max-width: 968px) {
+  .footer__list-items a {
+    padding: 0;
+  }
+}
+.footer .footer__bot {
+  padding: 1.5rem 0;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  font-family: "shinGoPro";
+  color: #f3f3f3;
+  background-color: #393838;
+  text-align: center;
+}
+@media screen and (max-width: 968px) {
+  .footer .footer__bot {
+    padding: 1rem 0;
+  }
 }
 
 .p_top .main {
@@ -2940,6 +2940,9 @@ ul {
   border-radius: 1rem;
 }
 
+.p__plan2 .pick__option {
+  margin-bottom: 10rem;
+}
 .p__plan2 .pick__option .txt-pick {
   width: 100%;
   padding: 2rem 2rem 2rem 2.5rem;
@@ -2982,4 +2985,131 @@ ul {
   height: 1.8rem;
   margin-right: 1rem;
   accent-color: #d02e8c;
+}
+.p__plan2 .pick__option .content-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 2.5rem 1.5rem 2.5rem;
+  border-bottom: 1px dashed #8a8a8a;
+}
+.p__plan2 .pick__option .content-top .left {
+  font-size: 2rem;
+  font-family: "notosansCJK-medium";
+  line-height: 1.2;
+  color: #282828;
+}
+.p__plan2 .pick__option .content-top .right {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2.5rem;
+}
+.p__plan2 .pick__option .content-top .total {
+  font-size: 2rem;
+  font-family: "notosansCJK-medium";
+  line-height: 1.2;
+  color: #282828;
+}
+.p__plan2 .pick__option .content-top .price {
+  margin-top: -1rem;
+}
+.p__plan2 .pick__option .content-top .price .txt {
+  font-size: 3rem;
+  font-family: "notosansCJK-medium";
+  line-height: 1.2;
+  color: #282828;
+}
+.p__plan2 .pick__option .content-top .price .unit {
+  font-size: 2rem;
+  font-family: "notosansCJK-medium";
+  line-height: 1.2;
+  color: #282828;
+}
+.p__plan2 .pick__option .content-top .price .desc {
+  display: inline-block;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  color: #282828;
+  text-indent: -0.25rem;
+}
+.p__plan2 .pick__option .content-bot {
+  font-size: 1.2rem;
+  line-height: 1.6666666667;
+  color: #282828;
+  padding: 1.5rem 1.5rem 0;
+}
+.p__plan2 .informartion__card--ttl {
+  font-size: 2rem;
+  font-family: "notosansCJK-medium";
+  line-height: 2;
+  text-align: center;
+  color: #282828;
+  margin-bottom: 6rem;
+}
+.p__plan2 .informartion__card--form {
+  padding: 0 7.5rem;
+}
+.p__plan2 .informartion__card .row-form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 3rem;
+}
+.p__plan2 .informartion__card .input-gr-text {
+  display: flex;
+  align-items: center;
+  max-width: 24.5rem;
+  width: 100%;
+}
+.p__plan2 .informartion__card .input-gr-text .requied {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: #fefefe;
+  background-color: #d02e8c;
+}
+.p__plan2 .informartion__card .input-gr-text .field {
+  font-size: 1.6rem;
+  font-family: "notosansCJK-medium";
+  line-height: 1.2;
+  color: #282828;
+  margin-left: 1rem;
+}
+.p__plan2 .informartion__card .input-gr-content {
+  flex: 1;
+}
+.p__plan2 .informartion__card .input-gr-content .input-txt {
+  width: 100%;
+  font-family: "notosansCJK";
+  font-size: 1.8rem;
+  line-height: 1.6666666667;
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.5rem;
+  color: #282828;
+  border: 1px solid #8a8a8a;
+}
+.p__plan2 .informartion__card .gr__btn {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 7rem;
+}
+.p__plan2 .informartion__card .gr__btn .btn_submit {
+  display: inline-block;
+  max-width: 21rem;
+  width: 100%;
+  font-size: 1.8rem;
+  font-family: "notosansCJK";
+  padding: 0.8rem 0.5rem;
+  letter-spacing: 0.2rem;
+  line-height: 2.2222222222;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #a8a8a8;
+  border: none;
+  border-radius: 1rem;
 }

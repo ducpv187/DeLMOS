@@ -116,6 +116,7 @@
 }
 .p__plan2 {
   .pick__option {
+    margin-bottom: 10rem;
     .txt-pick {
       width: 100%;
       padding: 2rem 2rem 2rem 2.5rem;
@@ -158,6 +159,135 @@
         margin-right: 1rem;
         accent-color: $pink;
       }      
+    }
+    .content-top {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 0 2.5rem 1.5rem 2.5rem;
+      border-bottom: 1px dashed $gray_dark2;
+      .left {
+        font-size: 2rem;
+        font-family: 'notosansCJK-medium';
+        line-height: 1.2;
+        color: $black;       
+      }
+      .right {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 2.5rem;
+      }
+      .total {
+        font-size: 2rem;
+        font-family: 'notosansCJK-medium';
+        line-height: 1.2;
+        color: $black;  
+      }
+      .price {
+        margin-top: -1rem;
+        .txt {
+          font-size: 3rem;
+          font-family: 'notosansCJK-medium';
+          line-height: 1.2;
+          color: $black;  
+        }
+        .unit {
+          font-size: 2rem;
+          font-family: 'notosansCJK-medium';
+          line-height: 1.2;
+          color: $black;  
+        }
+        .desc {
+          display: inline-block;
+          font-size: 1.2rem;
+          line-height: 1.2;
+          color: $black;  
+          text-indent: -0.25rem;
+        }
+      }
+    }
+    .content-bot {
+      font-size: 1.2rem;
+      line-height: calc(20/12);
+      color: $black;  
+      padding: 1.5rem 1.5rem 0;
+    }
+  }
+  .informartion__card {
+    &--ttl {
+      font-size: 2rem;
+      font-family: 'notosansCJK-medium';
+      line-height: calc(40/20);
+      text-align: center;
+      color: $black;
+      margin-bottom: 6rem;
+    }
+    &--form {
+      padding: 0 7.5rem;
+    }
+    .row-form {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 3rem;
+    }
+    .input-gr-text {
+      display: flex;
+      align-items: center;
+      max-width: 24.5rem;
+      width: 100%;
+      .requied {
+        font-size: 1.2rem;
+        line-height: 1.2;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        color: $white1;
+        background-color: $pink;
+      }
+      .field {
+        font-size: 1.6rem;
+        font-family: 'notosansCJK-medium';
+        line-height: 1.2;
+        color: $black;
+        margin-left: 1rem;
+      }
+    }
+    .input-gr-content {
+      flex: 1;
+      .input-txt {
+        width: 100%;
+        font-family: 'notosansCJK';
+        font-size: 1.8rem;
+        line-height: calc(30/18);
+        padding: 0.8rem 1.2rem;
+        border-radius: 0.5rem;
+        color: $black;
+        border: 1px solid $gray_dark2;
+      }
+    }
+    .gr__btn {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      margin-top: 7rem;
+      .btn_submit {
+        display: inline-block;
+        max-width: 21rem;
+        width: 100%;
+        font-size: 1.8rem;
+        font-family: 'notosansCJK';
+        padding: 0.8rem 0.5rem;
+        letter-spacing: 0.2rem;
+        line-height: calc(40/18);
+        color: $white;
+        cursor: pointer;
+        background-color: $gray_dark1;
+        border: none;
+        border-radius: 1rem;
+      }
     }
   }
 }
