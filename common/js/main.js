@@ -36,6 +36,23 @@ $(document).ready(function() {
     $(this).parents().find(".modal__login .modal__content").addClass('show');
   });
 
+  //add them for page form-expect(link het han)
+  $(".forgot__password").click(function() {
+    $(this).parents().find(".form__expired").addClass('d-none');
+    $(this).parents().find(".modal__forgot-pass  ").addClass('d-block');
+    $(this).parents().find(".modal__forgot-pass .modal__content").addClass('show_expired');
+  });
+
+  $(".modal__forgot-pass").click(function() {
+    $(this).removeClass('d-block');
+    $(this).parents().find(".form__expired").removeClass('d-none');
+  });
+
+  $(".modal__close").click(function() {
+    $(this).parents().find(".form__expired ").removeClass('d-none');
+    $(this).parents().find(".modal__forgot-pass").removeClass('d-block');
+  });
+  // end
 
   // click account drop
   $(".account__btn").click(function() {
