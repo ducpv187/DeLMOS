@@ -152,56 +152,72 @@
   }
   .payment-history {
     .content-txt {
-      .row {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        flex-wrap: wrap;
-        width: 100%;        
-        padding: 2rem 0;
+      padding: 3rem 0 4.5rem;
+    }
+    .table, .th, .td {
+      border: none;
+      text-align:center;      
+    }
+    .table {
+      width: 100%;
+    }
+    .tr {
+      width: 100%;
+    }
+    .th {
+      width: calc(100% /5);
+      font-size: 1.4rem;
+      line-height: calc(40/14);
+      border: 3px solid $white;
+      color: $black;
+      background-color: $gray_light;
+    }     
+    .td {
+      border-bottom: 1px dashed $gray_dark3;
+      padding: 1.5rem 0;
+      font-size: 1.4rem;
+      font-family: 'notosansCJK';
+      line-height: calc(40/14);  
+      letter-spacing: .2rem;    
+      color: $black;
+    }
+    .btn-receipt {   
+      display: inline-block;
+      width: 12rem;
+      font-size: 1.4rem;
+      font-family: 'notoansCJK-medium';
+      line-height: calc(40/14);
+      color: $white;
+      background-color: #5a5a5a;  
+      border-radius: .5rem; 
+      cursor: pointer;  
+      &:hover {
+        opacity: .7;
+      } 
+    }
+    .pagination {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 2.5rem;
+      padding: 0 2.5rem;
+      .text__des {
+        .link-page {
+          font-size: 1.6rem;
+          line-height: calc(40/16);
+          color: $black;
+        }
       }
-      .c-left {
-        width: 21rem;
-      }
-      .c-right {
-        flex: 1;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-      .field {       
-        font-size: 1.6rem;
-        line-height: 1.4;
-        font-weight: 400;
-        color: $black;            
-      }
-      .info-txt {          
-        font-size: 1.6rem;
-        line-height: 1.2;
-        font-weight: 400;
-        border: none;
-        color: $black;            
-      }
-      .receipt {
-        width: 16rem;
-        text-align: center;
-        font-size: 1.6rem;
-        line-height: 1.2;
-        font-family: 'notosansCJK-medium';        
-        padding: 1.45rem 1rem;
-        border-radius: 1rem;
-        border: 1px solid transparent;
-        color: $white;
-        background-color: $pink;
-        cursor: pointer;
+      .current {
+        color: $pink !important;
       }
     }
   }
   .purchase-history {
     .content-txt {
       padding: 2rem 0;
-     }
-     .table, .th, .td {
+    }
+    .table, .th, .td {
       border: none;
       text-align:center;      
     }
