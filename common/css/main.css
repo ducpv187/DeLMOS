@@ -2484,6 +2484,21 @@ ul {
 .p__my--page .tab-wrap {
   flex: 1;
 }
+.p__my--page .tab-wrap .tab-content .pagination {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 0 2.5rem;
+}
+.p__my--page .tab-wrap .tab-content .pagination .text__des .link-page {
+  font-size: 1.6rem;
+  line-height: 2.5;
+  color: #282828;
+}
+.p__my--page .tab-wrap .tab-content .pagination .current {
+  color: #d02e8c !important;
+}
 .p__my--page .tab--items {
   width: 100%;
   padding: 1rem 2rem 1rem 3rem;
@@ -2640,21 +2655,6 @@ ul {
 .p__my--page .payment-history .btn-receipt:hover {
   opacity: 0.7;
 }
-.p__my--page .payment-history .pagination {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 2.5rem;
-  padding: 0 2.5rem;
-}
-.p__my--page .payment-history .pagination .text__des .link-page {
-  font-size: 1.6rem;
-  line-height: 2.5;
-  color: #282828;
-}
-.p__my--page .payment-history .pagination .current {
-  color: #d02e8c !important;
-}
 .p__my--page .purchase-history .content-txt {
   padding: 2rem 0;
 }
@@ -2695,21 +2695,6 @@ ul {
 }
 .p__my--page .purchase-history .btn-download:hover {
   opacity: 0.7;
-}
-.p__my--page .purchase-history .pagination {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 2.5rem;
-  padding: 0 2.5rem;
-}
-.p__my--page .purchase-history .pagination .text__des .link-page {
-  font-size: 1.6rem;
-  line-height: 2.5;
-  color: #282828;
-}
-.p__my--page .purchase-history .pagination .current {
-  color: #d02e8c !important;
 }
 .p__my--page .ttl {
   font-size: 2.5rem;

@@ -17,7 +17,7 @@
     gap: 7rem;
     background-color: $white;
     width: 100%;    
-  }
+  }  
   .list__tab {
     display: flex;
     justify-content: flex-start;
@@ -29,6 +29,25 @@
   } 
   .tab-wrap {
     flex: 1;
+    .tab-content {
+      .pagination {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 2.5rem;
+        padding: 0 2.5rem;
+        .text__des {
+          .link-page {
+            font-size: 1.6rem;
+            line-height: calc(40/16);
+            color: $black;
+          }
+        }
+        .current {
+          color: $pink !important;
+        }
+      }
+    }
   }
   .tab--items {
     width: 100%;  
@@ -194,24 +213,7 @@
       &:hover {
         opacity: .7;
       } 
-    }
-    .pagination {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      gap: 2.5rem;
-      padding: 0 2.5rem;
-      .text__des {
-        .link-page {
-          font-size: 1.6rem;
-          line-height: calc(40/16);
-          color: $black;
-        }
-      }
-      .current {
-        color: $pink !important;
-      }
-    }
+    }  
   }
   .purchase-history {
     .content-txt {
@@ -254,23 +256,6 @@
       &:hover {
         opacity: .7;
       } 
-    }
-    .pagination {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      gap: 2.5rem;
-      padding: 0 2.5rem;
-      .text__des {
-        .link-page {
-          font-size: 1.6rem;
-          line-height: calc(40/16);
-          color: $black;
-        }
-      }
-      .current {
-        color: $pink !important;
-      }
     }
   }
 
