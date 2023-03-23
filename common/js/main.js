@@ -270,7 +270,26 @@ $(document).ready(function() {
     return false;
   });
 
-  
+  //function edit value
+  $(".js-showEdit").click(function() {    
+    $(this).parents().find(".modal__edit").addClass('d-block');
+  });
+
+  $(".btn-cancel").click(function() {    
+    $(this).parents().find(".modal__edit").removeClass('d-block');
+  });
+
+  $(".modal__confirmation").click(function(e) {
+    e.stopPropagation(e);
+  });
+
+  $(".modal__edit").click(function() {
+    $(this).removeClass('d-block');
+  });
+
+  //end func page__my--page 
+
+
   //validate check input katana
   jQuery.validator.addMethod(
     'katakana',
