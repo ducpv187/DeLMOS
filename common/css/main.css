@@ -312,6 +312,10 @@ ul {
   font-weight: 700;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .cl-pink {
   color: #d02e8c;
 }
@@ -3113,4 +3117,4 @@ ul {
   background-color: #a8a8a8;
   border: none;
   border-radius: 1rem;
-}/*# sourceMappingURL=main.css.map */
+}
