@@ -2739,6 +2739,12 @@ ul {
   margin: 0 auto;
   background-color: #ffffff;
 }
+.modal__information .confirmation-screen .icon {
+  cursor: pointer;
+}
+.modal__information .confirmation-screen .icon-hidden {
+  display: none;
+}
 .modal__information .input-edit {
   width: 100%;
   border: none;

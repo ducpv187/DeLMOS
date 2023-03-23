@@ -293,11 +293,17 @@
     padding: 2rem 4rem;
     margin: 0 auto;
     background-color: $white;    
+    .icon {
+      cursor: pointer;
+    }
+    .icon-hidden {
+      display: none;      
+    }
   }
   .input-edit {
     width: 100%;
     border: none;
-  }
+  }  
   .gr__btn {
     display: flex;
     justify-content: center;

@@ -86,7 +86,7 @@ $(document).ready(function() {
   })
 
   
-  //page forgot password : show-hidden icon
+  //page reset pass : show-hidden icon
   $(".form__reset .icon-show").click(function() {     
     $(this).addClass("d-none");
     $(this).siblings().addClass("d-block");
@@ -97,16 +97,16 @@ $(document).ready(function() {
     $(this).siblings().removeClass("d-none");
   })
 
- //page forgot password : show-hidden password
+ //page forgot password : show-hidden: icon->password
 
- 
-  $(".form__reset .icon").click(function() {  
-    let typeInput = $(this).parent().find(".input");
-    if( typeInput.attr('type') == "password" ){
-      typeInput.attr('type', 'text');       
+  $(".modal__edit .icon").click(function() {  
+    let editPassInput = $(this).parent().find(".js-inputpass");
+    console.log(editPassInput);
+    if( editPassInput.attr('type') == "password" ){
+      editPassInput.attr('type', 'text');       
     }
     else {
-      typeInput.attr('type', 'password');      
+      editPassInput.attr('type', 'password');      
     }
   })
 
@@ -271,22 +271,33 @@ $(document).ready(function() {
   });
 
   //function edit value
-  $(".js-showEdit").click(function() {    
-    $(this).parents().find(".modal__edit").addClass('d-block');
-  });
+      $(".js-showEdit").click(function() {    
+        $(this).parents().find(".modal__edit").addClass('d-block');
+      });
 
-  $(".btn-cancel").click(function() {    
-    $(this).parents().find(".modal__edit").removeClass('d-block');
-  });
+      $(".btn-cancel").click(function() {    
+        $(this).parents().find(".modal__edit").removeClass('d-block');
+      });
 
-  $(".modal__confirmation").click(function(e) {
-    e.stopPropagation(e);
-  });
+      $(".modal__confirmation").click(function(e) {
+        e.stopPropagation(e);
+      });
 
-  $(".modal__edit").click(function() {
-    $(this).removeClass('d-block');
-  });
+      $(".modal__edit").click(function() {
+        $(this).removeClass('d-block');
+      });
 
+    //page mypage : show-hidden icon
+    $(".modal__edit .icon-show").click(function() {     
+      $(this).addClass("d-none");
+      $(this).siblings().addClass("d-block");
+    })
+  
+    $(".modal__edit .icon-hidden").click(function() {     
+      $(this).removeClass("d-block");
+      $(this).siblings().removeClass("d-none");
+    })
+    
   //end func page__my--page 
 
 
