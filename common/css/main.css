@@ -190,6 +190,10 @@ ul {
   position: relative;
 }
 
+.ps-relative {
+  position: relative;
+}
+
 .main {
   padding: 3.5rem 0;
 }
