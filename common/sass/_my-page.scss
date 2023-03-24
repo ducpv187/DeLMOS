@@ -302,20 +302,29 @@
       display: none;      
     }
   }
-  .row {
+  .row {  
     .c-right {
       position: relative;
+      flex-wrap: wrap;
+      .firstname {
+        width: 50%;
+      }
+      .lastname {
+        width: 50%;
+      }
     }
     .icon {
       position: absolute;
       right: 1rem;
-      top: 50%;
-      transform: translateY(-50%);
+      top: 1.5rem;     
     }
   }
   .input-edit {
     width: 100%;
     border: 1px solid $gray_light1;    
+    &.error {
+      border: 1px solid $red;    
+    }
   }  
   .gr__btn {
     display: flex;
@@ -327,9 +336,10 @@
       width: 15rem;
       text-align: center;
       font-size: 1.8rem;
+      font-family: 'notosansCJK';
       line-height: 2.5;
       padding: 0.5rem 0.5rem;
-      color: #ffffff;
+      color: $white;
       border-radius: 1rem;
       border: 1px solid transparent;
       cursor: pointer;
@@ -342,7 +352,7 @@
       color: $white;
     }
   }
-  //border 
+  //boxshadown 
   .boxshadown-gray {
     position: relative;
     &::after {
@@ -355,4 +365,12 @@
     background-color: rgba(178, 178, 178, 0.5);
     }    
   } 
+  .error {
+    display: inline-block;
+    color: $red;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    width: 100%;
+    word-wrap: break-word;
+  }
 }

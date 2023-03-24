@@ -375,4 +375,21 @@ $(document).ready(function() {
       repass: "errror", 
     },
   });
+
+  $('#popup-edit').validate({
+    rules: {
+      password: "required",
+      firstname: "required",
+      lastname: "required", 
+      firstnamekata: "required", 
+      lastnamekata: "required", 
+    },
+    messages: { 
+      password: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      firstname: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      lastname: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+      firstnamekata: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+      lastnamekata: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+    },
+  });
 });

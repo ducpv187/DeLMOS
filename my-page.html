@@ -461,67 +461,79 @@
         </section>
       </div>
       <!--popup-edit -->
-        <div class="modal__edit">
-          <div class="modal__information">
-            <div class="modal__confirmation confirmation-screen">
-              <div class="ttl">
-                確認画面
+        <form action="" id="popup-edit" method="POST">
+          <div class="modal__edit">
+            <div class="modal__information">
+              <div class="modal__confirmation confirmation-screen">
+                <div class="ttl">
+                  確認画面
+                </div>
+                <div class="content-txt">                    
+                  <div class="row">
+                    <div class="c-left field">メールアドレス</div>
+                    <div class="c-right">
+                      <div class="info-txt boxshadown-gray">zuzzriya＠mail.com</div>      
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="c-left field">電話番号</div>
+                    <div class="c-right">
+                      <div class="info-txt boxshadown-gray">090-1234-5678</div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="c-left field">パスワード</div>
+                    <div class="c-right">
+                      <input type="password" value="123" name="password" class="info-txt input-edit js-inputpass w-100"></input>    
+                      <span class="icon icon-show">
+                        <img src="./common/images/img-showpass.svg" alt="img-showpass">
+                      </span>
+                      <span class="icon icon-hidden">
+                        <img src="./common/images/img-hiddenpass.svg" alt="img-hiddenpass">
+                      </span>                    
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="c-left field">会員種別</div>
+                    <div class="c-right">
+                      <div class="info-txt boxshadown-gray">個人</div>                       
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="c-left field">お名前</div>
+                    <div class="c-right">
+                      <div class="firstname">
+                        <input type="text" value="田中 太郎" class="info-txt input-edit" name="firstname"></input>
+                      </div>
+                      <div class="lastname">
+                        <input type="text" value="田中 太郎" class="info-txt input-edit" name="lastname"></input>
+                      </div>                                            
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="c-left field">フリガナ</div>
+                    <div class="c-right"> 
+                      <div class="firstname">
+                        <input type="text" value="タロウ" name="firstnamekata" class="info-txt input-edit"></input>                       
+                      </div>                                         
+                      <div class="lastname">
+                        <input type="text" value="タロウ" name="lastnamekata" class="info-txt input-edit"></input>                       
+                      </div>                   
+                    </div>
+                  </div>
+                </div> 
+                <div class="gr__btn">
+                  <button class="cpn__btn btn-cancel">
+                    キャンセル
+                  </button>  
+                  <button class="cpn__btn btn-update" type="submit">
+                    更新
+                  </button>                 
+                </div>               
               </div>
-              <div class="content-txt">                    
-                <div class="row">
-                  <div class="c-left field">メールアドレス</div>
-                  <div class="c-right">
-                    <div class="info-txt boxshadown-gray">zuzzriya＠mail.com</div>      
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="c-left field">電話番号</div>
-                  <div class="c-right">
-                    <div class="info-txt boxshadown-gray">090-1234-5678</div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="c-left field">パスワード</div>
-                  <div class="c-right">
-                    <input type="password" value="123" class="info-txt input-edit js-inputpass"></input>    
-                    <span class="icon icon-show">
-                      <img src="./common/images/img-showpass.svg" alt="img-showpass">
-                    </span>
-                    <span class="icon icon-hidden">
-                      <img src="./common/images/img-hiddenpass.svg" alt="img-hiddenpass">
-                    </span>                    
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="c-left field">会員種別</div>
-                  <div class="c-right">
-                    <div class="info-txt boxshadown-gray">個人</div>                       
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="c-left field">お名前</div>
-                  <div class="c-right">
-                    <input type="text" value="田中 太郎" class="info-txt input-edit"></input>                       
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="c-left field">フリガナ</div>
-                  <div class="c-right">                    
-                    <input type="text" value="タロウ" class="info-txt input-edit"></input>                       
-                  </div>
-                </div>
-              </div> 
-              <div class="gr__btn">
-                <div class="cpn__btn btn-cancel">
-                  キャンセル
-                </div>  
-                <div class="cpn__btn btn-update">
-                  更新
-                </div>                 
-              </div>               
             </div>
           </div>
-        </div>
+        </form>
       <!-- end popup-edit -->
       <footer class="footer">
         <div class="footer__top">
