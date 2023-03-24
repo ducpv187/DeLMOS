@@ -2749,6 +2749,7 @@ ul {
 }
 .modal__information .row .c-right {
   position: relative;
+  align-items: flex-start !important;
   flex-wrap: wrap;
 }
 .modal__information .row .c-right .firstname {
@@ -2767,7 +2768,7 @@ ul {
   border: 1px solid #d2d2d2;
 }
 .modal__information .input-edit.error {
-  border: 1px solid #A70000;
+  border: 1px solid red;
 }
 .modal__information .gr__btn {
   display: flex;
@@ -2809,7 +2810,7 @@ ul {
 }
 .modal__information .error {
   display: inline-block;
-  color: #A70000;
+  color: red;
   font-size: 1.6rem;
   line-height: 1.2;
   width: 100%;

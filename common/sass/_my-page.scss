@@ -305,6 +305,7 @@
   .row {  
     .c-right {
       position: relative;
+      align-items: flex-start !important;
       flex-wrap: wrap;
       .firstname {
         width: calc(50% - 0.5rem);
@@ -323,7 +324,7 @@
     width: 100%;
     border: 1px solid $gray_light1;    
     &.error {
-      border: 1px solid $red;    
+      border: 1px solid red;    
     }
   }  
   .gr__btn {
@@ -367,7 +368,7 @@
   } 
   .error {
     display: inline-block;
-    color: $red;
+    color: red;
     font-size: 1.6rem;
     line-height: 1.2;
     width: 100%;
