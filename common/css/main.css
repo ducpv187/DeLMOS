@@ -2594,9 +2594,11 @@ ul {
   color: #282828;
 }
 .p__my--page .confirmation-screen .content-txt .info-txt {
+  width: 100%;
   font-size: 1.6rem;
   font-family: "notosansCJK";
   line-height: 2.5;
+  padding: 0.5rem 3.5rem 0.5rem 1rem;
   color: #282828;
 }
 .p__my--page .confirmation-screen .btn-edit {
@@ -2735,7 +2737,7 @@ ul {
 .modal__information .confirmation-screen {
   max-width: 70rem;
   width: 100%;
-  padding: 2rem 4rem;
+  padding: 2rem 4rem 5rem 4rem;
   margin: 0 auto;
   background-color: #ffffff;
 }
@@ -2745,15 +2747,25 @@ ul {
 .modal__information .confirmation-screen .icon-hidden {
   display: none;
 }
+.modal__information .row .c-right {
+  position: relative;
+}
+.modal__information .row .icon {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
 .modal__information .input-edit {
   width: 100%;
-  border: none;
+  border: 1px solid #d2d2d2;
 }
 .modal__information .gr__btn {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   gap: 2rem;
+  margin-top: 3rem;
 }
 .modal__information .gr__btn .cpn__btn {
   width: 15rem;
@@ -2772,6 +2784,18 @@ ul {
 .modal__information .gr__btn .btn-cancel {
   background-color: #d2d2d2;
   color: #ffffff;
+}
+.modal__information .boxshadown-gray {
+  position: relative;
+}
+.modal__information .boxshadown-gray::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(178, 178, 178, 0.5);
 }
 
 .page__subcription .main {

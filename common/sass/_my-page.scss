@@ -141,10 +141,12 @@
         line-height: calc(40/16);
         color:  $black;
       }
-      .info-txt {   
+      .info-txt {           
+        width: 100%;
         font-size: 1.6rem;
         font-family: 'notosansCJK';
         line-height: calc(40/16);
+        padding: 0.5rem 3.5rem 0.5rem 1rem;
         color:  $black;     
       }
     }
@@ -290,7 +292,7 @@
   .confirmation-screen {
     max-width: 70rem;
     width: 100%;
-    padding: 2rem 4rem;
+    padding: 2rem 4rem 5rem 4rem;
     margin: 0 auto;
     background-color: $white;    
     .icon {
@@ -300,15 +302,27 @@
       display: none;      
     }
   }
+  .row {
+    .c-right {
+      position: relative;
+    }
+    .icon {
+      position: absolute;
+      right: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
   .input-edit {
     width: 100%;
-    border: none;
+    border: 1px solid $gray_light1;    
   }  
   .gr__btn {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     gap: 2rem;
+    margin-top: 3rem;
     .cpn__btn {
       width: 15rem;
       text-align: center;
@@ -328,4 +342,17 @@
       color: $white;
     }
   }
+  //border 
+  .boxshadown-gray {
+    position: relative;
+    &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(178, 178, 178, 0.5);
+    }    
+  } 
 }
