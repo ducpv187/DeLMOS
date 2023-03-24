@@ -2752,10 +2752,10 @@ ul {
   flex-wrap: wrap;
 }
 .modal__information .row .c-right .firstname {
-  width: 50%;
+  width: calc(50% - 0.5rem);
 }
 .modal__information .row .c-right .lastname {
-  width: 50%;
+  width: calc(50% - 0.5rem);
 }
 .modal__information .row .icon {
   position: absolute;

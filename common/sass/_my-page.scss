@@ -307,10 +307,10 @@
       position: relative;
       flex-wrap: wrap;
       .firstname {
-        width: 50%;
+        width: calc(50% - 0.5rem);
       }
       .lastname {
-        width: 50%;
+        width: calc(50% - 0.5rem);
       }
     }
     .icon {
