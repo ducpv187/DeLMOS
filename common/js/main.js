@@ -23,6 +23,18 @@ $(document).ready(function() {
     $(this).parent().find(".modal__forgot-pass").removeClass('block');   
   });
 
+  //popup p-plan2
+  $(".js-modalpayment").click(function() {  
+    $(this).parents().find(".modal-sucess").addClass('active-modal');
+    $(this).parents().find(".modal-sucess .modal-dialog").addClass('show');
+   
+  });
+  $(".modal-sucess").click(function() {    
+    $(this).parents().find(".modal-sucess").removeClass('active-modal');
+    $(this).parents().find(".modal-sucess .modal-dialog").removeClass('show');
+   
+  });
+
   $(".js-modalLogin").click(function() {
     $(this).parents(".modal__popup").find(".modal__login .modal__content").removeClass('show');
     $(this).parents().find(".modal__login").addClass('none');

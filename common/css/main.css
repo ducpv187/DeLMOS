@@ -940,6 +940,92 @@ ul {
   cursor: pointer;
 }
 
+.modal-sucess {
+  opacity: 0;
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+.modal-sucess.active-modal {
+  opacity: 1;
+  z-index: 9999;
+}
+.modal-sucess .modal-dialog {
+  max-width: 50rem;
+  width: 100%;
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.6s ease-in-out;
+}
+.modal-sucess .modal-dialog.show {
+  top: 10rem;
+}
+.modal-sucess .modal-content {
+  position: relative;
+  background-color: #ffffff;
+}
+.modal-sucess .modal-content .img-error {
+  width: 10rem;
+  height: 10rem;
+}
+.modal-sucess .modal-header {
+  background-color: #33d284;
+  text-align: center;
+  padding: 2rem 0;
+}
+.modal-sucess .modal-body {
+  padding: 2rem 0;
+}
+.modal-sucess .modal-body .txt {
+  font-size: 2.4rem;
+  text-align: center;
+}
+.modal-sucess .modal-footer {
+  text-align: center;
+  padding: 0 0 2rem 0;
+}
+.modal-sucess .modal-footer .link {
+  position: relative;
+  display: inline-block;
+  max-width: 12rem;
+  width: 100%;
+  font-size: 2rem;
+  color: #ffffff;
+  background-color: #33d284;
+  padding: 1rem 0.5rem;
+  border-radius: 1rem;
+}
+.modal-sucess .modal-footer .link::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 0.6rem solid transparent;
+  border-bottom: 0.6rem solid transparent;
+  border-left: 0.6rem solid #ffffff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1rem;
+}
+.modal-sucess .modal-close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+.modal-sucess .modal-close .img-close {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
 .block {
   display: block;
 }
