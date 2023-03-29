@@ -46,7 +46,7 @@ $(document).ready(function() {
     $(this).parents().find(".modal-payment .modal-dialog").removeClass('show');
   });
 
-  $(".modal-sucess .modal-content").click(function(e) {    
+  $(".modal-payment .modal-content").click(function(e) {    
     e.stopPropagation(e);
   });
   
