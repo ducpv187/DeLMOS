@@ -36,14 +36,12 @@ $(document).ready(function() {
    
   });
 
-  $(".modal-payment .modal-close").click(function() {    
-    console.log("hihii");
+  $(".modal-payment .modal-close").click(function() {        
     $(this).parents().find(".modal-payment").removeClass('active-modal');   
     $(this).parents().find(".modal-payment .modal-dialog").removeClass('show');
   });
 
-  $(".js-btnError").click(function() {    
-    console.log("hihii");
+  $(".js-btnError").click(function() {      
     $(this).parents().find(".modal-payment").removeClass('active-modal');   
     $(this).parents().find(".modal-payment .modal-dialog").removeClass('show');
   });
