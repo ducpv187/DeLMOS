@@ -940,7 +940,7 @@ ul {
   cursor: pointer;
 }
 
-.modal-sucess {
+.modal-payment {
   opacity: 0;
   z-index: -1;
   position: fixed;
@@ -952,12 +952,12 @@ ul {
   transition: all 0.2s ease-in-out;
   background-color: rgba(0, 0, 0, 0.45);
 }
-.modal-sucess.active-modal {
+.modal-payment.active-modal {
   opacity: 1;
   z-index: 9999;
 }
-.modal-sucess .modal-dialog {
-  max-width: 50rem;
+.modal-payment .modal-dialog {
+  max-width: 45rem;
   width: 100%;
   position: absolute;
   top: -100%;
@@ -965,45 +965,48 @@ ul {
   transform: translateX(-50%);
   transition: all 0.6s ease-in-out;
 }
-.modal-sucess .modal-dialog.show {
+.modal-payment .modal-dialog.show {
   top: 10rem;
 }
-.modal-sucess .modal-content {
+.modal-payment .modal-content {
   position: relative;
   background-color: #ffffff;
+  border-radius: 1rem;
 }
-.modal-sucess .modal-content .img-error {
+.modal-payment .modal-content .img-error {
   width: 10rem;
   height: 10rem;
 }
-.modal-sucess .modal-header {
-  background-color: #33d284;
+.modal-payment .modal-header {
   text-align: center;
   padding: 2rem 0;
 }
-.modal-sucess .modal-body {
-  padding: 2rem 0;
+.modal-payment .modal-header .img {
+  margin-top: -5rem;
 }
-.modal-sucess .modal-body .txt {
+.modal-payment .modal-body {
+  padding: 2rem 0 4rem 0;
+}
+.modal-payment .modal-body .txt {
   font-size: 2.4rem;
+  line-height: 1.2;
   text-align: center;
 }
-.modal-sucess .modal-footer {
+.modal-payment .modal-footer {
   text-align: center;
-  padding: 0 0 2rem 0;
+  padding: 0 0 3rem 0;
 }
-.modal-sucess .modal-footer .link {
+.modal-payment .modal-footer .link {
   position: relative;
   display: inline-block;
-  max-width: 12rem;
+  max-width: 20rem;
   width: 100%;
   font-size: 2rem;
   color: #ffffff;
-  background-color: #33d284;
   padding: 1rem 0.5rem;
   border-radius: 1rem;
 }
-.modal-sucess .modal-footer .link::before {
+.modal-payment .modal-footer .link::before {
   content: "";
   width: 0;
   height: 0;
@@ -1015,15 +1018,22 @@ ul {
   transform: translateY(-50%);
   right: 1rem;
 }
-.modal-sucess .modal-close {
+.modal-payment .modal-close {
   position: absolute;
   top: 2rem;
   right: 2rem;
 }
-.modal-sucess .modal-close .img-close {
+.modal-payment .modal-close .img-close {
   width: 2rem;
   height: 2rem;
   cursor: pointer;
+}
+.modal-payment.modal-sucess .modal-footer .link {
+  background-color: #33d284;
+}
+.modal-payment.modal-error .modal-footer .link {
+  cursor: pointer;
+  background-color: #ef513a;
 }
 
 .block {

@@ -23,17 +23,36 @@ $(document).ready(function() {
     $(this).parent().find(".modal__forgot-pass").removeClass('block');   
   });
 
-  //popup p-plan2
+  //popup p-plan2(payment)
   $(".js-modalpayment").click(function() {  
-    $(this).parents().find(".modal-sucess").addClass('active-modal');
-    $(this).parents().find(".modal-sucess .modal-dialog").addClass('show');
+    $(this).parents().find(".modal-payment").addClass('active-modal');
+    $(this).parents().find(".modal-payment .modal-dialog").addClass('show');
    
   });
-  $(".modal-sucess").click(function() {    
-    $(this).parents().find(".modal-sucess").removeClass('active-modal');
-    $(this).parents().find(".modal-sucess .modal-dialog").removeClass('show');
+
+  $(".modal-payment").click(function() {    
+    $(this).parents().find(".modal-payment").removeClass('active-modal');
+    $(this).parents().find(".modal-payment .modal-dialog").removeClass('show');
    
   });
+
+  $(".modal-payment .modal-close").click(function() {    
+    console.log("hihii");
+    $(this).parents().find(".modal-payment").removeClass('active-modal');   
+    $(this).parents().find(".modal-payment .modal-dialog").removeClass('show');
+  });
+
+  $(".js-btnError").click(function() {    
+    console.log("hihii");
+    $(this).parents().find(".modal-payment").removeClass('active-modal');   
+    $(this).parents().find(".modal-payment .modal-dialog").removeClass('show');
+  });
+
+  $(".modal-sucess .modal-content").click(function(e) {    
+    e.stopPropagation(e);
+  });
+  
+  //end popup p-plan2(payment)
 
   $(".js-modalLogin").click(function() {
     $(this).parents(".modal__popup").find(".modal__login .modal__content").removeClass('show');
