@@ -83,15 +83,6 @@ $(document).ready(function() {
   });
   // end
 
-  // click account drop
-  $(".account__btn").click(function() {
-    $(this).parents().find(".account__drop").toggleClass('active_drop');
- 
-  });
-  $(".main").click(function() {    
-    $(this).parents().find(".account__drop").removeClass('active_drop');   
-  })
-
   //page form register :show-hidden password
   $(".input__password .icon").click(function() { 
     let typePassword = $(this).parents().find(".input__password .input").attr("type");    
