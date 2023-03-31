@@ -940,102 +940,6 @@ ul {
   cursor: pointer;
 }
 
-.modal-payment {
-  opacity: 0;
-  z-index: -1;
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  transition: all 0.2s ease-in-out;
-  background-color: rgba(0, 0, 0, 0.45);
-}
-.modal-payment.active-modal {
-  opacity: 1;
-  z-index: 9999;
-}
-.modal-payment .modal-dialog {
-  max-width: 45rem;
-  width: 100%;
-  position: absolute;
-  top: -100%;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: all 0.6s ease-in-out;
-}
-.modal-payment .modal-dialog.show {
-  top: 10rem;
-}
-.modal-payment .modal-content {
-  position: relative;
-  background-color: #ffffff;
-  border-radius: 1rem;
-}
-.modal-payment .modal-content .img-error {
-  width: 10rem;
-  height: 10rem;
-}
-.modal-payment .modal-header {
-  text-align: center;
-  padding: 2rem 0;
-}
-.modal-payment .modal-header .img {
-  margin-top: -5rem;
-}
-.modal-payment .modal-body {
-  padding: 2rem 0 4rem 0;
-}
-.modal-payment .modal-body .txt {
-  font-size: 2.4rem;
-  line-height: 1.2;
-  text-align: center;
-}
-.modal-payment .modal-footer {
-  text-align: center;
-  padding: 0 0 3rem 0;
-}
-.modal-payment .modal-footer .link {
-  position: relative;
-  display: inline-block;
-  max-width: 20rem;
-  width: 100%;
-  font-size: 2rem;
-  color: #ffffff;
-  padding: 1rem 0.5rem;
-  border-radius: 1rem;
-}
-.modal-payment .modal-footer .link::before {
-  content: "";
-  width: 0;
-  height: 0;
-  border-top: 0.6rem solid transparent;
-  border-bottom: 0.6rem solid transparent;
-  border-left: 0.6rem solid #ffffff;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 1rem;
-}
-.modal-payment .modal-close {
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-}
-.modal-payment .modal-close .img-close {
-  width: 2rem;
-  height: 2rem;
-  cursor: pointer;
-}
-.modal-payment.modal-sucess .modal-footer .link {
-  background-color: #33d284;
-}
-.modal-payment.modal-error .modal-footer .link {
-  cursor: pointer;
-  background-color: #ef513a;
-}
-
 .block {
   display: block;
 }
@@ -1172,6 +1076,25 @@ ul {
   flex-shrink: 0;
   transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   font-size: 1.6rem;
+}
+
+.p-modal .ttl {
+  text-align: center;
+}
+.p-modal .list-modal {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.p-modal .btn-modal {
+  display: inline-block;
+  border: 1px solid #a8a8a8;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.p-modal .btn-modal:hover {
+  opacity: 0.7;
 }
 
 .header {
@@ -3333,3 +3256,203 @@ ul {
   border: none;
   border-radius: 1rem;
 }
+
+/* modal__popup-success */
+.modal-payment {
+  opacity: 0;
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+.modal-payment.active-modal {
+  opacity: 1;
+  z-index: 9999;
+}
+.modal-payment .modal-dialog {
+  max-width: 45rem;
+  width: 100%;
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.6s ease-in-out;
+}
+.modal-payment .modal-dialog.show {
+  top: 10rem;
+}
+.modal-payment .modal-content {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 1rem;
+}
+.modal-payment .modal-content .img-error {
+  width: 10rem;
+  height: 10rem;
+}
+.modal-payment .modal-header {
+  text-align: center;
+  padding: 2rem 0;
+}
+.modal-payment .modal-header .img {
+  margin-top: -5rem;
+}
+.modal-payment .modal-body {
+  padding: 2rem 0 4rem 0;
+}
+.modal-payment .modal-body .txt {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  text-align: center;
+}
+.modal-payment .modal-footer {
+  text-align: center;
+  padding: 0 0 3rem 0;
+}
+.modal-payment .modal-footer .link {
+  position: relative;
+  display: inline-block;
+  max-width: 20rem;
+  width: 100%;
+  font-size: 2rem;
+  color: #ffffff;
+  padding: 1rem 0.5rem;
+  border-radius: 1rem;
+}
+.modal-payment .modal-footer .link::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 0.6rem solid transparent;
+  border-bottom: 0.6rem solid transparent;
+  border-left: 0.6rem solid #ffffff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1rem;
+}
+.modal-payment .modal-close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+.modal-payment .modal-close .img-close {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+.modal-payment.modal-sucess .modal-footer .link {
+  background-color: #33d284;
+}
+.modal-payment.modal-error .modal-footer .link {
+  cursor: pointer;
+  background-color: #ef513a;
+}
+
+/* end modal payment*/
+/* CMS modal PopUp Alert Delete */
+.modal-alertdelete {
+  opacity: 0;
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+.modal-alertdelete.active-modal {
+  opacity: 1;
+  z-index: 99999;
+}
+.modal-alertdelete .modal-dialog {
+  max-width: 45rem;
+  width: 100%;
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.7s ease-in-out;
+}
+.modal-alertdelete .modal-dialog.show {
+  top: 50%;
+}
+.modal-alertdelete .modal-content {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+}
+.modal-alertdelete .modal-header .ttl {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #282828;
+  margin-bottom: 2rem;
+}
+.modal-alertdelete .modal-body {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.modal-alertdelete .modal-body .img {
+  width: 2.5rem;
+  height: 2.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.modal-alertdelete .modal-body .text {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #282828;
+}
+.modal-alertdelete .modal-footer .gr-btn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.modal-alertdelete .modal-footer .cpn__btn {
+  display: inline-block;
+  width: 8rem;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+.modal-alertdelete .modal-footer .btn-white {
+  color: #282828;
+  background-color: #ffffff;
+  border: 1px solid #a8a8a8;
+}
+.modal-alertdelete .modal-footer .btn-blue {
+  color: #ffffff;
+  background-color: #4b98cd;
+  border: 1px solid transparent;
+}
+.modal-alertdelete .modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  cursor: pointer;
+}
+.modal-alertdelete .modal-close .img-close {
+  width: 1.5rem;
+  height: 1.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* End CMS modal PopUp Alert Delete */

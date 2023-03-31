@@ -26,8 +26,7 @@ $(document).ready(function() {
   //popup p-plan2(payment)
   $(".js-modalpayment").click(function() {  
     $(this).parents().find(".modal-payment").addClass('active-modal');
-    $(this).parents().find(".modal-payment .modal-dialog").addClass('show');
-   
+    $(this).parents().find(".modal-payment .modal-dialog").addClass('show');   
   });
 
   $(".modal-payment").click(function() {    
@@ -48,10 +47,29 @@ $(document).ready(function() {
 
   $(".modal-payment .modal-content").click(function(e) {    
     e.stopPropagation(e);
-  });
-  
+  });  
   //end popup p-plan2(payment)
 
+  //modal alertDelete
+  $(".js-modalAlertdelete").click(function() {  
+    console.log("hihi");
+    $(this).parents().find(".modal-alertdelete").addClass('active-modal');
+    $(this).parents().find(".modal-alertdelete .modal-dialog").addClass('show');   
+  });
+
+  $(".modal-alertdelete").click(function() {    
+    $(this).parents().find(".modal-alertdelete").removeClass('active-modal');
+    $(this).parents().find(".modal-alertdelete .modal-dialog").removeClass('show');   
+  });
+
+  $(".modal-alertdelete .modal-close").click(function() {    
+    $(this).parents().find(".modal-alertdelete").removeClass('active-modal');
+    $(this).parents().find(".modal-alertdelete .modal-dialog").removeClass('show');   
+  });
+
+  //end modal alertDelete
+
+  //modal popup modalLogin-forgot
   $(".js-modalLogin").click(function() {
     $(this).parents(".modal__popup").find(".modal__login .modal__content").removeClass('show');
     $(this).parents().find(".modal__login").addClass('none');
@@ -64,6 +82,7 @@ $(document).ready(function() {
     $(this).parents().find(".modal__login").removeClass('none');
     $(this).parents().find(".modal__login .modal__content").addClass('show');
   });
+  //end popup modalLogin-forgot
 
   //add them for page form-expect(link het han)
   $(".forgot__password").click(function() {
