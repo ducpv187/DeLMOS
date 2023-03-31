@@ -24,9 +24,14 @@ $(document).ready(function() {
   });
 
   //popup p-plan2(payment)
-  $(".js-modalpayment").click(function() {  
-    $(this).parents().find(".modal-payment").addClass('active-modal');
-    $(this).parents().find(".modal-payment .modal-dialog").addClass('show');   
+  $(".js-modalpaymentSucces").click(function() {  
+    $(this).parents().find(".modal-sucess").addClass('active-modal');
+    $(this).parents().find(".modal-sucess .modal-dialog").addClass('show');   
+  });
+  
+  $(".js-modalpaymentError").click(function() {  
+    $(this).parents().find(".modal-error").addClass('active-modal');
+    $(this).parents().find(".modal-error .modal-dialog").addClass('show');   
   });
 
   $(".modal-payment").click(function() {    
