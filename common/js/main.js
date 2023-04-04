@@ -196,18 +196,18 @@ $(document).ready(function() {
 
   //hover autoplay video
   $(".video--items").mousemove(function(){
-    let idVideo = $(this).find(".video_play").attr('id');
+    let idVideo = $(this).find(".js-hoverVideo").attr('id');
     let video = document.getElementById(idVideo);
-    $(this).find(".video_play").addClass("active-video");
+    $(this).find(".js-hoverVideo").addClass("active-video");
     video.play();
       // $(this).parent().find(".video_play").controls = false;    
       // document.getElementsByTagName("video").controls = false;    
     }
   );
   $(".video--items").mouseout(function(){
-    let idVideo = $(this).find(".video_play").attr('id');
+    let idVideo = $(this).find(".js-hoverVideo").attr('id');
     let video = document.getElementById(idVideo);    
-    $(this).find(".video_play").removeClass("active-video");   
+    $(this).find(".js-hoverVideo").removeClass("active-video");   
     video.pause();     
     //reload video  when hover
     // document.getElementById("video").load();
