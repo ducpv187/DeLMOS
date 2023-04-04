@@ -195,23 +195,25 @@ $(document).ready(function() {
   })
 
   //hover autoplay video
-  $(".video").mousemove(function(){
-    $(this).parent().find(".video_play").addClass("active-video");
-
+  $(".video--items").mousemove(function(){
+    let idVideo = $(this).find(".video_play").attr('id');
+    let video = document.getElementById(idVideo);
+    $(this).find(".video_play").addClass("active-video");
+    video.play();
       // $(this).parent().find(".video_play").controls = false;    
       // document.getElementsByTagName("video").controls = false;    
     }
   );
-  $(".video").mouseout(function(){
-    $(this).parent().find(".video_play").removeClass("active-video");    
+  $(".video--items").mouseout(function(){
+    let idVideo = $(this).find(".video_play").attr('id');
+    let video = document.getElementById(idVideo);    
+    $(this).find(".video_play").removeClass("active-video");   
+    video.pause();     
     //reload video  when hover
     // document.getElementById("video").load();
   });
 
-  $( ".video_play" ).each(function( index ) {
-    // console.log(this);
-    // const idTag = document.getElementById($(this).attr("id"));
-    // console.log(idTag);
+  $( ".video_play" ).each(function( index ) {    
     document.getElementById($(this).attr("id")).controls = false; 
   });
 
@@ -233,21 +235,20 @@ $(document).ready(function() {
 
   // var video = $("video"); 
   //c1   
-  var video = document.getElementsByClassName("js-hoverVideo");
+  // var video = document.getElementById("detail1");
   //c2
   // var videoQuery = document.querySelectorAll(".js-hoverVideo");
   // console.log(typeof video);  a
   // console.log(typeof videoQuery);  
   // Check if video is ready to play
-  $(video).on('canplay', function () {
-    $(video)
-    .mouseenter( () => {
-        $(this).get(0).play();
-    })
-    .mouseleave( () => {
-        $(this).get(0).pause();
-    })
-  });
+  // $(video).on('canplay', function () {
+  //   $(video).mouseenter(function () {
+  //       $(this).get(0).play();
+  //   }).mouseleave(function () {
+  //       $(this).get(0).pause();
+  //   })
+  // }); 
+ 
 
   //c2
   // $(".video").hover(
