@@ -1210,6 +1210,10 @@ ul {
      object-fit: cover;
 }
 
+.btn-changePassword {
+  width: 21rem !important;
+}
+
 .pagination {
   text-align: center;
 }
