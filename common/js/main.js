@@ -197,6 +197,7 @@ $(document).ready(function() {
   //hover autoplay video
   $(".video--items").mousemove(function(){
     let idVideo = $(this).find(".js-hoverVideo").attr('id');
+    // console.log(idVideo);
     let video = document.getElementById(idVideo);
     $(this).find(".js-hoverVideo").addClass("active-video");
     video.play();
