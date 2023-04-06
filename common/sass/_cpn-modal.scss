@@ -1,0 +1,328 @@
+/* Popup login*/
+.modal__popup {
+  display: none;
+  // opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+.modal__content {
+  background-color: $white; 
+  z-index: 999999;
+  top: -100%;
+  @include mq_max_968 {
+    width: 35rem;
+  }
+}
+.modal__login {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(178, 178, 178, 0.65);
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+.modal__forgot-pass {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(178, 178, 178, 0.65);
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+ .form__infor {
+  .ttl {
+    font-size: 2.5rem;
+    line-height: calc(40/25);
+    font-family: 'notosansCJK-medium';
+  }
+ }
+}
+.form__infor {
+  position: relative;
+  max-width: 74rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 6.5rem 2rem 4.5rem;
+  border-radius: 0.6rem;
+  box-shadow: 0 0.3rem 1rem rgb(0 0 0 / 0.2);
+  .ttl {
+    font-size: 1.6rem;
+    line-height: calc(30/16);
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+  .row-form {
+    max-width: 38rem;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 2.5rem;   
+  }
+  .link {
+    text-align: center;
+  }
+  .label {
+    font-size: 1.4rem;
+    line-height: 1.2;
+    width: 100%;
+    font-family: 'notosansCJK-medium';
+    margin-bottom: 1.2rem;
+  }
+  .input-login {
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: $black;
+    padding: 1.6rem 1.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid $gray_dark2;
+  }
+  .btn__submit-login {  
+    width: 100%;
+    font-size: 1.8rem;
+    line-height: calc(40/18);
+    letter-spacing: 0.2rem;
+    color: $white;
+    background-color: $gray_dark1;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+  }
+  .txt {
+    display: inline-block;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: calc(25/12);
+    color: $blue2;
+    font-family: 'notosansCJK-medium';
+  }
+  .modal__close {
+    position: absolute;
+    top: 2rem;
+    right: 2.5rem;
+  }
+  .img-close {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+  }
+}
+/* end modal__popup */
+/* modal__popup-success */
+.modal-payment {
+  opacity: 0;
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%; 
+  transition: all 0.2s ease-in-out; ;
+  background-color: rgba(0, 0, 0, 0.45);
+  &.active-modal{
+    opacity: 1;
+    z-index: 99999;
+  }
+  .modal-dialog {
+    max-width: 45rem;
+    width: 100%;    
+    position: absolute;    
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all .6s ease-in-out; ;
+    &.show {
+      top: 10rem;
+    }
+  }
+  .modal-content {
+    position: relative;
+    background-color: $white; 
+    border-radius: 1rem;   
+    .img-error {
+      width: 10rem;
+      height: 10rem;
+    }
+  }
+  .modal-header {    
+    text-align: center;
+    padding: 2rem 0;
+    .img {
+      margin-top: -5rem;
+    }
+  }
+  .modal-body {
+    padding: 2rem 0 4rem 0;
+    .txt {
+      font-size: 2.4rem;
+      line-height: 1.2;
+      text-align: center;
+    }
+  }
+  .modal-footer {
+    text-align: center;
+    padding: 0 0 3rem 0;
+    .link {
+      position: relative;
+      display: inline-block;
+      max-width: 20rem;
+      width: 100%;
+      font-size: 2rem;
+      color: $white;
+      padding: 1rem 0.5rem;
+      border-radius: 1rem;
+      &::before {
+        content: "";
+        width: 0;
+        height: 0;
+        border-top: 0.6rem solid transparent;
+        border-bottom: 0.6rem solid transparent;
+        border-left: 0.6rem solid $white;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 1rem;
+      }
+    }
+  }
+  .modal-close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    .img-close {
+      width: 2rem;
+      height: 2rem;
+      cursor: pointer;
+    }
+  }
+  &.modal-sucess {
+    .modal-footer {
+      .link {
+      background-color: #33d284;
+      }
+    }
+  }
+  &.modal-error {
+    .modal-footer {
+      .link {
+      cursor: pointer;
+      background-color: #ef513a;
+      }
+    }
+  }
+}
+/* end modal payment*/
+
+/* CMS modal PopUp Alert Delete */
+.modal-alertdelete {
+  opacity: 0;
+  z-index: -1;  
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%; 
+  transition: all 0.3s ease-in-out; ;
+  background-color: rgba(0, 0, 0, 0.45);
+  &.active-modal{
+    opacity: 1;
+    z-index: 99999;
+  }
+  .modal-dialog {
+    max-width: 45rem;
+    width: 100%;        
+    position: absolute;    
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all .7s ease-in-out; ;
+    &.show {
+      top: 50%;
+    }
+  }
+  .modal-content {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    padding: 1rem 1.5rem;
+  }
+  .modal-header {
+    .ttl {
+      font-size: 2.4rem;
+      line-height: 1.2;
+      font-weight: 500;
+      color: $black;
+      margin-bottom: 2rem;
+    }
+
+  }
+  .modal-body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    .img {
+      width: 2.5rem;
+      height: 2.5rem;
+      object-fit: cover;
+    }
+    .text {
+      font-size: 1.8rem;      
+      line-height: 1.2;
+      font-weight: 400;
+      color: $black;
+    }
+  }
+  .modal-footer {
+    .gr-btn {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+    .cpn__btn {
+      display: inline-block;
+      width: 8rem;
+      font-size: 1.4rem;
+      line-height: 1.2;
+      font-weight: 500;
+      padding: 0.5rem 1rem; 
+      border: none;
+      cursor: pointer;
+    }
+    .btn-white {
+      color: $black;
+      background-color: $white;
+      border: 1px solid $gray_dark1;
+    }
+    .btn-blue {
+      color: $white;
+      background-color: $blue2;      
+      border: 1px solid transparent;
+    }
+  }
+  .modal-close {    
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    cursor: pointer; 
+    .img-close {
+      width: 1.5rem;
+      height: 1.5rem;
+      object-fit: cover;
+    }
+  }
+}
+/* End CMS modal PopUp Alert Delete */

@@ -23,6 +23,58 @@ $(document).ready(function() {
     $(this).parent().find(".modal__forgot-pass").removeClass('block');   
   });
 
+  //popup p-plan2(payment)
+  $(".js-modalpaymentSucces").click(function() {  
+    $(this).parents().find(".modal-sucess").addClass('active-modal');
+    $(this).parents().find(".modal-sucess .modal-dialog").addClass('show');   
+  });
+  
+  $(".js-modalpaymentError").click(function() {  
+    $(this).parents().find(".modal-error").addClass('active-modal');
+    $(this).parents().find(".modal-error .modal-dialog").addClass('show');   
+  });
+
+  $(".modal-payment").click(function() {    
+    $(this).parents().find(".modal-payment").removeClass('active-modal');
+    $(this).parents().find(".modal-payment .modal-dialog").removeClass('show');
+   
+  });
+
+  $(".modal-payment .modal-close").click(function() {        
+    $(this).parents().find(".modal-payment").removeClass('active-modal');   
+    $(this).parents().find(".modal-payment .modal-dialog").removeClass('show');
+  });
+
+  $(".js-btnError").click(function() {      
+    $(this).parents().find(".modal-payment").removeClass('active-modal');   
+    $(this).parents().find(".modal-payment .modal-dialog").removeClass('show');
+  });
+
+  $(".modal-payment .modal-content").click(function(e) {    
+    e.stopPropagation(e);
+  });  
+  //end popup p-plan2(payment)
+
+  //modal alertDelete
+  $(".js-modalAlertdelete").click(function() {  
+    console.log("hihi");
+    $(this).parents().find(".modal-alertdelete").addClass('active-modal');
+    $(this).parents().find(".modal-alertdelete .modal-dialog").addClass('show');   
+  });
+
+  $(".modal-alertdelete").click(function() {    
+    $(this).parents().find(".modal-alertdelete").removeClass('active-modal');
+    $(this).parents().find(".modal-alertdelete .modal-dialog").removeClass('show');   
+  });
+
+  $(".modal-alertdelete .modal-close").click(function() {    
+    $(this).parents().find(".modal-alertdelete").removeClass('active-modal');
+    $(this).parents().find(".modal-alertdelete .modal-dialog").removeClass('show');   
+  });
+
+  //end modal alertDelete
+
+  //modal popup modalLogin-forgot
   $(".js-modalLogin").click(function() {
     $(this).parents(".modal__popup").find(".modal__login .modal__content").removeClass('show');
     $(this).parents().find(".modal__login").addClass('none');
@@ -35,6 +87,7 @@ $(document).ready(function() {
     $(this).parents().find(".modal__login").removeClass('none');
     $(this).parents().find(".modal__login .modal__content").addClass('show');
   });
+  //end popup modalLogin-forgot
 
   //add them for page form-expect(link het han)
   $(".forgot__password").click(function() {
@@ -53,15 +106,6 @@ $(document).ready(function() {
     $(this).parents().find(".modal__forgot-pass").removeClass('d-block');
   });
   // end
-
-  // click account drop
-  $(".account__btn").click(function() {
-    $(this).parents().find(".account__drop").toggleClass('active_drop');
- 
-  });
-  $(".main").click(function() {    
-    $(this).parents().find(".account__drop").removeClass('active_drop');   
-  })
 
   //page form register :show-hidden password
   $(".input__password .icon").click(function() { 
@@ -86,7 +130,7 @@ $(document).ready(function() {
   })
 
   
-  //page forgot password : show-hidden icon
+  //page reset pass : show-hidden icon
   $(".form__reset .icon-show").click(function() {     
     $(this).addClass("d-none");
     $(this).siblings().addClass("d-block");
@@ -97,16 +141,16 @@ $(document).ready(function() {
     $(this).siblings().removeClass("d-none");
   })
 
- //page forgot password : show-hidden password
+ //page forgot password : show-hidden: icon->password
 
- 
-  $(".form__reset .icon").click(function() {  
-    let typeInput = $(this).parent().find(".input");
-    if( typeInput.attr('type') == "password" ){
-      typeInput.attr('type', 'text');       
+  $(".modal__edit .icon").click(function() {  
+    let editPassInput = $(this).parent().find(".js-inputpass");
+    console.log(editPassInput);
+    if( editPassInput.attr('type') == "password" ){
+      editPassInput.attr('type', 'text');       
     }
     else {
-      typeInput.attr('type', 'password');      
+      editPassInput.attr('type', 'password');      
     }
   })
 
@@ -151,23 +195,26 @@ $(document).ready(function() {
   })
 
   //hover autoplay video
-  $(".video").mousemove(function(){
-    $(this).parent().find(".video_play").addClass("active-video");
-
+  $(".video--items").mousemove(function(){
+    let idVideo = $(this).find(".js-hoverVideo").attr('id');
+    // console.log(idVideo);
+    let video = document.getElementById(idVideo);
+    $(this).find(".js-hoverVideo").addClass("active-video");
+    video.play();
       // $(this).parent().find(".video_play").controls = false;    
       // document.getElementsByTagName("video").controls = false;    
     }
   );
-  $(".video").mouseout(function(){
-    $(this).parent().find(".video_play").removeClass("active-video");    
+  $(".video--items").mouseout(function(){
+    let idVideo = $(this).find(".js-hoverVideo").attr('id');
+    let video = document.getElementById(idVideo);    
+    $(this).find(".js-hoverVideo").removeClass("active-video");   
+    video.pause();     
     //reload video  when hover
     // document.getElementById("video").load();
   });
 
-  $( ".video_play" ).each(function( index ) {
-    // console.log(this);
-    // const idTag = document.getElementById($(this).attr("id"));
-    // console.log(idTag);
+  $( ".video_play" ).each(function( index ) {    
     document.getElementById($(this).attr("id")).controls = false; 
   });
 
@@ -189,21 +236,20 @@ $(document).ready(function() {
 
   // var video = $("video"); 
   //c1   
-  var video = document.getElementsByClassName("js-hoverVideo");
+  // var video = document.getElementById("detail1");
   //c2
   // var videoQuery = document.querySelectorAll(".js-hoverVideo");
   // console.log(typeof video);  a
   // console.log(typeof videoQuery);  
   // Check if video is ready to play
-  $(video).on('canplay', function () {
-    $(video)
-    .mouseenter( () => {
-        $(this).get(0).play();
-    })
-    .mouseleave( () => {
-        $(this).get(0).pause();
-    })
-  });
+  // $(video).on('canplay', function () {
+  //   $(video).mouseenter(function () {
+  //       $(this).get(0).play();
+  //   }).mouseleave(function () {
+  //       $(this).get(0).pause();
+  //   })
+  // }); 
+ 
 
   //c2
   // $(".video").hover(
@@ -270,7 +316,37 @@ $(document).ready(function() {
     return false;
   });
 
+  //function edit value
+      $(".js-showEdit").click(function() {    
+        $(this).parents().find(".modal__edit").addClass('d-block');
+      });
+
+      $(".btn-cancel").click(function() {    
+        $(this).parents().find(".modal__edit").removeClass('d-block');
+      });
+
+      $(".modal__confirmation").click(function(e) {
+        e.stopPropagation(e);
+      });
+
+      $(".modal__edit").click(function() {
+        $(this).removeClass('d-block');
+      });
+
+    //page mypage : show-hidden icon
+    $(".modal__edit .icon-show").click(function() {     
+      $(this).addClass("d-none");
+      $(this).siblings().addClass("d-block");
+    })
   
+    $(".modal__edit .icon-hidden").click(function() {     
+      $(this).removeClass("d-block");
+      $(this).siblings().removeClass("d-none");
+    })
+    
+  //end func page__my--page 
+
+
   //validate check input katana
   jQuery.validator.addMethod(
     'katakana',
@@ -343,6 +419,23 @@ $(document).ready(function() {
     messages: {
       pass: "errror",
       repass: "errror", 
+    },
+  });
+
+  $('#popup-edit').validate({
+    rules: {
+      password: "required",
+      firstname: "required",
+      lastname: "required", 
+      firstnamekata: "required", 
+      lastnamekata: "required", 
+    },
+    messages: { 
+      password: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      firstname: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      lastname: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+      firstnamekata: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+      lastnamekata: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
     },
   });
 });
