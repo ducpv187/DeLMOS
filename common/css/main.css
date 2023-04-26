@@ -2166,7 +2166,7 @@ ul {
 }
 @media screen and (max-width: 968px) {
   .page__form .main {
-    padding: 5.5rem 0 7.5rem 0;
+    padding: 5rem 0 3.5rem 0;
   }
 }
 .page__form .form .container {
@@ -2222,6 +2222,11 @@ ul {
   color: #282828;
   font-weight: 500;
 }
+@media screen and (max-width: 968px) {
+  .page__form .form .label {
+    font-size: 1.4rem;
+  }
+}
 .page__form .form .requied {
   font-size: 1.2rem;
   line-height: 1.2;
@@ -2229,6 +2234,11 @@ ul {
   border-radius: 0.5rem;
   color: #fefefe;
   background-color: #d02e8c;
+}
+@media screen and (max-width: 968px) {
+  .page__form .form .requied {
+    padding: 0.5rem 0.5rem;
+  }
 }
 .page__form .form .input {
   width: 100%;
@@ -2239,13 +2249,20 @@ ul {
   border-radius: 0.5rem;
   border: 1px solid #CCCCCC;
 }
+@media screen and (max-width: 968px) {
+  .page__form .form .input {
+    font-size: 1.4rem;
+  }
+}
 .page__form .form .input:focus {
   background-color: #E8F0FE;
 }
 .page__form .form .input__checkbox {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
+  font-size: 1.6rem;
 }
 .page__form .form .input__checkbox .label--checkbox {
   margin-left: 1rem;
@@ -2253,6 +2270,16 @@ ul {
 @media screen and (max-width: 968px) {
   .page__form .form .input__checkbox .label--checkbox {
     font-size: 1.2rem;
+  }
+}
+.page__form .form .input__checkbox .checkbox {
+  width: 2rem;
+  height: 2rem;
+}
+@media screen and (max-width: 968px) {
+  .page__form .form .input__checkbox .checkbox {
+    width: 1.5rem;
+    height: 1.5rem;
   }
 }
 .page__form .form .input.error {
@@ -2330,13 +2357,14 @@ ul {
   line-height: 1.2;
   color: #ffffff;
   background-color: #999999;
-  padding: 2.5rem 2.8rem;
+  padding: 1.5rem 2.8rem;
   border-radius: 1rem;
   border: none;
   cursor: pointer;
 }
 @media screen and (max-width: 968px) {
   .page__form .form .btn__submit {
+    font-size: 1.4rem;
     max-width: 15rem;
     padding: 1.5rem 1rem;
   }
@@ -2356,6 +2384,9 @@ ul {
   font-size: 1.2rem;
   line-height: 1.2;
   color: #A70000;
+}
+.page__form .form .row-company {
+  display: none;
 }
 
 .p__register-confirm .infor-confirm {

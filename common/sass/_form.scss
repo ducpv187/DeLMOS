@@ -2,7 +2,7 @@
   .main {
     padding: 7.5rem 0 10.5rem 0;
     @include mq_max_968 {
-      padding: 5.5rem 0 7.5rem 0;
+      padding: 5rem 0 3.5rem 0;
     }
   }
   .form {
@@ -57,6 +57,9 @@
       line-height: 1.2;
       color: $black;
       font-weight: 500;
+      @include mq_max_968 {
+        font-size: 1.4rem;
+      }
     }
     .requied {
       font-size: 1.2rem;
@@ -65,6 +68,9 @@
       border-radius: 0.5rem;
       color: $white1;
       background-color: $pink;
+      @include mq_max_968 {
+       padding: 0.5rem 0.5rem;
+      }
     }
     .input {
       width: 100%;
@@ -74,17 +80,30 @@
       margin-bottom: 1rem;
       border-radius: 0.5rem;
       border: 1px solid #CCCCCC;
+      @include mq_max_968 {
+        font-size: 1.4rem;
+      }
       &:focus {
         background-color: #E8F0FE;
       }
       &__checkbox {
         display: flex;
         justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
+        font-size: 1.6rem;
         .label--checkbox {
           margin-left: 1rem;
           @include mq_max_968 {
             font-size: 1.2rem;
+          }
+        }
+        .checkbox {
+          width: 2rem;
+          height: 2rem;
+          @include mq_max_968 {
+            width: 1.5rem;
+            height: 1.5rem;
           }
         }
       }
@@ -159,11 +178,12 @@
         line-height: 1.2;
         color: #ffffff;
         background-color: #999999;
-        padding: 2.5rem 2.8rem;
+        padding: 1.5rem 2.8rem;
         border-radius: 1rem;
         border: none;
         cursor: pointer;
         @include mq_max_968 {
+          font-size: 1.4rem;
           max-width: 15rem;
           padding: 1.5rem 1rem;
         }
@@ -182,6 +202,10 @@
       font-size: 1.2rem;
       line-height: 1.2;
       color: $red;  
+    }
+    //add feedback 230426
+    .row-company {
+      display: none;
     }
   }  
 }

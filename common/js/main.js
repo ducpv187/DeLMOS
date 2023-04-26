@@ -347,6 +347,23 @@ $(document).ready(function() {
   //end func page__my--page 
 
 
+  //page-form-register
+  $(".js-checkradio .input-radio .type-radio").click(function() {     
+    let valueRadio =  $(this).val();  
+     console.log( valueRadio);
+     if(valueRadio == "0"){
+      $(this).parents().find(".row-user").addClass("d-block");
+      $(this).parents().find(".row-company").removeClass("d-block");
+     }
+     else if(valueRadio == "1"){
+      $(this).parents().find(".row-user").addClass("d-none");
+      $(this).parents().find(".row-user").removeClass("d-block");
+      $(this).parents().find(".row-company").addClass("d-block");
+
+     }
+  })
+
+
   //validate check input katana
   jQuery.validator.addMethod(
     'katakana',

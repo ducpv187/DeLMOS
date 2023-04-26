@@ -73,7 +73,7 @@
         </div>
       </header>
       <div class="main">
-        <section class="ttl mb-7">
+        <section class="ttl mb-lg-7 mb-2">
           <h1 class="form-ttl">
             新規登録（無料）
             </h1>   
@@ -124,20 +124,20 @@
                     <label class="label">会員種別</label>
                     <span class="requied">必須</span>
                   </div>
-                  <div class="c-full row-radio">
+                  <div class="c-full row-radio js-checkradio">
                     <div class="gr-radio">
                       <div class="input-radio">
-                        <input class="type-radio" type="radio" id="PERSONAL" name="accountType" value="PERSONAL">
+                        <input class="type-radio" type="radio" id="PERSONAL" name="accountType" value="0" checked>
                         <label for="PERSONAL">個人</label>         
                       </div>           
                       <div class="input-radio">
-                        <input class="type-radio" type="radio" id="COMPANY" name="accountType" value="COMPANY">
+                        <input class="type-radio" type="radio" id="COMPANY" name="accountType" value="1">
                         <label for="COMPANY">法人</label>         
                       </div>         
                     </div>  
                   </div>                
                 </div>
-                <div class="row-form">
+                <div class="row-form row-user">
                   <div class="c-full row-txt">
                     <label class="label">お名前</label>
                     <span class="requied">必須</span>
@@ -151,7 +151,7 @@
                   </div>
                  </div>
                 </div>
-                <div class="row-form">
+                <div class="row-form row-user">
                   <div class="c-full row-txt">
                     <label class="label">お名前（カナ）</label>
                     <span class="requied">必須</span>
@@ -165,11 +165,23 @@
                   </div>
                  </div>
                 </div>
+                <div class="row-form row-company">
+                  <div class="c-full row-txt">
+                    <label class="label">会社名</label>
+                    <span class="requied">必須</span>
+                  </div>
+                 <div class="input__number">
+                  <div class="c-full">
+                    <input class="input" type="text"  placeholder="例：田中" name="staffNameLastName">
+                  </div>
+
+                 </div>
+                </div>
               </div>
               <div class="form__checkbox">
                 <div class="row-form">
                   <div class="c-full input__checkbox">
-                    <input type="checkbox" id="acceptPolicy" name="acceptPolicy">
+                    <input type="checkbox" id="acceptPolicy" name="acceptPolicy" class="checkbox">
                     <label for="acceptPolicy" class="label--checkbox">
                       <a class="cs-link" href="https://drive.google.com/file/d/1Y_UaLQbxIE9cTZMc1bZkl1PvY7j852AW/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                         利用規約
