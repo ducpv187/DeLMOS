@@ -110,6 +110,8 @@
       color: $black;
       margin-bottom: 4rem;
       @include mq_max_968 {
+        font-size: 1.6rem;
+        line-height: 1.2;
         margin-bottom: 2.5rem;
       } 
     }
