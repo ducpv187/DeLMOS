@@ -31,6 +31,9 @@
       }
       video {
         width: 100%;
+        @include mq_max_968 {     
+          height: 35rem;
+         }
       }
     }
     .detail {
@@ -123,7 +126,7 @@
     }
     .video--items {
       width: calc(calc(100% /5 ) - 1.6rem);
-      margin: 0 0.8rem;
+      margin: 0 0.8rem 0.75rem;
       display: flex;
       align-items: center;      
       background-color: $black;

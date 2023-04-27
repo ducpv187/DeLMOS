@@ -2167,6 +2167,11 @@ ul {
 .page__deatail .infor__video .l__video video {
   width: 100%;
 }
+@media screen and (max-width: 968px) {
+  .page__deatail .infor__video .l__video video {
+    height: 35rem;
+  }
+}
 .page__deatail .infor__video .detail {
   flex: 1;
 }
@@ -2267,7 +2272,7 @@ ul {
 }
 .page__deatail .orthes__video .video--items {
   width: calc(20% - 1.6rem);
-  margin: 0 0.8rem;
+  margin: 0 0.8rem 0.75rem;
   display: flex;
   align-items: center;
   background-color: #282828;
