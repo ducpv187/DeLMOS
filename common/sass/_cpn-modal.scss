@@ -85,17 +85,20 @@
     border-radius: 0.5rem;
     border: 1px solid $gray_dark2;
   }
-  .btn__submit-login {  
+  .btn__submit-login  {  
     width: 100%;
     font-size: 1.8rem;
     line-height: calc(40/18);
     letter-spacing: 0.2rem;
     color: $white;
-    background-color: $gray_dark1;
+    background-color: red;
     padding: 1rem 1.5rem;
     border-radius: 1rem;
     border: none;
-    cursor: pointer;
+    cursor: pointer; 
+    &:disabled {      
+      background-color: $gray_dark1;
+    }
   }
   .txt {
     display: inline-block;

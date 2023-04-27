@@ -364,6 +364,24 @@ $(document).ready(function() {
   })
 
 
+  //check disable button
+  $('.js-check-disabled button').prop('disabled',true) ;
+  $('.js-check-disabled input').keyup(function() {     
+    let checked = true;
+    $(this).parents('form').find('input').each(function(){
+      if (!$(this).val()){
+        checked = false;
+      }
+      // console.log($(this).attr('name'));
+   })
+   if(checked){
+    $(this).parents('form').find('button').prop('disabled',false) ;
+   }
+   else{
+    $(this).parents('form').find('button').prop('disabled',true) ;
+   }
+  })
+
   //validate check input katana
   jQuery.validator.addMethod(
     'katakana',

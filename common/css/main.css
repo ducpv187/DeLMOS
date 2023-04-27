@@ -283,11 +283,14 @@ ul {
   line-height: 2.2222222222;
   letter-spacing: 0.2rem;
   color: #ffffff;
-  background-color: #a8a8a8;
+  background-color: red;
   padding: 1rem 1.5rem;
   border-radius: 1rem;
   border: none;
   cursor: pointer;
+}
+.form__infor .btn__submit-login:disabled {
+  background-color: #a8a8a8;
 }
 .form__infor .txt {
   display: inline-block;
