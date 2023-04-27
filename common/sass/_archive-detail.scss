@@ -23,11 +23,10 @@
       }
     }
     .l__video {
-      max-width: 28rem;
-      width: 100%;
+      width: 28rem;
       line-height: 0;
       @include mq_max_968 {
-        width: 30rem;      
+        width: 100%;      
         text-align: center;
       }
       video {
@@ -42,8 +41,7 @@
         align-items: center;
         flex-wrap: wrap;      
         @include mq_max_968 {
-         font-size: 1.4rem;
-         margin-bottom: 1.5rem;
+         font-size: 1.4rem;        
         }
         @include mq_max_767 {
           display: flex;
@@ -171,6 +169,7 @@
     cursor: pointer;
     @include mq_max_968 {
       font-size: 1.4rem;
+      padding: 1rem 1.25rem;
     } 
   }
   .btn--favorites {    
@@ -196,6 +195,9 @@
     color: $white;
     background-color: $pink;
     border: 1px solid transparent;
+    @include mq_max_968 {     
+     width: calc(100% - 3.5rem);
+    }
   }
   .cs-flex {
     display: flex;

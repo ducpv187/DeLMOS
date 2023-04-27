@@ -2078,13 +2078,12 @@ ul {
   }
 }
 .page__deatail .infor__video .l__video {
-  max-width: 28rem;
-  width: 100%;
+  width: 28rem;
   line-height: 0;
 }
 @media screen and (max-width: 968px) {
   .page__deatail .infor__video .l__video {
-    width: 30rem;
+    width: 100%;
     text-align: center;
   }
 }
@@ -2103,7 +2102,6 @@ ul {
 @media screen and (max-width: 968px) {
   .page__deatail .infor__video .detail .flex--text {
     font-size: 1.4rem;
-    margin-bottom: 1.5rem;
   }
 }
 @media screen and (max-width: 767px) {
@@ -2243,6 +2241,7 @@ ul {
 @media screen and (max-width: 968px) {
   .page__deatail .cpn__btn {
     font-size: 1.4rem;
+    padding: 1rem 1.25rem;
   }
 }
 .page__deatail .btn--favorites {
@@ -2272,6 +2271,11 @@ ul {
   color: #ffffff;
   background-color: #d02e8c;
   border: 1px solid transparent;
+}
+@media screen and (max-width: 968px) {
+  .page__deatail .btn--readmore {
+    width: calc(100% - 3.5rem);
+  }
 }
 .page__deatail .cs-flex {
   display: flex;
