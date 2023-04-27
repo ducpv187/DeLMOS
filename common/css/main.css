@@ -1833,6 +1833,11 @@ ul {
 .p__ichiran--cre .ttl {
   margin-bottom: 5rem;
 }
+@media screen and (max-width: 968px) {
+  .p__ichiran--cre .ttl {
+    margin-bottom: 2rem;
+  }
+}
 .p__ichiran--cre .ttl .span-ttl {
   font-size: 3.5rem;
   line-height: 1.1428571429;
@@ -1876,7 +1881,7 @@ ul {
   flex-wrap: wrap;
 }
 .p__ichiran--ctg .list__post {
-  margin-bottom: 5rem !important;
+  margin-bottom: 2rem !important;
 }
 .p__ichiran--ctg .link {
   display: inline-block;
@@ -1884,6 +1889,11 @@ ul {
 }
 .p__ichiran--ctg .ttl {
   margin-bottom: 5rem;
+}
+@media screen and (max-width: 968px) {
+  .p__ichiran--ctg .ttl {
+    margin-bottom: 2rem;
+  }
 }
 .p__ichiran--ctg .ttl .span-ttl {
   font-size: 3.5rem;
@@ -1908,9 +1918,11 @@ ul {
 .p__ichiran--ctg .archive__category .tab {
   margin-bottom: 3rem;
 }
-.p__ichiran--ctg .archive__category .list__post .items-creator {
-  width: calc(20% - 2rem);
-  margin: 0 1rem;
+@media screen and (min-width: 969px) {
+  .p__ichiran--ctg .archive__category .list__post .items-creator {
+    width: calc(20% - 2rem);
+    margin: 0 1rem;
+  }
 }
 
 .p__archive-creater .main {

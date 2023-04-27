@@ -9,6 +9,9 @@
 .p__ichiran--cre {
   .ttl {
     margin-bottom: 5rem;
+    @include mq_max_968 {     
+      margin-bottom: 2rem;
+    }
     .span-ttl {
       font-size: 3.5rem;  
       line-height: calc(40/35);
@@ -53,7 +56,7 @@
     flex-wrap: wrap;
   }
   .list__post {
-    margin-bottom: 5rem !important;
+    margin-bottom: 2rem !important;
   }
   .link {
     display: inline-block;
@@ -61,6 +64,9 @@
   }
   .ttl {
     margin-bottom: 5rem;
+    @include mq_max_968 {     
+      margin-bottom: 2rem;
+    }
     .span-ttl {
       font-size: 3.5rem;  
       line-height: calc(40/35);
@@ -86,8 +92,10 @@
     }   
     .list__post {
       .items-creator {
-        width: calc(20% - 2rem);
-        margin: 0 1rem;
+        @include mq_min_969 {
+          width: calc(20% - 2rem);
+          margin: 0 1rem;
+        }
       }
     }  
   }
