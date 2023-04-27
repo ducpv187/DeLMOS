@@ -61,6 +61,19 @@
   .link {
     display: inline-block;
     width: 100%;
+    .thumb {
+      width: 100%;
+      line-height: 0;
+        @include mq_max_968 {     
+        height: 25rem;
+        }
+      img {
+        @include mq_max_968 {     
+          height: 100%;
+          object-fit: cover;
+        }
+      }      
+    }
   }
   .ttl {
     margin-bottom: 5rem;
@@ -140,8 +153,18 @@
     margin-bottom: 0 !important;
   }
   .link-details {
-     display: inline-block;
-     line-height: 0;
+    display: inline-block;
+    width: 100%;
+    line-height: 0;
+    @include mq_max_968 {     
+    height: 25rem;
+    }
+    img {
+    @include mq_max_968 {     
+      height: 100%;
+      object-fit: cover;
+      }
+    }
   }
 }
 .p__archive--hashtag {
@@ -164,8 +187,18 @@
   }
   .link-details {
     display: inline-block;
+    width: 100%;
     line-height: 0;
- }
+      @include mq_max_968 {     
+      height: 25rem;
+      }
+    img {
+      @include mq_max_968 {     
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
 }
 .p__rireki-etsuran {
   .main {
@@ -185,10 +218,20 @@
     margin-bottom: 1.5rem;
    }
  }
- .link-details {
-  display: inline-block;
-  line-height: 0;
- }
+  .link-details {
+    display: inline-block;
+    width: 100%;
+    line-height: 0;
+      @include mq_max_968 {     
+      height: 25rem;
+      }
+    img {
+      @include mq_max_968 {     
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
 }
 .p__rireki-konyu {
   .main {
@@ -208,8 +251,18 @@
     margin-bottom: 1.5rem;
   }
  }
- .link-details {
-  display: inline-block;
-  line-height: 0;
- }
+  .link-details {
+    display: inline-block;
+    width: 100%;
+    line-height: 0;
+    @include mq_max_968 {     
+    height: 25rem;
+    }
+    img {
+    @include mq_max_968 {     
+      height: 100%;
+      object-fit: cover;
+      }
+    }
+  }
 }

@@ -1896,6 +1896,22 @@ ul {
   display: inline-block;
   width: 100%;
 }
+.p__ichiran--ctg .link .thumb {
+  width: 100%;
+  line-height: 0;
+}
+@media screen and (max-width: 968px) {
+  .p__ichiran--ctg .link .thumb {
+    height: 25rem;
+  }
+}
+@media screen and (max-width: 968px) {
+  .p__ichiran--ctg .link .thumb img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
 .p__ichiran--ctg .ttl {
   margin-bottom: 5rem;
 }
@@ -1977,7 +1993,20 @@ ul {
 }
 .p__archive-creater .link-details {
   display: inline-block;
+  width: 100%;
   line-height: 0;
+}
+@media screen and (max-width: 968px) {
+  .p__archive-creater .link-details {
+    height: 25rem;
+  }
+}
+@media screen and (max-width: 968px) {
+  .p__archive-creater .link-details img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
 .p__archive--hashtag .main {
@@ -2003,7 +2032,20 @@ ul {
 }
 .p__archive--hashtag .link-details {
   display: inline-block;
+  width: 100%;
   line-height: 0;
+}
+@media screen and (max-width: 968px) {
+  .p__archive--hashtag .link-details {
+    height: 25rem;
+  }
+}
+@media screen and (max-width: 968px) {
+  .p__archive--hashtag .link-details img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
 .p__rireki-etsuran .main {
@@ -2029,7 +2071,20 @@ ul {
 }
 .p__rireki-etsuran .link-details {
   display: inline-block;
+  width: 100%;
   line-height: 0;
+}
+@media screen and (max-width: 968px) {
+  .p__rireki-etsuran .link-details {
+    height: 25rem;
+  }
+}
+@media screen and (max-width: 968px) {
+  .p__rireki-etsuran .link-details img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
 .p__rireki-konyu .main {
@@ -2055,7 +2110,20 @@ ul {
 }
 .p__rireki-konyu .link-details {
   display: inline-block;
+  width: 100%;
   line-height: 0;
+}
+@media screen and (max-width: 968px) {
+  .p__rireki-konyu .link-details {
+    height: 25rem;
+  }
+}
+@media screen and (max-width: 968px) {
+  .p__rireki-konyu .link-details img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
 .page__deatail .main {
