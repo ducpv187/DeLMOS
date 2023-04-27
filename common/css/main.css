@@ -3336,6 +3336,11 @@ ul {
 .p__plan .main {
   padding: 10rem 0 15rem;
 }
+@media screen and (max-width: 968px) {
+  .p__plan .main {
+    padding: 2.5rem 0 6rem;
+  }
+}
 .p__plan .main .container {
   max-width: 79rem;
 }
@@ -3346,18 +3351,40 @@ ul {
   text-align: center;
   color: #282828;
 }
+@media screen and (max-width: 968px) {
+  .p__plan .ttl {
+    font-size: 2.4rem;
+    line-height: 1.2;
+  }
+}
 
 .p__plan1 .information {
   margin-bottom: 8.5rem;
+}
+@media screen and (max-width: 968px) {
+  .p__plan1 .information {
+    margin-bottom: 4rem;
+  }
 }
 .p__plan1 .row {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  flex-wrap: wrap;
   gap: 12rem;
+}
+@media screen and (max-width: 968px) {
+  .p__plan1 .row {
+    gap: 1.5rem;
+  }
 }
 .p__plan1 .c-left {
   width: 20rem;
+}
+@media screen and (max-width: 968px) {
+  .p__plan1 .c-left {
+    width: 100%;
+  }
 }
 .p__plan1 .c-left .option-purchase {
   font-size: 2.5rem;
@@ -3365,6 +3392,13 @@ ul {
   line-height: 1.6;
   color: #d02e8c;
   margin-bottom: 2.5rem;
+}
+@media screen and (max-width: 968px) {
+  .p__plan1 .c-left .option-purchase {
+    font-size: 2.2rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+  }
 }
 .p__plan1 .c-left .price {
   font-family: "notosansCJK-bold";
@@ -3381,12 +3415,28 @@ ul {
   font-size: 4rem;
   line-height: 1.2;
 }
+@media screen and (max-width: 968px) {
+  .p__plan1 .c-left .txt-big {
+    font-size: 2.8rem;
+  }
+}
 .p__plan1 .c-left .txt-small {
   font-size: 2.3rem;
   line-height: 1.7391304348;
 }
+@media screen and (max-width: 968px) {
+  .p__plan1 .c-left .txt-small {
+    font-size: 1.6rem;
+    line-height: 1.2;
+  }
+}
 .p__plan1 .c-right {
   flex: 1;
+}
+@media screen and (max-width: 968px) {
+  .p__plan1 .c-right {
+    width: 100%;
+  }
 }
 .p__plan1 .c-right .list-field {
   display: flex;
@@ -3394,6 +3444,11 @@ ul {
   align-items: center;
   padding: 2rem 0.5rem 2rem 1.5rem;
   border-bottom: 1px dashed #c9c9c9;
+}
+@media screen and (max-width: 968px) {
+  .p__plan1 .c-right .list-field {
+    padding: 1rem 0.5rem 1rem;
+  }
 }
 .p__plan1 .c-right .list-field:first-child {
   padding-top: 0;
@@ -3414,6 +3469,11 @@ ul {
   font-size: 1.6rem;
   line-height: 1.2;
   color: #282828;
+}
+@media screen and (max-width: 968px) {
+  .p__plan1 .c-right .content {
+    font-size: 1.4rem;
+  }
 }
 .p__plan1 .c-right .minimum {
   display: flex;
@@ -3446,6 +3506,14 @@ ul {
   background-color: #d02e8c;
   border: none;
   border-radius: 1rem;
+}
+@media screen and (max-width: 968px) {
+  .p__plan1 .btn__app--procedure {
+    max-width: 100%;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    padding: 1.5rem 1rem;
+  }
 }
 
 .p__plan2 .pick__option {
@@ -3586,6 +3654,11 @@ ul {
   line-height: 1.2;
   color: #282828;
   margin-left: 1rem;
+}
+@media screen and (max-width: 968px) {
+  .p__plan2 .informartion__card .input-gr-text .field {
+    font-size: 1.4rem;
+  }
 }
 .p__plan2 .informartion__card .input-gr-content {
   flex: 1;

@@ -1,6 +1,9 @@
 .p__plan {
   .main {
     padding: 10rem  0 15rem;
+    @include mq_max_968 {     
+      padding: 2.5rem 0 6rem;
+     }
     .container {
       max-width: 79rem;
     }
@@ -11,26 +14,45 @@
     line-height: calc(40/30);
     text-align: center;
     color: $black;  
+    @include mq_max_968 {     
+      font-size: 2.4rem;
+      line-height: 1.2;
+     }
   }
 }
 .p__plan1 {
   .information {
     margin-bottom: 8.5rem;
+    @include mq_max_968 {     
+      margin-bottom: 4rem;
+     }
   }
   .row {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    flex-wrap: wrap;
     gap: 12rem;
+    @include mq_max_968 {     
+     gap: 1.5rem;
+    }
   }
   .c-left {
     width: 20rem;
+    @include mq_max_968 {     
+     width: 100%;
+    }
     .option-purchase {
       font-size: 2.5rem;
       font-family: 'notosansCJK-medium';
       line-height: calc(40/25);
       color: $pink;
       margin-bottom: 2.5rem;
+      @include mq_max_968 {     
+        font-size: 2.2rem;
+        line-height: 1.2;
+        margin-bottom: 1.5rem;
+       }
     }
     .price {
       font-family: 'notosansCJK-bold';
@@ -46,20 +68,33 @@
     .txt-big {
       font-size: 4rem;      
       line-height: 1.2;
+      @include mq_max_968 {     
+        font-size: 2.8rem;      
+       }
     }
     .txt-small {
       font-size: 2.3rem;
       line-height: calc(40/23);
+      @include mq_max_968 {     
+        font-size: 1.6rem;     
+        line-height: 1.2; 
+       }
     }
   }
   .c-right {
     flex: 1;
+    @include mq_max_968 {     
+      width: 100%;
+     }
     .list-field {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 2rem 0.5rem 2rem 1.5rem;
       border-bottom: 1px dashed $gray_dark3;
+      @include mq_max_968 {     
+        padding: 1rem 0.5rem 1rem;
+       }
       &:first-child {
         padding-top: 0;
       }
@@ -80,6 +115,9 @@
       font-size: 1.6rem;
       line-height: 1.2;
       color: $black;
+      @include mq_max_968 {     
+        font-size: 1.4rem;      
+       }
     }
     .minimum {
       display: flex;
@@ -112,6 +150,12 @@
       background-color: $pink;
       border: none;
       border-radius: 1rem;
+      @include mq_max_968 {     
+        max-width: 100%;
+        font-size: 1.4rem;
+        line-height: 1.2;
+        padding: 1.5rem 1rem;
+       }
     }
   }
 }
@@ -254,6 +298,9 @@
         line-height: 1.2;
         color: $black;
         margin-left: 1rem;
+        @include mq_max_968 {     
+          font-size: 1.4rem;      
+         }
       }
     }
     .input-gr-content {
