@@ -281,7 +281,7 @@
   margin-bottom: 6.5rem;
   @include mq_max_968 {
     margin-bottom: 3rem;
-    padding: 2rem 0;
+    padding: 3.5rem 0;
   }
   .form {
     display: flex;
@@ -291,7 +291,7 @@
     gap: 5rem;
     overflow: hidden;
     @include mq_max_968 {
-      gap: 1.5rem;
+      gap: 2.5rem;
     }
   }
   .select {
@@ -303,7 +303,7 @@
     @include mq_max_968 {
       width: 100%;
       flex-direction: column;
-      gap: 0.5rem;
+      gap: 1rem;
     }
   }
   .row-form {   
@@ -530,6 +530,9 @@
     align-items: flex-start;
     flex-wrap: wrap;
     margin-bottom: 5rem;
+    @include mq_max_968 {      
+      margin-bottom: 2.5rem;
+     }
     .btn--radio {
       display: flex;
       justify-content: flex-start;
@@ -540,11 +543,19 @@
     }
     input {
       accent-color: $pink;
+      @include mq_max_968 {
+        width: 1.2rem;
+        height: 1.2rem;
+       }
     }
     .label {
       font-size: 1.6rem;
+      line-height: 1.2;
       color: $black;
       font-weight: 500;
+      @include mq_max_968 {
+        font-size: 1.2rem;           
+       }
     }
   }
   .cate-items {

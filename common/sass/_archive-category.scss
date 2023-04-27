@@ -106,13 +106,20 @@
     font-weight: 400;
     color: $black;
     margin-bottom: 5rem;
+    @include mq_max_968 {
+      font-size: 2rem;   
+      margin-bottom: 1.5rem;
+     }
   }
   .archive__category {
     .tab {
       margin-bottom: 3rem;
     }
     .tab__content {
-      margin-bottom: 5rem;
+      margin-bottom: 5rem; 
+      @include mq_max_968 {      
+        margin-bottom: 2.5rem;
+       }
     }
   }
   .items-creator {
@@ -142,6 +149,10 @@
     font-weight: 400;
     color: $black;
     margin-bottom: 3.5rem;
+    @include mq_max_968 {
+     font-size: 2rem;   
+     margin-bottom: 1.5rem;
+    }
   }
   .link-details {
     display: inline-block;
@@ -161,6 +172,10 @@
   font-weight: 400;
   color: $black;
   margin-bottom: 6.5rem;
+  @include mq_max_968 {
+    font-size: 2rem;   
+    margin-bottom: 1.5rem;
+   }
  }
  .link-details {
   display: inline-block;
@@ -180,6 +195,10 @@
   font-weight: 400;
   color: $black;
   margin-bottom: 3rem;
+    @include mq_max_968 {
+    font-size: 2rem;   
+    margin-bottom: 1.5rem;
+  }
  }
  .link-details {
   display: inline-block;
