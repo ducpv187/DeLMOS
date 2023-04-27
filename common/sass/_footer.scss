@@ -2,7 +2,7 @@
   &__top {
     padding: 4rem 0 5rem;
     @include mq_max_968 {
-      padding: 2.5rem 0 3rem;
+      padding: 2rem 0;
     }
     background-color: $gray_light;
   }
@@ -10,6 +10,10 @@
     width: 23rem;
     margin: 0 auto;
     margin-bottom: 4rem;    
+    @include mq_max_968 {
+     width: 15rem;   
+     margin-bottom: 1.5rem;
+    }
   }
   &__list {
     width: 100%;
@@ -18,6 +22,9 @@
     align-items: flex-start;   
     flex-wrap: wrap;
     gap: 5rem;
+    @include mq_max_968 {
+      gap: 2rem;   
+    }
     &-items {
       @include mq_max_968 {
         text-align: center;
@@ -30,6 +37,7 @@
       padding: 1rem .5rem;
       color: $black;
       @include mq_max_968 {
+        font-size: 1.4rem;
         padding: 0;
       }
       }
@@ -37,13 +45,14 @@
   }
   .footer__bot {
     padding: 1.5rem 0;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     line-height: 1.2;
     font-family: 'shinGoPro';
     color: $gray_light;
     background-color: $black1;
     text-align: center;
     @include mq_max_968 {
+      font-size: 1.2;
       padding: 1rem 0;
     }
   }

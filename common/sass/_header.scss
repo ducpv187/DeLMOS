@@ -6,6 +6,11 @@
   justify-content: center;
   background-color: $white;
   z-index: 9999;
+  @include mq_max_968 {
+    height: unset;
+    padding: 1.5rem 0;
+
+  }
   .container {
     max-width: 144rem;
     @include mq_max_968 {
@@ -21,7 +26,10 @@
     display: flex;
     line-height: 0;
     .img {
-      width: 23rem
+      width: 23rem;
+      @include mq_max_968 {
+        width: 15rem;
+      }      
     }
   }
   &__navigation {
