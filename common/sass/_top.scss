@@ -193,28 +193,6 @@
 .main {
   position: relative;
   z-index: 99;  
-  .usage {
-    .row {
-      display: flex;
-      justify-content: flex-end;
-      align-items: flex-start;      
-      gap: 3rem;
-      flex-direction: row;
-      @include mq_max_968 {
-        gap: 1.5rem;
-        flex-direction: column;
-        padding: 1.5rem 0;
-      }
-    }
-    .cpn__text {
-      font-size: 1.4rem;
-      line-height: calc(40/14);
-      color: $white;
-      @include mq_max_968 {
-        line-height: 1.2;
-      }
-    }
-  }
   .category {
     .ttl__child--cate {
       position: relative;
