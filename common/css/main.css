@@ -1333,6 +1333,37 @@ ul {
   opacity: 0.7;
 }
 
+.input__password {
+  position: relative;
+}
+.input__password .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 1rem;
+  right: 1rem;
+  height: 4rem;
+  cursor: pointer;
+}
+.input__password .icon-show,
+.input__password .icon-hidden {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  width: 2.4rem;
+  height: 2.4rem;
+  fill: currentcolor;
+  flex-shrink: 0;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-size: 1.4rem;
+  color: #B2B2B2;
+}
+.input__password .icon-show {
+  display: none;
+}
+
 .header {
   position: relative;
   height: 8rem;
@@ -2531,36 +2562,6 @@ ul {
     margin: 2rem 0;
   }
 }
-.page__form .form .input__password {
-  position: relative;
-}
-.page__form .form .input__password .icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  bottom: 1rem;
-  right: 1rem;
-  height: 4rem;
-  cursor: pointer;
-}
-.page__form .form .input__password .icon-show,
-.page__form .form .input__password .icon-hidden {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  width: 2.4rem;
-  height: 2.4rem;
-  fill: currentcolor;
-  flex-shrink: 0;
-  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  font-size: 1.4rem;
-  color: #B2B2B2;
-}
-.page__form .form .input__password .icon-show {
-  display: none;
-}
 .page__form .form .btn {
   text-align: center;
 }
@@ -2913,11 +2914,14 @@ ul {
   line-height: 2.2222222222;
   letter-spacing: 0.2rem;
   color: #ffffff;
-  background-color: #a8a8a8;
+  background-color: red;
   padding: 1rem 1.5rem;
   border-radius: 1rem;
   border: none;
   cursor: pointer;
+}
+.form__resetpass .form__reset .btn__submit:disabled {
+  background-color: #a8a8a8;
 }
 .form__resetpass .form .icon {
   padding: 1rem;

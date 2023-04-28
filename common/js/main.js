@@ -367,17 +367,17 @@ $(document).ready(function() {
   //check disable button
   $('.js-check-disabled button').prop('disabled',true) ;
   $('.js-check-disabled input').keyup(function() {     
-    let checked = true;
+    let checkedValue = true;
     $(this).parents('form').find('input').each(function(){
       if (!$(this).val()){
-        checked = false;
+        checkedValue  = false;
       }
       // console.log($(this).attr('name'));
-   })
-   if(checked){
+   } )
+   if(checkedValue) {
     $(this).parents('form').find('button').prop('disabled',false) ;
    }
-   else{
+   else {
     $(this).parents('form').find('button').prop('disabled',true) ;
    }
   })
