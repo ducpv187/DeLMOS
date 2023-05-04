@@ -370,7 +370,7 @@ $(document).ready(function() {
     let checkedValue = true;
     $(this).parents('form').find('input').each(function(){
       if (!$(this).val()){
-        checkedValue  = false;
+        return checkedValue  = false;
       }
       // console.log($(this).attr('name'));
    } )

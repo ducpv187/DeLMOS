@@ -85,14 +85,11 @@
         line-height: 2.2222222222;
         letter-spacing: 0.2rem;
         color: $white;
-        background-color: red;
+        background-color: $gray_dark1;
         padding: 1rem 1.5rem;
         border-radius: 1rem;
         border: none;
         cursor: pointer;
-        &:disabled {      
-          background-color: $gray_dark1;
-        }
       }
     }
     .icon {      

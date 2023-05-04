@@ -283,7 +283,7 @@ ul {
   line-height: 2.2222222222;
   letter-spacing: 0.2rem;
   color: #ffffff;
-  background-color: red;
+  background-color: #d02e8c;
   padding: 1rem 1.5rem;
   border-radius: 1rem;
   border: none;
@@ -1341,10 +1341,8 @@ ul {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 0;
-  bottom: 1rem;
+  top: 1.2rem;
   right: 1rem;
-  height: 4rem;
   cursor: pointer;
 }
 .input__password .icon-show,
@@ -2571,11 +2569,14 @@ ul {
   font-size: 1.6rem;
   line-height: 1.2;
   color: #ffffff;
-  background-color: #999999;
+  background-color: #d02e8c;
   padding: 1.5rem 2.8rem;
   border-radius: 1rem;
   border: none;
   cursor: pointer;
+}
+.page__form .form .btn__submit:disabled {
+  background-color: #a8a8a8;
 }
 @media screen and (max-width: 968px) {
   .page__form .form .btn__submit {
@@ -2914,14 +2915,11 @@ ul {
   line-height: 2.2222222222;
   letter-spacing: 0.2rem;
   color: #ffffff;
-  background-color: red;
+  background-color: #a8a8a8;
   padding: 1rem 1.5rem;
   border-radius: 1rem;
   border: none;
   cursor: pointer;
-}
-.form__resetpass .form__reset .btn__submit:disabled {
-  background-color: #a8a8a8;
 }
 .form__resetpass .form .icon {
   padding: 1rem;

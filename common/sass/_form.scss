@@ -140,35 +140,7 @@
       @include mq_max_968 {
         margin: 2rem 0;
       }
-    }
-    // .input__password {
-    //     position: relative;
-    //   .icon {
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center;
-    //     position: absolute;
-    //     top: 0;
-    //     bottom: 1rem;              
-    //     right: 1rem;
-    //     height: 4rem;
-    //     cursor: pointer;
-    //   }
-    //   .icon-show , 
-    //   .icon-hidden {
-    //     user-select: none;
-    //     width: 2.4rem;
-    //     height: 2.4rem;
-    //     fill: currentcolor;
-    //     flex-shrink: 0;
-    //     transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-    //     font-size: 1.4rem;
-    //     color: #B2B2B2;
-    //   }
-    //   .icon-show {
-    //     display: none;
-    //   }
-    // }
+    } 
     .btn {
       text-align: center;
       &__submit {
@@ -176,12 +148,15 @@
         width: 100%;
         font-size: 1.6rem;
         line-height: 1.2;
-        color: #ffffff;
-        background-color: #999999;
+        color: $white;
+        background-color: $pink;
         padding: 1.5rem 2.8rem;
         border-radius: 1rem;
         border: none;
         cursor: pointer;
+        &:disabled {
+          background-color: $gray_dark1;
+        }
         @include mq_max_968 {
           font-size: 1.4rem;
           max-width: 15rem;
