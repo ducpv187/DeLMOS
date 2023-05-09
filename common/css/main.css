@@ -3608,6 +3608,11 @@ ul {
 .p__plan2 .pick__option {
   margin-bottom: 10rem;
 }
+@media screen and (max-width: 968px) {
+  .p__plan2 .pick__option {
+    margin-bottom: 4.5rem;
+  }
+}
 .p__plan2 .pick__option .txt-pick {
   width: 100%;
   padding: 2rem 2rem 2rem 2.5rem;
@@ -3620,10 +3625,25 @@ ul {
   font-size: 1.8rem;
   line-height: 1.2;
 }
+@media screen and (max-width: 968px) {
+  .p__plan2 .pick__option .txt-pick .txt-big {
+    display: inline-block;
+    width: 100%;
+    font-size: 1.6rem;
+  }
+}
 .p__plan2 .pick__option .txt-pick .txt-small {
   font-size: 1.2rem;
   line-height: 1.2;
   padding-left: 1rem;
+}
+@media screen and (max-width: 968px) {
+  .p__plan2 .pick__option .txt-pick .txt-small {
+    display: inline-block;
+    width: 100%;
+    font-size: 1.2rem;
+    padding-left: 0;
+  }
 }
 .p__plan2 .pick__option .wrap-option {
   display: flex;
@@ -3634,6 +3654,11 @@ ul {
   padding: 0 2.5rem;
   margin-bottom: 10rem;
 }
+@media screen and (max-width: 968px) {
+  .p__plan2 .pick__option .wrap-option {
+    margin-bottom: 3.5rem;
+  }
+}
 .p__plan2 .pick__option .wrap-option .label {
   display: flex;
   align-items: center;
@@ -3643,6 +3668,12 @@ ul {
   color: #282828;
   margin-right: 4rem;
 }
+@media screen and (max-width: 968px) {
+  .p__plan2 .pick__option .wrap-option .label {
+    font-size: 1.4rem;
+    margin-right: 2rem;
+  }
+}
 .p__plan2 .pick__option .wrap-option .input-checkbox {
   display: flex;
   align-items: center;
@@ -3651,11 +3682,18 @@ ul {
   margin-right: 0.5rem;
   accent-color: #d02e8c;
 }
+@media screen and (max-width: 968px) {
+  .p__plan2 .pick__option .wrap-option .input-checkbox {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+}
 .p__plan2 .pick__option .content-top {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: wrap;
   padding: 0 2.5rem 1.5rem 2.5rem;
   border-bottom: 1px dashed #8a8a8a;
 }
@@ -3665,17 +3703,34 @@ ul {
   line-height: 1.2;
   color: #282828;
 }
+@media screen and (max-width: 968px) {
+  .p__plan2 .pick__option .content-top .left {
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+  }
+}
 .p__plan2 .pick__option .content-top .right {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   gap: 2.5rem;
 }
+@media screen and (max-width: 968px) {
+  .p__plan2 .pick__option .content-top .right {
+    width: 100%;
+  }
+}
 .p__plan2 .pick__option .content-top .total {
   font-size: 2rem;
   font-family: "notosansCJK-medium";
   line-height: 1.2;
   color: #282828;
+}
+@media screen and (max-width: 968px) {
+  .p__plan2 .pick__option .content-top .total {
+    font-size: 1.6rem;
+  }
 }
 .p__plan2 .pick__option .content-top .price {
   margin-top: -1rem;
@@ -3686,11 +3741,21 @@ ul {
   line-height: 1.2;
   color: #282828;
 }
+@media screen and (max-width: 968px) {
+  .p__plan2 .pick__option .content-top .price .txt {
+    font-size: 2.4rem;
+  }
+}
 .p__plan2 .pick__option .content-top .price .unit {
   font-size: 2rem;
   font-family: "notosansCJK-medium";
   line-height: 1.2;
   color: #282828;
+}
+@media screen and (max-width: 968px) {
+  .p__plan2 .pick__option .content-top .price .unit {
+    font-size: 1.8rem;
+  }
 }
 .p__plan2 .pick__option .content-top .price .desc {
   display: inline-block;
@@ -3713,14 +3778,25 @@ ul {
   color: #282828;
   margin-bottom: 6rem;
 }
+@media screen and (max-width: 968px) {
+  .p__plan2 .informartion__card--ttl {
+    margin-bottom: 3.5rem;
+  }
+}
 .p__plan2 .informartion__card--form {
   padding: 0 7.5rem;
+}
+@media screen and (max-width: 968px) {
+  .p__plan2 .informartion__card--form {
+    padding: 0;
+  }
 }
 .p__plan2 .informartion__card .row-form {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  flex-wrap: wrap;
   margin-bottom: 3rem;
 }
 .p__plan2 .informartion__card .input-gr-text {
@@ -3728,6 +3804,11 @@ ul {
   align-items: center;
   max-width: 24.5rem;
   width: 100%;
+}
+@media screen and (max-width: 968px) {
+  .p__plan2 .informartion__card .input-gr-text {
+    margin-bottom: 1rem;
+  }
 }
 .p__plan2 .informartion__card .input-gr-text .requied {
   font-size: 1.2rem;
@@ -3752,6 +3833,12 @@ ul {
 .p__plan2 .informartion__card .input-gr-content {
   flex: 1;
 }
+@media screen and (max-width: 968px) {
+  .p__plan2 .informartion__card .input-gr-content {
+    width: 100%;
+    flex: none;
+  }
+}
 .p__plan2 .informartion__card .input-gr-content .input-txt {
   width: 100%;
   font-family: "notosansCJK";
@@ -3768,6 +3855,11 @@ ul {
   justify-content: center;
   margin-top: 7rem;
 }
+@media screen and (max-width: 968px) {
+  .p__plan2 .informartion__card .gr__btn {
+    margin-top: 3.5rem;
+  }
+}
 .p__plan2 .informartion__card .gr__btn .btn_submit {
   display: inline-block;
   max-width: 21rem;
@@ -3782,4 +3874,9 @@ ul {
   background-color: #a8a8a8;
   border: none;
   border-radius: 1rem;
+}
+@media screen and (max-width: 968px) {
+  .p__plan2 .informartion__card .gr__btn .btn_submit {
+    font-size: 1.6rem;
+  }
 }

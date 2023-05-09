@@ -159,9 +159,12 @@
     }
   }
 }
-.p__plan2 {
+.p__plan2 {  
   .pick__option {
     margin-bottom: 10rem;
+    @include mq_max_968 {
+      margin-bottom: 4.5rem;
+    } 
     .txt-pick {
       width: 100%;
       padding: 2rem 2rem 2rem 2.5rem;
@@ -172,11 +175,22 @@
       .txt-big {
         font-size: 1.8rem;
         line-height: 1.2;
+        @include mq_max_968 {
+          display: inline-block;
+          width: 100%;
+          font-size: 1.6rem;
+        }
       }
       .txt-small {
         font-size: 1.2rem;
         line-height: 1.2;
         padding-left: 1rem;
+        @include mq_max_968 {
+          display: inline-block;
+          width: 100%;
+          font-size: 1.2rem;
+          padding-left: 0;
+        }
       }
     }
     .wrap-option {
@@ -187,6 +201,9 @@
       gap: 1rem;
       padding: 0 2.5rem;
       margin-bottom: 10rem;
+      @include mq_max_968 {
+        margin-bottom: 3.5rem;
+      }
       .label {
         display: flex;
         align-items: center;
@@ -195,6 +212,10 @@
         line-height: 1.2;
         color: $black;       
         margin-right: 4rem;
+        @include mq_max_968 {
+          font-size: 1.4rem;
+          margin-right: 2rem;
+        }
       }
       .input-checkbox {
         display: flex;
@@ -203,6 +224,10 @@
         height: 1.8rem;
         margin-right: .5rem;
         accent-color: $pink;
+        @include mq_max_968 {
+         width: 1.4rem;
+         height: 1.4rem;
+        }
       }      
     }
     .content-top {
@@ -210,25 +235,37 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
+      flex-wrap: wrap;
       padding: 0 2.5rem 1.5rem 2.5rem;
       border-bottom: 1px dashed $gray_dark2;
       .left {
         font-size: 2rem;
         font-family: 'notosansCJK-medium';
         line-height: 1.2;
-        color: $black;       
+        color: $black;      
+        @include mq_max_968 {
+         width: 100%;
+         margin-bottom: 1rem;
+         font-size: 1.6rem;
+        } 
       }
       .right {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
         gap: 2.5rem;
+        @include mq_max_968 {
+          width: 100%;
+        } 
       }
       .total {
         font-size: 2rem;
         font-family: 'notosansCJK-medium';
         line-height: 1.2;
         color: $black;  
+        @include mq_max_968 {
+          font-size: 1.6rem;
+        } 
       }
       .price {
         margin-top: -1rem;
@@ -237,12 +274,18 @@
           font-family: 'notosansCJK-medium';
           line-height: 1.2;
           color: $black;  
+          @include mq_max_968 {
+            font-size: 2.4rem;
+          } 
         }
         .unit {
           font-size: 2rem;
           font-family: 'notosansCJK-medium';
           line-height: 1.2;
-          color: $black;  
+          color: $black; 
+          @include mq_max_968 {
+            font-size: 1.8rem;
+          }  
         }
         .desc {
           display: inline-block;
@@ -268,15 +311,22 @@
       text-align: center;
       color: $black;
       margin-bottom: 6rem;
+      @include mq_max_968 {
+        margin-bottom: 3.5rem;
+      }
     }
     &--form {
       padding: 0 7.5rem;
+      @include mq_max_968 {
+        padding: 0;
+      }
     }
     .row-form {
       width: 100%;
       display: flex;
       align-items: center;
       justify-content: flex-start;
+      flex-wrap: wrap;
       margin-bottom: 3rem;
     }
     .input-gr-text {
@@ -284,6 +334,9 @@
       align-items: center;
       max-width: 24.5rem;
       width: 100%;
+      @include mq_max_968 {
+        margin-bottom: 1rem;
+      }
       .requied {
         font-size: 1.2rem;
         line-height: 1.2;
@@ -305,6 +358,10 @@
     }
     .input-gr-content {
       flex: 1;
+      @include mq_max_968 {
+        width: 100%;
+        flex: none;
+      }
       .input-txt {
         width: 100%;
         font-family: 'notosansCJK';
@@ -321,6 +378,9 @@
       align-items: flex-start;
       justify-content: center;
       margin-top: 7rem;
+      @include mq_max_968 {
+        margin-top: 3.5rem;
+      }
       .btn_submit {
         display: inline-block;
         max-width: 21rem;
@@ -335,6 +395,9 @@
         background-color: $gray_dark1;
         border: none;
         border-radius: 1rem;
+        @include mq_max_968 {
+          font-size: 1.6rem;
+        } 
       }
     }
   }
