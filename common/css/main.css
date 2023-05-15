@@ -1485,7 +1485,7 @@ body.active {
     flex-direction: column;
     gap: 2rem;
     position: fixed;
-    top: 6.2rem;
+    top: 5.6rem;
     left: 0;
     z-index: 9999;
     overflow: auto;
@@ -1506,7 +1506,7 @@ body.active {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: 2rem;
+  right: 1rem;
   border: 0;
   background-color: transparent;
   padding: 1.8rem 0 0;
