@@ -37,8 +37,7 @@
     justify-content: flex-end;
     align-items: center;
     flex: 1;
-    @include mq_max_968 {
-      // display: block;
+    @include mq_max_968 {      
       display: none;
     }
     &__bar {
@@ -68,47 +67,75 @@
     transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     font-size: 1.25rem;
     color: #000;
-    margin-right: 0.5rem;
+    margin-right: 0.5rem;    
   }
   .link__logo {
     display: inline-block;
   }
 
+  &__logout {
+    .header__navigation {
+      @include mq_max_968 {
+        display: block;      
+      }
+    }
+    .header__navigation__bar {
+      @include mq_max_968 {
+        justify-content: flex-end;
+        gap: 1.5rem;
+      }
+      .link__nav {
+        @include mq_max_968 {
+          font-size: 1.4rem;
+        }
+        .icon {
+          @include mq_max_968 { 
+            width: 1.6rem;
+            height: 1.2rem;
+          }
+        }
+      }
+    }
+
+  }
+  &__login {
+
+  }
 
   //custom menu sp
-  &-nav_toggle {
-    width: 2.4rem;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 2rem;
-    border: 0;
-    background-color: transparent;
-    padding: 1.8rem 0 0;
-    font-size: .6rem;
-    text-align: center;
-    outline: none !important;
-    z-index: 9999;
-    transition: .3s ease-in-out;
-    @include mq_min_969 {
-      display: none;
-    }
-    span {
-      position: absolute;
-      left: 0;
-      width: 100%;
-      height: .15rem;
-      background-color:#333333;
-      transition: .3s ease-in-out;
-      &:nth-child(1) {
-        top: -0.1rem;
-      }
-      &:nth-child(2) {
-        top: .8rem;
-      }
-      &:nth-child(3) {
-        top: 1.8rem;
-      }
-    }
-  }
+  // &-nav_toggle {
+  //   width: 2.4rem;
+  //   position: absolute;
+  //   top: 50%;
+  //   transform: translateY(-50%);
+  //   right: 2rem;
+  //   border: 0;
+  //   background-color: transparent;
+  //   padding: 1.8rem 0 0;
+  //   font-size: .6rem;
+  //   text-align: center;
+  //   outline: none !important;
+  //   z-index: 9999;
+  //   transition: .3s ease-in-out;
+  //   @include mq_min_969 {
+  //     display: none;
+  //   }
+  //   span {
+  //     position: absolute;
+  //     left: 0;
+  //     width: 100%;
+  //     height: .15rem;
+  //     background-color:#333333;
+  //     transition: .3s ease-in-out;
+  //     &:nth-child(1) {
+  //       top: -0.1rem;
+  //     }
+  //     &:nth-child(2) {
+  //       top: .8rem;
+  //     }
+  //     &:nth-child(3) {
+  //       top: 1.8rem;
+  //     }
+  //   }
+  // }
 }
