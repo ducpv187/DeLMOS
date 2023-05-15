@@ -511,6 +511,10 @@ ul {
 }
 
 /* End CMS modal PopUp Alert Delete */
+body.active {
+  overflow: hidden;
+}
+
 .page {
   position: relative;
 }
@@ -1466,6 +1470,97 @@ ul {
     height: 1.2rem;
   }
 }
+@media screen and (max-width: 968px) {
+  .header__login .header__navigation {
+    display: none;
+  }
+}
+@media screen and (max-width: 968px) {
+  .header__login .header__navigation__bar {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 2rem;
+    position: fixed;
+    top: 6.2rem;
+    left: 0;
+    z-index: 9999;
+    overflow: auto;
+    background-color: #fff;
+    padding: 0;
+    transition: 0.3s ease-in-out;
+    padding: 0 2rem;
+  }
+}
+@media screen and (max-width: 968px) {
+  .header__login .header__navigation__bar .list-item-menu {
+    width: 100%;
+    padding: 1rem 0;
+  }
+}
+.header__login .header-nav_toggle {
+  width: 2.4rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2rem;
+  border: 0;
+  background-color: transparent;
+  padding: 1.8rem 0 0;
+  font-size: 0.6rem;
+  text-align: center;
+  outline: none !important;
+  z-index: 9999;
+  transition: 0.3s ease-in-out;
+}
+@media screen and (min-width: 969px) {
+  .header__login .header-nav_toggle {
+    display: none;
+  }
+}
+.header__login .header-nav_toggle span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0.15rem;
+  background-color: #333333;
+  transition: 0.3s ease-in-out;
+}
+.header__login .header-nav_toggle span:nth-child(1) {
+  top: -0.1rem;
+}
+.header__login .header-nav_toggle span:nth-child(2) {
+  top: 0.8rem;
+}
+.header__login .header-nav_toggle span:nth-child(3) {
+  top: 1.8rem;
+}
+@media screen and (max-width: 968px) {
+  .header.on_nav .header__navigation {
+    display: block;
+  }
+}
+.header.on_nav .header-nav_toggle {
+  font-size: 0;
+}
+.header.on_nav .header-nav_toggle span {
+  background-color: #333333;
+}
+.header.on_nav .header-nav_toggle span:nth-child(1) {
+  top: 0.5rem;
+  transform: rotate(45deg);
+}
+.header.on_nav .header-nav_toggle span:nth-child(2) {
+  opacity: 0;
+}
+.header.on_nav .header-nav_toggle span:nth-child(3) {
+  top: 0.5rem;
+  transform: rotate(-45deg);
+}
+
 .footer__top {
   padding: 4rem 0 5rem;
   background-color: #f3f3f3;

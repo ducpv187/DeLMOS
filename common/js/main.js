@@ -382,6 +382,12 @@ $(document).ready(function() {
    }
   })
 
+  //show menu-sp
+  $(".header-nav_toggle").click(function() {     
+    $(this).parents('.header').toggleClass('on_nav');   
+    $('body').toggleClass('active'); 
+  })
+
   //validate check input katana
   jQuery.validator.addMethod(
     'katakana',
@@ -391,6 +397,7 @@ $(document).ready(function() {
     
     '<br/>全角カタカナを入力してください'
   );
+  
 
   //Validate form
   $('#my__form').validate({    
