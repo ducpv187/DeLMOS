@@ -4135,6 +4135,7 @@ body.active {
 .p__plan2 .image-logo .list-logo {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   gap: 1rem;
 }
 .p__plan2 .image-logo .logo-item {
