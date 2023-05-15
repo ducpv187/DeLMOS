@@ -377,7 +377,7 @@
       display: flex;
       align-items: flex-start;
       justify-content: center;
-      margin-top: 7rem;
+      margin-top: 4rem;
       @include mq_max_968 {
         margin-top: 3.5rem;
       }
@@ -398,6 +398,29 @@
         @include mq_max_968 {
           font-size: 1.6rem;
         } 
+      }
+    }
+  }
+  .image-logo {
+    display: flex;
+    justify-content: flex-start;
+
+    .image-ttl {      
+      max-width: 24.5rem;
+      width: 100%;
+      @include mq_max_968 {
+        display: none;
+      }
+    }
+    .list-logo {
+      display: flex;
+      justify-content: flex-start;
+      gap: 1rem;
+    }
+    .logo-item {
+      width: 10rem;
+      @include mq_max_968 {
+        width: 5rem;
       }
     }
   }
