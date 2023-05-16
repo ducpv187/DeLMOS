@@ -101,8 +101,7 @@
   &__login {
     .header__navigation {
       @include mq_max_968 {
-        display: none;      
-        // display: block;      
+        display: none;              
       }
     }
     .header__navigation__bar {
