@@ -194,6 +194,12 @@ $(document).ready(function() {
 
   })
 
+  //current time video
+  $(".video_play").each(function(){
+    let idVideo = $(this).attr('id');      
+    document.getElementById(idVideo).currentTime = 0.1;
+  });
+
   //hover autoplay video
   $(".video--items").mousemove(function(){
     let idVideo = $(this).find(".js-hoverVideo").attr('id');

@@ -24,7 +24,7 @@
     }
     .l__video {
       width: 28rem;
-      line-height: 0;
+      line-height: 0;      
       @include mq_max_968 {
         width: 100%;      
         text-align: center;

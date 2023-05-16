@@ -1244,6 +1244,10 @@ body.active {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.video_play.video_ps_none {
+  position: inherit;
+  z-index: inherit;
+}
 
 .btn-changePassword {
   width: 21rem !important;

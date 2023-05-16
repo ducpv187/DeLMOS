@@ -679,7 +679,12 @@ body.active {
   left: 0;
   z-index: -1;
   object-fit: cover;
+  &.video_ps_none {
+    position: inherit;
+    z-index: inherit;
+  }
 }
+
 
 
 //BE add them
